@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 import http
 from tryagain import retries
 
-username = "DarthEd"
+username = "toasterovenly"
 commands = {
 	"collection": "collection?",
 }
@@ -28,7 +28,7 @@ def waitFunc(n):
 
 @retries(max_attempts=5, wait=waitFunc)
 def getCollection():
-	result = urllib.request.urlopen(urls["boardgames"])\
+	result = urllib.request.urlopen(urls["boardgames"])
 	print(result.code, result.reason)
 	if result.code == http.HTTPStatus.ACCEPTED.value:
 		raise Exception(result.reason)
