@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="http://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgameexpansion" id="178494">
+         <thumbnail>//cf.geekdo-images.com/images/pic2538935_t.jpg</thumbnail>
+      <image>//cf.geekdo-images.com/images/pic2538935.jpg</image>
+                                     				
+				<name type="primary" sortindex="1" value="Dutch Blitz: Blue Expansion Pack" />
+			
+						                           
+						               													<description>The Dutch Blitz Blue Expansion Pack can be used together with regular Dutch Blitz in order to enable games with 5-8 players.&amp;#10;&amp;#10;Contains: 160 cards&amp;#10;&amp;#10;Publisher description:&amp;#10;&amp;#10;Dutch Blitz has developed this expansion that allows you to play with up to eight players. Insane!&amp;#10;&amp;#10;And, here's the thing. You can play with this New Blue pack, just like Classic Green, with up to 4 players OR combine the two packs to play with 5, 6, 7 or 8 players. Outta control!&amp;#10;&amp;#10;So, what makes New Blue different? It's simply a reinvention of the Classic Green boxed game that you know and love, with the colours of the four decks' designs (carriage, bucket, pump and plow) switched to enable more players. Yes, it's that simple and that awesome.&amp;#10;&amp;#10;</description>
+										      	               				<yearpublished value="2014" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="8" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="0">
+			
+		<results numplayers="8+">		
+				</results>					
+	</poll> 
+			               				<playingtime value="15" />
+						               				<minplaytime value="1" />
+						               				<maxplaytime value="15" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="0">
+	</poll> 
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+	</poll> 
+			      			 
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1037" value="Real-time" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="148203" value="Dutch Blitz" inbound="true"/>
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="238" value="Dutch Blitz Games Company" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="41" />
+			<average value="7.21829" />
+			<bayesaverage value="5.56673" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.56673" />
+												</ranks>
+
+			<stddev value="1.4768" />
+			<median value="0" />
+			<owned value="146" />
+			<trading value="0" />
+			<wanting value="5" />
+			<wishing value="8" />
+			<numcomments value="6" />
+			<numweights value="2" />
+			<averageweight value="1.5" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

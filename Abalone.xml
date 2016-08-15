@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items termsofuse="http://boardgamegeek.com/xmlapi/termsofuse">
+	<item id="526" type="boardgame">
+		<thumbnail>//cf.geekdo-images.com/images/pic685843_t.jpg</thumbnail>
+		<image>//cf.geekdo-images.com/images/pic685843.jpg</image>
+		<name sortindex="1" type="primary" value="Abalone"/>
+		<name sortindex="1" type="alternate" value="Abalone Classic"/>
+		<name sortindex="1" type="alternate" value="Abalone Deluxe"/>
+		<name sortindex="1" type="alternate" value="Abalone Mini"/>
+		<name sortindex="1" type="alternate" value="Abalone Travel"/>
+		<name sortindex="1" type="alternate" value="Polaris"/>
+		<name sortindex="1" type="alternate" value="Travel Abalone"/>
+		<name sortindex="1" type="alternate" value="אבלון נסיעות"/>
+		<description>This beautiful and functional board has room for two teams of large marbles. Players take turns pushing the marbles around the board, with the goal of pushing six of the opposing player's marbles off the board. The central idea is that a column of marbles has weight given by the number of marbles in line. Someone will need to push with a heavier group of marbles in order to push the column along that axis. However, with six possible directions, it's difficult to defend yourself perfectly. Also, it's possible to play the game with up to six players when supplemental marble sets are purchased.&amp;#10;&amp;#10;</description>
+		<yearpublished value="1987"/>
+		<minplayers value="2"/>
+		<maxplayers value="2"/>
+		<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="44">
+			<results numplayers="1">
+				<result numvotes="0" value="Best"/>
+				<result numvotes="1" value="Recommended"/>
+				<result numvotes="18" value="Not Recommended"/>
+			</results>
+			<results numplayers="2">
+				<result numvotes="35" value="Best"/>
+				<result numvotes="8" value="Recommended"/>
+				<result numvotes="0" value="Not Recommended"/>
+			</results>
+			<results numplayers="2+">
+				<result numvotes="1" value="Best"/>
+				<result numvotes="4" value="Recommended"/>
+				<result numvotes="17" value="Not Recommended"/>
+			</results>
+		</poll>
+		<playingtime value="30"/>
+		<minplaytime value="30"/>
+		<maxplaytime value="30"/>
+		<minage value="7"/>
+		<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="18">
+			<results>
+				<result numvotes="0" value="2"/>
+				<result numvotes="0" value="3"/>
+				<result numvotes="0" value="4"/>
+				<result numvotes="0" value="5"/>
+				<result numvotes="3" value="6"/>
+				<result numvotes="10" value="8"/>
+				<result numvotes="2" value="10"/>
+				<result numvotes="2" value="12"/>
+				<result numvotes="1" value="14"/>
+				<result numvotes="0" value="16"/>
+				<result numvotes="0" value="18"/>
+				<result numvotes="0" value="21 and up"/>
+			</results>
+		</poll>
+		<poll name="language_dependence" title="Language Dependence" totalvotes="32">
+			<results>
+				<result level="1" numvotes="32" value="No necessary in-game text"/>
+				<result level="2" numvotes="0" value="Some necessary text - easily memorized or small crib sheet"/>
+				<result level="3" numvotes="0" value="Moderate in-game text - needs crib sheet or paste ups"/>
+				<result level="4" numvotes="0" value="Extensive use of text - massive conversion needed to be playable"/>
+				<result level="5" numvotes="0" value="Unplayable in another language"/>
+			</results>
+		</poll>
+		<link id="1009" type="boardgamecategory" value="Abstract Strategy"/>
+		<link id="2676" type="boardgamemechanic" value="Grid Movement"/>
+		<link id="11031" type="boardgamefamily" value="Abalone"/>
+		<link id="26432" type="boardgamefamily" value="Combinatorial"/>
+		<link id="5902" type="boardgamefamily" value="Marble Games"/>
+		<link id="6485" type="boardgamefamily" value="Mensa Select"/>
+		<link id="20072" type="boardgamefamily" value="Parker 'games to go'"/>
+		<link id="11679" type="boardgameexpansion" value="Abalone Extra Player Marbles"/>
+		<link id="31968" type="boardgameimplementation" value="Abalone Quattro"/>
+		<link id="89951" type="boardgameimplementation" value="Offboard"/>
+		<link id="101" type="boardgamedesigner" value="Michel Lalet"/>
+		<link id="102" type="boardgamedesigner" value="Laurent Levi"/>
+		<link id="3320" type="boardgamepublisher" value="(Unknown)"/>
+		<link id="66" type="boardgamepublisher" value="Abalone Games"/>
+		<link id="31199" type="boardgamepublisher" value="abalone s.a."/>
+		<link id="6469" type="boardgamepublisher" value="Abstract Games (magazine)"/>
+		<link id="157" type="boardgamepublisher" value="Asmodee"/>
+		<link id="389" type="boardgamepublisher" value="Brio AB"/>
+		<link id="5231" type="boardgamepublisher" value="Carrom Art"/>
+		<link id="17388" type="boardgamepublisher" value="Creative Crafthouse"/>
+		<link id="1280" type="boardgamepublisher" value="FoxMind"/>
+		<link id="67" type="boardgamepublisher" value="Galoob"/>
+		<link id="454" type="boardgamepublisher" value="Goliath B.V."/>
+		<link id="51" type="boardgamepublisher" value="Hasbro"/>
+		<link id="335" type="boardgamepublisher" value="Jumbo"/>
+		<link id="7938" type="boardgamepublisher" value="Ludens Spirit"/>
+		<link id="6261" type="boardgamepublisher" value="Mitra"/>
+		<link id="23494" type="boardgamepublisher" value="Oficina do Aprendiz"/>
+		<link id="12047" type="boardgamepublisher" value="Oliphante"/>
+		<link id="28" type="boardgamepublisher" value="Parker Brothers"/>
+		<link id="4653" type="boardgamepublisher" value="Parker Spiele"/>
+		<link id="22" type="boardgamepublisher" value="Piatnik"/>
+		<link id="7466" type="boardgamepublisher" value="REBEL.pl"/>
+		<link id="4668" type="boardgamepublisher" value="Schmidt International"/>
+		<link id="38" type="boardgamepublisher" value="Schmidt Spiele"/>
+		<link id="964" type="boardgamepublisher" value="Tactic"/>
+		<link id="254" type="boardgamepublisher" value="University Games"/>
+		<link id="909" type="boardgamepublisher" value="Week End Games"/>
+	</item>
+</items>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="http://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgameexpansion" id="29510">
+         <thumbnail>//cf.geekdo-images.com/images/pic225839_t.jpg</thumbnail>
+      <image>//cf.geekdo-images.com/images/pic225839.jpg</image>
+                                     				
+				<name type="primary" sortindex="1" value="Jambo Expansion" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Jambo: 1e uitbreiding" />
+			    				
+				<name type="alternate" sortindex="1" value="Jambo: Die Erweiterung" />
+			
+						               													<description>The expansion contains 3 separate modules, which can be combined in many ways:&amp;#10;&amp;#10;&amp;#10;    New Beginnings adds 40 new utility, people and animal cards, providing players with new elements to keep the game new and exciting.&amp;#10;    The Three Huts add 3 new huts for each player to use throughout the game, giving each additional options on each turn.&amp;#10;    The Relic adds 4 cards, which offer players an additional way to win the game.&amp;#10;&amp;#10;&amp;#10;Expands:&amp;#10;&amp;#10;     Jambo&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;2 players, Ages 10 and up; length: 30 minutes; author: R&amp;uuml;diger Dorn.&amp;#10;&amp;#10;</description>
+										      	               				<yearpublished value="2007" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="5">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+	</poll> 
+			               				<playingtime value="30" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="30" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="0">
+	</poll> 
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="4">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 
+			      			 
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1042" value="Expansion for Base-game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2001" value="Action Point Allowance System" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17105" value="Jambo" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="12002" value="Jambo" inbound="true"/>
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="184685" value="Jambo: Nieuwe avonturen en ontmoetingen" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="381" value="Rüdiger Dorn" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11825" value="Michael Menzel" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7007" value="12spiel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4696" value="Quined White Goblin Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3" value="Rio Grande Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4932" value="White Goblin Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="789" />
+			<average value="7.2529" />
+			<bayesaverage value="6.3541" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.3541" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.5237" />
+												</ranks>
+
+			<stddev value="1.18925" />
+			<median value="0" />
+			<owned value="2473" />
+			<trading value="55" />
+			<wanting value="105" />
+			<wishing value="174" />
+			<numcomments value="349" />
+			<numweights value="72" />
+			<averageweight value="2.0556" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+<item type="boardgameexpansion" id="46127">
+         <thumbnail>//cf.geekdo-images.com/images/pic594131_t.jpg</thumbnail>
+      <image>//cf.geekdo-images.com/images/pic594131.jpg</image>
+                                     				
+				<name type="primary" sortindex="1" value="Jambo Expansion 2" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Jambo 2e uitbreiding" />
+			    				
+				<name type="alternate" sortindex="1" value="Jambo: die 2. Erweiterung" />
+			
+						               													<description>The 2nd expansion contains 3 separate modules, which can be combined in many ways with the basic game and the first expansions.&amp;#10;&amp;#10;I - NEW WARES and ENCOUNTERS&amp;#10;&amp;#10;II - THE FOURTH HUT&amp;#10;&amp;#10;III - THE CARPET&amp;#10;&amp;#10;Contents:&amp;#10;- 5 new persons (2 copies each = 10)&amp;#10;- 5 new animals (2 copies each except 1 of the Giraffe = 9)&amp;#10;- 2 new utilities  (2 copies each = 4)&amp;#10;- 3 carpets&amp;#10;- 1 new hut  (2 copies = 2)&amp;#10;- 16 new ware cards (incl. 4 new kinds of ware cards)  (2 copies each = 32)&amp;#10;&amp;#10;60 new cards plus one sheet of rules&amp;#10;(and you need about 5 counters)&amp;#10;&amp;#10;The cards from this expansion can be combined with all the cards from the base game and first expansion to create a playable deck.  (Unlike the base game + first expansion, which required a number of non-ware cards to be removed from the deck to maintain a good balance of card types.)&amp;#10;&amp;#10;Expansion for:&amp;#10;&amp;#10;     Jambo&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;</description>
+										      	               				<yearpublished value="2009" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="5">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+	</poll> 
+			               				<playingtime value="30" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="30" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="1">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="11" value="No necessary in-game text" numvotes="0" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 
+			      			 
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1042" value="Expansion for Base-game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17105" value="Jambo" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="12002" value="Jambo" inbound="true"/>
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="184685" value="Jambo: Nieuwe avonturen en ontmoetingen" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="381" value="Rüdiger Dorn" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11825" value="Michael Menzel" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7007" value="12spiel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4696" value="Quined White Goblin Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3" value="Rio Grande Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4932" value="White Goblin Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="445" />
+			<average value="7.60463" />
+			<bayesaverage value="6.24247" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.24247" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.43846" />
+												</ranks>
+
+			<stddev value="1.1618" />
+			<median value="0" />
+			<owned value="1605" />
+			<trading value="29" />
+			<wanting value="125" />
+			<wishing value="188" />
+			<numcomments value="167" />
+			<numweights value="29" />
+			<averageweight value="2.2069" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+<item type="boardgameexpansion" id="184685">
+         <thumbnail>//cf.geekdo-images.com/images/pic2679046_t.jpg</thumbnail>
+      <image>//cf.geekdo-images.com/images/pic2679046.jpg</image>
+                                     				
+				<name type="primary" sortindex="1" value="Jambo: Nieuwe avonturen en ontmoetingen" />
+			
+						                           
+						               													<description>This is an expansion that combines Expansion 1 and 2 that were previously released seperately.&amp;#10;&amp;#10;The expansion contains 6 separate modules, which can be combined in many ways:&amp;#10;&amp;bull;New Beginnings adds 40 new utility, people and animal cards, providing players with new elements to keep the game new and exciting.&amp;#10;&amp;bull;The Three Huts add 3 new huts for each player to use throughout the game, giving each additional options on each turn.&amp;#10;&amp;bull;The Relic adds 4 cards, which offer players an additional way to win the game.&amp;#10;&amp;#10;I - NEW WARES and ENCOUNTERS&amp;#10;&amp;#10;II - THE FOURTH HUT&amp;#10;&amp;#10;III - THE CARPET&amp;#10;&amp;#10;Contents:&amp;#10; - 5 new persons (2 copies each = 10)&amp;#10; - 5 new animals (2 copies each except 1 of the Giraffe = 9)&amp;#10; - 2 new utilities (2 copies each = 4)&amp;#10; - 3 carpets&amp;#10; - 1 new hut (2 copies = 2)&amp;#10; - 16 new ware cards (incl. 4 new kinds of ware cards) (2 copies each = 32)&amp;#10;&amp;#10;60 new cards plus one sheet of rules&amp;#10; (and you need about 5 counters)&amp;#10;&amp;#10;The cards from this expansion can be combined with all the cards from the base game.&amp;#10;&amp;#10;</description>
+										      	               				<yearpublished value="2015" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="0">
+			
+		<results numplayers="2+">		
+				</results>					
+	</poll> 
+			               				<playingtime value="30" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="30" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="0">
+	</poll> 
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 
+			      			 
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1042" value="Expansion for Base-game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="12002" value="Jambo" inbound="true"/>
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="29510" value="Jambo Expansion" inbound="true"/>
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="46127" value="Jambo Expansion 2" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="381" value="Rüdiger Dorn" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11825" value="Michael Menzel" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4932" value="White Goblin Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="2" />
+			<average value="7.95" />
+			<bayesaverage value="0" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="Not Ranked" />
+												</ranks>
+
+			<stddev value="1.95" />
+			<median value="0" />
+			<owned value="17" />
+			<trading value="0" />
+			<wanting value="2" />
+			<wishing value="7" />
+			<numcomments value="1" />
+			<numweights value="0" />
+			<averageweight value="0" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,767 +1,1305 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<items totalitems="76" termsofuse="http://boardgamegeek.com/xmlapi/termsofuse" pubdate="Sat, 13 Aug 2016 02:40:56 +0000">
-		<item objecttype="thing" objectid="526" subtype="boardgame" collid="8169686">
-	<name sortindex="1">Abalone</name>
-		<yearpublished>1990</yearpublished>			<image>//cf.geekdo-images.com/images/pic895069.jpg</image>
+<items pubdate="Sat, 13 Aug 2016 02:40:56 +0000" termsofuse="http://boardgamegeek.com/xmlapi/termsofuse" totalitems="76">
+	<item collid="8169686" objectid="526" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Abalone</name>
+		<yearpublished>1990</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic895069.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic895069_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="6112" >
-				<rating value="9">			<usersrated value="4268" />			<average value="6.43401" />
-			<bayesaverage value="6.24546" />			<stddev value="1.41622" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:52:14" />
-	<numplays>3</numplays>							</item>
-		<item objecttype="thing" objectid="43868" subtype="boardgame" collid="8887769">
-	<name sortindex="5">The Adventurers: The Temple of Chac</name>
-		<yearpublished>2009</yearpublished>			<image>//cf.geekdo-images.com/images/pic517825.jpg</image>
+		<stats maxplayers="2" maxplaytime="30" minplayers="2" minplaytime="30" numowned="6112" playingtime="30">
+			<rating value="9">
+				<usersrated value="4268"/>
+				<average value="6.43401"/>
+				<bayesaverage value="6.24546"/>
+				<stddev value="1.41622"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:52:14" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>3</numplays>
+	</item>
+	<item collid="8887769" objectid="43868" objecttype="thing" subtype="boardgame">
+		<name sortindex="5">The Adventurers: The Temple of Chac</name>
+		<yearpublished>2009</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic517825.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic517825_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="4710" >
-				<rating value="7">			<usersrated value="3954" />			<average value="6.62396" />
-			<bayesaverage value="6.41246" />			<stddev value="1.22836" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:47:49" />
-	<numplays>5</numplays>							</item>
-		<item objecttype="thing" objectid="45358" subtype="boardgame" collid="9972823">
-	<name sortindex="1">Alhambra: Big Box</name>
-		<yearpublished>2009</yearpublished>			<image>//cf.geekdo-images.com/images/pic535726.jpg</image>
+		<stats maxplayers="6" maxplaytime="45" minplayers="2" minplaytime="45" numowned="4710" playingtime="45">
+			<rating value="7">
+				<usersrated value="3954"/>
+				<average value="6.62396"/>
+				<bayesaverage value="6.41246"/>
+				<stddev value="1.22836"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:47:49" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>5</numplays>
+	</item>
+	<item collid="9972823" objectid="45358" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Alhambra: Big Box</name>
+		<yearpublished>2009</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic535726.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic535726_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="5277" >
-				<rating value="N/A">			<usersrated value="2765" />			<average value="7.56983" />
-			<bayesaverage value="7.08989" />			<stddev value="1.12357" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2010-03-31 22:41:00" />
-	<numplays>4</numplays>							</item>
-		<item objecttype="thing" objectid="6779" subtype="boardgame" collid="30495616">
-	<name sortindex="5">The Ark of the Covenant</name>
-		<yearpublished>2005</yearpublished>			<image>//cf.geekdo-images.com/images/pic32152.jpg</image>
+		<stats maxplayers="6" maxplaytime="60" minplayers="2" minplaytime="60" numowned="5277" playingtime="60">
+			<rating value="N/A">
+				<usersrated value="2765"/>
+				<average value="7.56983"/>
+				<bayesaverage value="7.08989"/>
+				<stddev value="1.12357"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2010-03-31 22:41:00" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>4</numplays>
+	</item>
+	<item collid="30495616" objectid="6779" objecttype="thing" subtype="boardgame">
+		<name sortindex="5">The Ark of the Covenant</name>
+		<yearpublished>2005</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic32152.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic32152_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="1740" >
-				<rating value="N/A">			<usersrated value="1347" />			<average value="6.97579" />
-			<bayesaverage value="6.42" />			<stddev value="1.20847" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:43:54" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="8229" subtype="boardgame" collid="36090502">
-	<name sortindex="1">Armadöra</name>
-		<yearpublished>2003</yearpublished>			<image>//cf.geekdo-images.com/images/pic2404104.jpg</image>
+		<stats maxplayers="5" maxplaytime="30" minplayers="2" minplaytime="30" numowned="1740" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="1347"/>
+				<average value="6.97579"/>
+				<bayesaverage value="6.42"/>
+				<stddev value="1.20847"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:43:54" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="36090502" objectid="8229" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">ArmadÃ¶ra</name>
+		<yearpublished>2003</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2404104.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2404104_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="931" >
-				<rating value="N/A">			<usersrated value="519" />			<average value="6.47592" />
-			<bayesaverage value="5.88748" />			<stddev value="1.17974" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:38:35" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="1231" subtype="boardgame" collid="25170440">
-	<name sortindex="1">Bandu</name>
-	<originalname>Bausack</originalname>	<yearpublished>1991</yearpublished>			<image>//cf.geekdo-images.com/images/pic103871.jpg</image>
+		<stats maxplayers="4" maxplaytime="30" minplayers="2" minplaytime="30" numowned="931" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="519"/>
+				<average value="6.47592"/>
+				<bayesaverage value="5.88748"/>
+				<stddev value="1.17974"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:38:35" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="25170440" objectid="1231" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Bandu</name>
+		<originalname>Bausack</originalname>
+		<yearpublished>1991</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic103871.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic103871_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="8"																	minplaytime="15"																	maxplaytime="45"																	playingtime="45"																	numowned="3718" >
-				<rating value="N/A">			<usersrated value="3092" />			<average value="6.89865" />
-			<bayesaverage value="6.5973" />			<stddev value="1.37075" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:52:27" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="3955" subtype="boardgame" collid="8169383">
-	<name sortindex="1">BANG!</name>
-		<yearpublished>2007</yearpublished>			<image>//cf.geekdo-images.com/images/pic697361.jpg</image>
+		<stats maxplayers="8" maxplaytime="45" minplayers="2" minplaytime="15" numowned="3718" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="3092"/>
+				<average value="6.89865"/>
+				<bayesaverage value="6.5973"/>
+				<stddev value="1.37075"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:52:27" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169383" objectid="3955" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">BANG!</name>
+		<yearpublished>2007</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic697361.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic697361_t.jpg</thumbnail>
-		<stats minplayers="4"																	maxplayers="7"																	minplaytime="20"																	maxplaytime="40"																	playingtime="40"																	numowned="20249" >
-				<rating value="10">			<usersrated value="18204" />			<average value="6.57631" />
-			<bayesaverage value="6.46481" />			<stddev value="1.46162" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:48:21" />
-	<numplays>6</numplays>							</item>
-		<item objecttype="thing" objectid="3706" subtype="boardgame" collid="36105954">
-	<name sortindex="1">Batik</name>
-		<yearpublished>2006</yearpublished>			<image>//cf.geekdo-images.com/images/pic198672.jpg</image>
+		<stats maxplayers="7" maxplaytime="40" minplayers="4" minplaytime="20" numowned="20249" playingtime="40">
+			<rating value="10">
+				<usersrated value="18204"/>
+				<average value="6.57631"/>
+				<bayesaverage value="6.46481"/>
+				<stddev value="1.46162"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:48:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>6</numplays>
+	</item>
+	<item collid="36105954" objectid="3706" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Batik</name>
+		<yearpublished>2006</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic198672.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic198672_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="10"																	maxplaytime="10"																	playingtime="10"																	numowned="658" >
-				<rating value="N/A">			<usersrated value="465" />			<average value="5.95667" />
-			<bayesaverage value="5.65873" />			<stddev value="1.30109" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-07 12:32:36" />
-	<numplays>0</numplays>					<wantpartslist>The weird concave piece in the light color. I made a replacement.
+		<stats maxplayers="2" maxplaytime="10" minplayers="2" minplaytime="10" numowned="658" playingtime="10">
+			<rating value="N/A">
+				<usersrated value="465"/>
+				<average value="5.95667"/>
+				<bayesaverage value="5.65873"/>
+				<stddev value="1.30109"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-07 12:32:36" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+		<wantpartslist>The weird concave piece in the light color. I made a replacement.
  ____
 |     /
-|___\</wantpartslist>		</item>
-		<item objecttype="thing" objectid="169341" subtype="boardgame" collid="36090508">
-	<name sortindex="1">Birds of a Feather</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2902931.jpg</image>
+|___\</wantpartslist>
+	</item>
+	<item collid="36090508" objectid="169341" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Birds of a Feather</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2902931.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2902931_t.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="7"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="426" >
-				<rating value="N/A">			<usersrated value="218" />			<average value="6.99844" />
-			<bayesaverage value="5.79662" />			<stddev value="1.11048" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:39:29" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="21287" subtype="boardgame" collid="8169376">
-	<name sortindex="1">Bison: Thunder on the Prairie</name>
-		<yearpublished>2006</yearpublished>			<image>//cf.geekdo-images.com/images/pic509244.jpg</image>
+		<stats maxplayers="7" maxplaytime="15" minplayers="1" minplaytime="15" numowned="426" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="218"/>
+				<average value="6.99844"/>
+				<bayesaverage value="5.79662"/>
+				<stddev value="1.11048"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:39:29" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169376" objectid="21287" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Bison: Thunder on the Prairie</name>
+		<yearpublished>2006</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic509244.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic509244_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="1820" >
-				<rating value="8">			<usersrated value="1125" />			<average value="6.39783" />
-			<bayesaverage value="6.01246" />			<stddev value="1.17802" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:48:41" />
-	<numplays>4</numplays>							</item>
-		<item objecttype="thing" objectid="11" subtype="boardgame" collid="32443691">
-	<name sortindex="1">Bohnanza</name>
-		<yearpublished>2000</yearpublished>			<image>//cf.geekdo-images.com/images/pic69366.jpg</image>
+		<stats maxplayers="4" maxplaytime="90" minplayers="2" minplaytime="90" numowned="1820" playingtime="90">
+			<rating value="8">
+				<usersrated value="1125"/>
+				<average value="6.39783"/>
+				<bayesaverage value="6.01246"/>
+				<stddev value="1.17802"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:48:41" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>4</numplays>
+	</item>
+	<item collid="32443691" objectid="11" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Bohnanza</name>
+		<yearpublished>2000</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic69366.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic69366_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="7"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="35615" >
-				<rating value="N/A">			<usersrated value="26186" />			<average value="7.07699" />
-			<bayesaverage value="6.99499" />			<stddev value="1.27639" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-11 21:11:08" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="172308" subtype="boardgame" collid="36090453">
-	<name sortindex="1">Broom Service</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2546156.jpg</image>
+		<stats maxplayers="7" maxplaytime="45" minplayers="2" minplaytime="45" numowned="35615" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="26186"/>
+				<average value="7.07699"/>
+				<bayesaverage value="6.99499"/>
+				<stddev value="1.27639"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-11 21:11:08" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="36090453" objectid="172308" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Broom Service</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2546156.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2546156_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="75"																	playingtime="75"																	numowned="3826" >
-				<rating value="N/A">			<usersrated value="2264" />			<average value="7.30139" />
-			<bayesaverage value="6.82966" />			<stddev value="1.23298" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:35:36" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="164159" subtype="boardgame" collid="32282408">
-	<name sortindex="1">BUS</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559563.jpg</image>
+		<stats maxplayers="5" maxplaytime="75" minplayers="2" minplaytime="30" numowned="3826" playingtime="75">
+			<rating value="N/A">
+				<usersrated value="2264"/>
+				<average value="7.30139"/>
+				<bayesaverage value="6.82966"/>
+				<stddev value="1.23298"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:35:36" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32282408" objectid="164159" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">BUS</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559563.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559563_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="3"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="614" >
-				<rating value="N/A">			<usersrated value="145" />			<average value="6.36079" />
-			<bayesaverage value="5.62927" />			<stddev value="1.09263" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:03" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="822" subtype="boardgame" collid="26308175">
-	<name sortindex="1">Carcassonne</name>
-		<yearpublished>2000</yearpublished>			<image>//cf.geekdo-images.com/images/pic2337577.jpg</image>
+		<stats maxplayers="3" maxplaytime="20" minplayers="2" minplaytime="20" numowned="614" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="145"/>
+				<average value="6.36079"/>
+				<bayesaverage value="5.62927"/>
+				<stddev value="1.09263"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:03" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="26308175" objectid="822" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Carcassonne</name>
+		<yearpublished>2000</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2337577.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2337577_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="45"																	playingtime="45"																	numowned="80587" >
-				<rating value="N/A">			<usersrated value="59771" />			<average value="7.43528" />
-			<bayesaverage value="7.33832" />			<stddev value="1.30042" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-12-30 20:17:33" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="171" subtype="boardgame" collid="30495584">
-	<name sortindex="1">Chess</name>
-		<yearpublished>1475</yearpublished>			<image>//cf.geekdo-images.com/images/pic260745.jpg</image>
+		<stats maxplayers="5" maxplaytime="45" minplayers="2" minplaytime="30" numowned="80587" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="59771"/>
+				<average value="7.43528"/>
+				<bayesaverage value="7.33832"/>
+				<stddev value="1.30042"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-12-30 20:17:33" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="30495584" objectid="171" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Chess</name>
+		<yearpublished>1475</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic260745.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic260745_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="24128" >
-				<rating value="N/A">			<usersrated value="18576" />			<average value="7.09506" />
-			<bayesaverage value="6.93984" />			<stddev value="1.84013" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-10-02 00:27:39" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="478" subtype="boardgame" collid="8169380">
-	<name sortindex="1">Citadels</name>
-		<yearpublished>2006</yearpublished>			<image>//cf.geekdo-images.com/images/pic636868.jpg</image>
+		<stats maxplayers="2" maxplaytime="60" minplayers="2" minplaytime="60" numowned="24128" playingtime="60">
+			<rating value="N/A">
+				<usersrated value="18576"/>
+				<average value="7.09506"/>
+				<bayesaverage value="6.93984"/>
+				<stddev value="1.84013"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-10-02 00:27:39" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169380" objectid="478" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Citadels</name>
+		<yearpublished>2006</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic636868.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic636868_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="8"																	minplaytime="20"																	maxplaytime="60"																	playingtime="60"																	numowned="44830" >
-				<rating value="8.5">			<usersrated value="34575" />			<average value="7.16327" />
-			<bayesaverage value="7.07978" />			<stddev value="1.24038" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:48:58" />
-	<numplays>3</numplays>							</item>
-		<item objecttype="thing" objectid="22141" subtype="boardgame" collid="12115953">
-	<name sortindex="1">Cleopatra and the Society of Architects</name>
-		<yearpublished>2006</yearpublished>			<image>//cf.geekdo-images.com/images/pic1904123.jpg</image>
+		<stats maxplayers="8" maxplaytime="60" minplayers="2" minplaytime="20" numowned="44830" playingtime="60">
+			<rating value="8.5">
+				<usersrated value="34575"/>
+				<average value="7.16327"/>
+				<bayesaverage value="7.07978"/>
+				<stddev value="1.24038"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:48:58" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>3</numplays>
+	</item>
+	<item collid="12115953" objectid="22141" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Cleopatra and the Society of Architects</name>
+		<yearpublished>2006</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1904123.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1904123_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="5"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="6599" >
-				<rating value="8.5">			<usersrated value="5420" />			<average value="6.81863" />
-			<bayesaverage value="6.63207" />			<stddev value="1.1478" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:46:10" />
-	<numplays>0</numplays>			<comment>Really like the corruption mechanic. Every really good action in the game has a  negative cost so you really have to weigh your decisions carefully.</comment>				</item>
-		<item objecttype="thing" objectid="146130" subtype="boardgame" collid="25170445">
-	<name sortindex="1">Coin Age</name>
-		<yearpublished>2013</yearpublished>			<image>//cf.geekdo-images.com/images/pic1753319.png</image>
+		<stats maxplayers="5" maxplaytime="60" minplayers="3" minplaytime="60" numowned="6599" playingtime="60">
+			<rating value="8.5">
+				<usersrated value="5420"/>
+				<average value="6.81863"/>
+				<bayesaverage value="6.63207"/>
+				<stddev value="1.1478"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:46:10" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+		<comment>Really like the corruption mechanic. Every really good action in the game has a  negative cost so you really have to weigh your decisions carefully.</comment>
+	</item>
+	<item collid="25170445" objectid="146130" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Coin Age</name>
+		<yearpublished>2013</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1753319.png</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1753319_t.png</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="4287" >
-				<rating value="N/A">			<usersrated value="1380" />			<average value="6.26126" />
-			<bayesaverage value="5.95444" />			<stddev value="1.2938" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-10-15 00:18:03" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="5782" subtype="boardgame" collid="23147716">
-	<name sortindex="1">Coloretto</name>
-		<yearpublished>2003</yearpublished>			<image>//cf.geekdo-images.com/images/pic149765.jpg</image>
+		<stats maxplayers="2" maxplaytime="15" minplayers="2" minplaytime="15" numowned="4287" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="1380"/>
+				<average value="6.26126"/>
+				<bayesaverage value="5.95444"/>
+				<stddev value="1.2938"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-10-15 00:18:03" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23147716" objectid="5782" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Coloretto</name>
+		<yearpublished>2003</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic149765.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic149765_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="15597" >
-				<rating value="N/A">			<usersrated value="12759" />			<average value="6.98221" />
-			<bayesaverage value="6.87884" />			<stddev value="1.12219" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 01:42:45" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="131357" subtype="boardgame" collid="21478267">
-	<name sortindex="1">Coup</name>
-		<yearpublished>2012</yearpublished>			<image>//cf.geekdo-images.com/images/pic2016054.jpg</image>
+		<stats maxplayers="5" maxplaytime="30" minplayers="2" minplaytime="30" numowned="15597" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="12759"/>
+				<average value="6.98221"/>
+				<bayesaverage value="6.87884"/>
+				<stddev value="1.12219"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 01:42:45" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="21478267" objectid="131357" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Coup</name>
+		<yearpublished>2012</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2016054.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2016054_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="26020" >
-				<rating value="N/A">			<usersrated value="16576" />			<average value="7.16171" />
-			<bayesaverage value="7.04762" />			<stddev value="1.39118" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-01-10 02:26:21" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="35935" subtype="boardgame" collid="9026831">
-	<name sortindex="1">Day &amp; Night</name>
-		<yearpublished>2008</yearpublished>			<image>//cf.geekdo-images.com/images/pic369599.jpg</image>
+		<stats maxplayers="6" maxplaytime="15" minplayers="2" minplaytime="15" numowned="26020" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="16576"/>
+				<average value="7.16171"/>
+				<bayesaverage value="7.04762"/>
+				<stddev value="1.39118"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-01-10 02:26:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="9026831" objectid="35935" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Day &amp; Night</name>
+		<yearpublished>2008</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic369599.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic369599_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="773" >
-				<rating value="N/A">			<usersrated value="650" />			<average value="6.60434" />
-			<bayesaverage value="5.97287" />			<stddev value="1.46188" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:48:03" />
-	<numplays>3</numplays>			<comment>Fun game for two players, but a player really has to use both decks once to be able to strategize effectively. That&#039;s a pretty high investment cost, so I haven&#039;t played it too much.</comment>				</item>
-		<item objecttype="thing" objectid="39856" subtype="boardgame" collid="12115960">
-	<name sortindex="1">Dixit</name>
-		<yearpublished>2008</yearpublished>			<image>//cf.geekdo-images.com/images/pic455883.jpg</image>
+		<stats maxplayers="2" maxplaytime="45" minplayers="2" minplaytime="45" numowned="773" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="650"/>
+				<average value="6.60434"/>
+				<bayesaverage value="5.97287"/>
+				<stddev value="1.46188"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:48:03" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>3</numplays>
+		<comment>Fun game for two players, but a player really has to use both decks once to be able to strategize effectively. That's a pretty high investment cost, so I haven't played it too much.</comment>
+	</item>
+	<item collid="12115960" objectid="39856" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Dixit</name>
+		<yearpublished>2008</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic455883.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic455883_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="6"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="33960" >
-				<rating value="N/A">			<usersrated value="26744" />			<average value="7.38372" />
-			<bayesaverage value="7.29177" />			<stddev value="1.35637" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2011-01-26 01:13:24" />
-	<numplays>1</numplays>							</item>
-		<item objecttype="thing" objectid="2394" subtype="boardgame" collid="23148335">
-	<name sortindex="1">Dominoes Double Twelve</name>
-	<originalname>Dominoes</originalname>	<yearpublished>1500</yearpublished>			<image>//cf.geekdo-images.com/images/pic90585.jpg</image>
+		<stats maxplayers="6" maxplaytime="30" minplayers="3" minplaytime="30" numowned="33960" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="26744"/>
+				<average value="7.38372"/>
+				<bayesaverage value="7.29177"/>
+				<stddev value="1.35637"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2011-01-26 01:13:24" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>1</numplays>
+	</item>
+	<item collid="23148335" objectid="2394" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Dominoes Double Twelve</name>
+		<originalname>Dominoes</originalname>
+		<yearpublished>1500</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic90585.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic90585_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="10"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="6915" >
-				<rating value="N/A">			<usersrated value="4150" />			<average value="5.42768" />
-			<bayesaverage value="5.40355" />			<stddev value="1.59478" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 03:54:41" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="148203" subtype="boardgame" collid="23147718">
-	<name sortindex="1">Dutch Blitz</name>
-		<yearpublished>1960</yearpublished>			<image>//cf.geekdo-images.com/images/pic336418.jpg</image>
+		<stats maxplayers="10" maxplaytime="30" minplayers="2" minplaytime="30" numowned="6915" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="4150"/>
+				<average value="5.42768"/>
+				<bayesaverage value="5.40355"/>
+				<stddev value="1.59478"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 03:54:41" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23147718" objectid="148203" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Dutch Blitz</name>
+		<yearpublished>1960</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic336418.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic336418_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="1"																	maxplaytime="15"																	playingtime="15"																	numowned="1866" >
-				<rating value="N/A">			<usersrated value="906" />			<average value="6.52357" />
-			<bayesaverage value="6.01351" />			<stddev value="1.56736" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 01:43:04" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="157820" subtype="boardgame" collid="27621979">
-	<name sortindex="1">Escape: The Curse of the Temple – Big Box</name>
-		<yearpublished>2014</yearpublished>			<image>//cf.geekdo-images.com/images/pic1987738.jpg</image>
+		<stats maxplayers="4" maxplaytime="15" minplayers="2" minplaytime="1" numowned="1866" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="906"/>
+				<average value="6.52357"/>
+				<bayesaverage value="6.01351"/>
+				<stddev value="1.56736"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 01:43:04" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="27621979" objectid="157820" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Escape: The Curse of the Temple â€“ Big Box</name>
+		<yearpublished>2014</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1987738.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1987738_t.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="6"																	minplaytime="10"																	maxplaytime="10"																	playingtime="10"																	numowned="1631" >
-				<rating value="N/A">			<usersrated value="585" />			<average value="7.80412" />
-			<bayesaverage value="6.45727" />			<stddev value="1.11188" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-03-19 00:46:46" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="100901" subtype="boardgame" collid="36090497">
-	<name sortindex="1">Flash Point: Fire Rescue</name>
-		<yearpublished>2012</yearpublished>			<image>//cf.geekdo-images.com/images/pic1129370.jpg</image>
+		<stats maxplayers="6" maxplaytime="10" minplayers="1" minplaytime="10" numowned="1631" playingtime="10">
+			<rating value="N/A">
+				<usersrated value="585"/>
+				<average value="7.80412"/>
+				<bayesaverage value="6.45727"/>
+				<stddev value="1.11188"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-03-19 00:46:46" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="36090497" objectid="100901" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Flash Point: Fire Rescue</name>
+		<yearpublished>2012</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1129370.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1129370_t.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="6"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="18388" >
-				<rating value="N/A">			<usersrated value="11804" />			<average value="7.31028" />
-			<bayesaverage value="7.16848" />			<stddev value="1.21916" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:40:47" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="158918" subtype="boardgame" collid="32282426">
-	<name sortindex="1">FLY</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559564.jpg</image>
+		<stats maxplayers="6" maxplaytime="45" minplayers="1" minplaytime="45" numowned="18388" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="11804"/>
+				<average value="7.31028"/>
+				<bayesaverage value="7.16848"/>
+				<stddev value="1.21916"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:40:47" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32282426" objectid="158918" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">FLY</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559564.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559564_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="10"																	maxplaytime="10"																	playingtime="10"																	numowned="490" >
-				<rating value="N/A">			<usersrated value="108" />			<average value="5.53986" />
-			<bayesaverage value="5.50034" />			<stddev value="1.25625" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:10" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="136063" subtype="boardgame" collid="22464464">
-	<name sortindex="1">Forbidden Desert</name>
-		<yearpublished>2013</yearpublished>			<image>//cf.geekdo-images.com/images/pic1528722.jpg</image>
+		<stats maxplayers="4" maxplaytime="10" minplayers="2" minplaytime="10" numowned="490" playingtime="10">
+			<rating value="N/A">
+				<usersrated value="108"/>
+				<average value="5.53986"/>
+				<bayesaverage value="5.50034"/>
+				<stddev value="1.25625"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:10" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="22464464" objectid="136063" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Forbidden Desert</name>
+		<yearpublished>2013</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1528722.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1528722_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="20230" >
-				<rating value="8">			<usersrated value="11710" />			<average value="7.34045" />
-			<bayesaverage value="7.19287" />			<stddev value="1.10784" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:45:09" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="340" subtype="boardgame" collid="30495578">
-	<name sortindex="1">Frank&#039;s Zoo</name>
-		<yearpublished>1999</yearpublished>			<image>//cf.geekdo-images.com/images/pic197395.jpg</image>
+		<stats maxplayers="5" maxplaytime="45" minplayers="2" minplaytime="45" numowned="20230" playingtime="45">
+			<rating value="8">
+				<usersrated value="11710"/>
+				<average value="7.34045"/>
+				<bayesaverage value="7.19287"/>
+				<stddev value="1.10784"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:45:09" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="30495578" objectid="340" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Frank's Zoo</name>
+		<yearpublished>1999</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic197395.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic197395_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="7"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="3924" >
-				<rating value="N/A">			<usersrated value="2858" />			<average value="6.62962" />
-			<bayesaverage value="6.37269" />			<stddev value="1.34827" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-10-02 00:27:22" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="10934" subtype="boardgame" collid="32060271">
-	<name sortindex="1">The Game of THINGS...</name>
-	<originalname>Things...</originalname>	<yearpublished>2014</yearpublished>			<image>//cf.geekdo-images.com/images/pic2420186.jpg</image>
+		<stats maxplayers="7" maxplaytime="60" minplayers="3" minplaytime="60" numowned="3924" playingtime="60">
+			<rating value="N/A">
+				<usersrated value="2858"/>
+				<average value="6.62962"/>
+				<bayesaverage value="6.37269"/>
+				<stddev value="1.34827"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-10-02 00:27:22" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32060271" objectid="10934" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">The Game of THINGS...</name>
+		<originalname>Things...</originalname>
+		<yearpublished>2014</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2420186.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2420186_t.jpg</thumbnail>
-		<stats minplayers="4"																	maxplayers="15"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="2157" >
-				<rating value="N/A">			<usersrated value="1153" />			<average value="6.13731" />
-			<bayesaverage value="5.81848" />			<stddev value="1.70445" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-12-27 11:46:50" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="158915" subtype="boardgame" collid="32282402">
-	<name sortindex="1">GEM</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559565.jpg</image>
+		<stats maxplayers="15" maxplaytime="45" minplayers="4" minplaytime="45" numowned="2157" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="1153"/>
+				<average value="6.13731"/>
+				<bayesaverage value="5.81848"/>
+				<stddev value="1.70445"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-12-27 11:46:50" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32282402" objectid="158915" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">GEM</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559565.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559565_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="600" >
-				<rating value="N/A">			<usersrated value="107" />			<average value="6.48248" />
-			<bayesaverage value="5.61458" />			<stddev value="1.16407" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:13" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="2266" subtype="boardgame" collid="27621999">
-	<name sortindex="1">Gobblet</name>
-		<yearpublished>2000</yearpublished>			<image>//cf.geekdo-images.com/images/pic1783771.jpg</image>
+		<stats maxplayers="4" maxplaytime="15" minplayers="2" minplaytime="15" numowned="600" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="107"/>
+				<average value="6.48248"/>
+				<bayesaverage value="5.61458"/>
+				<stddev value="1.16407"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:13" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="27621999" objectid="2266" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Gobblet</name>
+		<yearpublished>2000</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1783771.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1783771_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="1921" >
-				<rating value="N/A">			<usersrated value="1209" />			<average value="6.55314" />
-			<bayesaverage value="6.10095" />			<stddev value="1.24686" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-03-19 00:49:30" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="98778" subtype="boardgame" collid="21406286">
-	<name sortindex="1">Hanabi</name>
-		<yearpublished>2010</yearpublished>			<image>//cf.geekdo-images.com/images/pic2007286.jpg</image>
+		<stats maxplayers="2" maxplaytime="20" minplayers="2" minplaytime="20" numowned="1921" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="1209"/>
+				<average value="6.55314"/>
+				<bayesaverage value="6.10095"/>
+				<stddev value="1.24686"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-03-19 00:49:30" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="21406286" objectid="98778" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Hanabi</name>
+		<yearpublished>2010</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2007286.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2007286_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="25"																	maxplaytime="25"																	playingtime="25"																	numowned="31519" >
-				<rating value="N/A">			<usersrated value="19849" />			<average value="7.26725" />
-			<bayesaverage value="7.18299" />			<stddev value="1.33639" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-01-10 02:26:29" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="8203" subtype="boardgame" collid="21406320">
-	<name sortindex="1">Hey, That&#039;s My Fish!</name>
-		<yearpublished>2003</yearpublished>			<image>//cf.geekdo-images.com/images/pic1004115.jpg</image>
+		<stats maxplayers="5" maxplaytime="25" minplayers="2" minplaytime="25" numowned="31519" playingtime="25">
+			<rating value="N/A">
+				<usersrated value="19849"/>
+				<average value="7.26725"/>
+				<bayesaverage value="7.18299"/>
+				<stddev value="1.33639"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-01-10 02:26:29" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="21406320" objectid="8203" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Hey, That's My Fish!</name>
+		<yearpublished>2003</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1004115.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1004115_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="16971" >
-				<rating value="N/A">			<usersrated value="14216" />			<average value="6.79789" />
-			<bayesaverage value="6.71783" />			<stddev value="1.0893" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2013-12-10 00:44:31" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="159143" subtype="boardgame" collid="32282441">
-	<name sortindex="1">HUE</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559566.jpg</image>
+		<stats maxplayers="4" maxplaytime="20" minplayers="2" minplaytime="20" numowned="16971" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="14216"/>
+				<average value="6.79789"/>
+				<bayesaverage value="6.71783"/>
+				<stddev value="1.0893"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2013-12-10 00:44:31" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32282441" objectid="159143" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">HUE</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559566.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559566_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="10"																	maxplaytime="10"																	playingtime="10"																	numowned="624" >
-				<rating value="N/A">			<usersrated value="174" />			<average value="6.54273" />
-			<bayesaverage value="5.68757" />			<stddev value="0.995087" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:17" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="31133" subtype="boardgame" collid="11075023">
-	<name sortindex="1">Ice Flow</name>
-		<yearpublished>2008</yearpublished>			<image>//cf.geekdo-images.com/images/pic310029.jpg</image>
+		<stats maxplayers="5" maxplaytime="10" minplayers="2" minplaytime="10" numowned="624" playingtime="10">
+			<rating value="N/A">
+				<usersrated value="174"/>
+				<average value="6.54273"/>
+				<bayesaverage value="5.68757"/>
+				<stddev value="0.995087"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:17" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="11075023" objectid="31133" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Ice Flow</name>
+		<yearpublished>2008</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic310029.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic310029_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="1558" >
-				<rating value="N/A">			<usersrated value="1271" />			<average value="6.4684" />
-			<bayesaverage value="6.08055" />			<stddev value="1.1947" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2010-08-28 14:16:40" />
-	<numplays>1</numplays>							</item>
-		<item objecttype="thing" objectid="2750" subtype="boardgame" collid="23148326">
-	<name sortindex="1">Imaginiff</name>
-		<yearpublished>1998</yearpublished>			<image>//cf.geekdo-images.com/images/pic212910.jpg</image>
+		<stats maxplayers="4" maxplaytime="45" minplayers="2" minplaytime="45" numowned="1558" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="1271"/>
+				<average value="6.4684"/>
+				<bayesaverage value="6.08055"/>
+				<stddev value="1.1947"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2010-08-28 14:16:40" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>1</numplays>
+	</item>
+	<item collid="23148326" objectid="2750" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Imaginiff</name>
+		<yearpublished>1998</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic212910.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic212910_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="8"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="2011" >
-				<rating value="N/A">			<usersrated value="1129" />			<average value="5.55899" />
-			<bayesaverage value="5.51143" />			<stddev value="1.55802" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 03:52:34" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="12002" subtype="boardgame" collid="8169645">
-	<name sortindex="1">Jambo</name>
-		<yearpublished>2004</yearpublished>			<image>//cf.geekdo-images.com/images/pic253740.jpg</image>
+		<stats maxplayers="8" maxplaytime="30" minplayers="3" minplaytime="30" numowned="2011" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="1129"/>
+				<average value="5.55899"/>
+				<bayesaverage value="5.51143"/>
+				<stddev value="1.55802"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 03:52:34" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169645" objectid="12002" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Jambo</name>
+		<yearpublished>2004</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic253740.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic253740_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="8677" >
-				<rating value="7">			<usersrated value="7108" />			<average value="7.07495" />
-			<bayesaverage value="6.90745" />			<stddev value="1.20691" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:49:21" />
-	<numplays>8</numplays>							</item>
-		<item objecttype="thing" objectid="257" subtype="boardgame" collid="8169511">
-	<name sortindex="1">Kill Doctor Lucky</name>
-		<yearpublished>1996</yearpublished>			<image>//cf.geekdo-images.com/images/pic2923257.jpg</image>
+		<stats maxplayers="2" maxplaytime="45" minplayers="2" minplaytime="45" numowned="8677" playingtime="45">
+			<rating value="7">
+				<usersrated value="7108"/>
+				<average value="7.07495"/>
+				<bayesaverage value="6.90745"/>
+				<stddev value="1.20691"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:49:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>8</numplays>
+	</item>
+	<item collid="8169511" objectid="257" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Kill Doctor Lucky</name>
+		<yearpublished>1996</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2923257.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2923257_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="7"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="7215" >
-				<rating value="N/A">			<usersrated value="4932" />			<average value="6.15866" />
-			<bayesaverage value="6.01521" />			<stddev value="1.49531" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-03-19 00:50:59" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="70323" subtype="boardgame" collid="21406317">
-	<name sortindex="1">King of Tokyo</name>
-		<yearpublished>2011</yearpublished>			<image>//cf.geekdo-images.com/images/pic3043734.jpg</image>
+		<stats maxplayers="7" maxplaytime="45" minplayers="3" minplaytime="45" numowned="7215" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="4932"/>
+				<average value="6.15866"/>
+				<bayesaverage value="6.01521"/>
+				<stddev value="1.49531"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-03-19 00:50:59" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="21406317" objectid="70323" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">King of Tokyo</name>
+		<yearpublished>2011</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic3043734.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic3043734_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="42300" >
-				<rating value="N/A">			<usersrated value="30932" />			<average value="7.33729" />
-			<bayesaverage value="7.2507" />			<stddev value="1.30944" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="1" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-12-24 12:26:21" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="27162" subtype="boardgame" collid="8169470">
-	<name sortindex="1">Kingsburg</name>
-		<yearpublished>2007</yearpublished>			<image>//cf.geekdo-images.com/images/pic253057.jpg</image>
+		<stats maxplayers="6" maxplaytime="30" minplayers="2" minplaytime="30" numowned="42300" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="30932"/>
+				<average value="7.33729"/>
+				<bayesaverage value="7.2507"/>
+				<stddev value="1.30944"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="1" lastmodified="2015-12-24 12:26:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169470" objectid="27162" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Kingsburg</name>
+		<yearpublished>2007</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic253057.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic253057_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="13523" >
-				<rating value="8.6">			<usersrated value="14038" />			<average value="7.2497" />
-			<bayesaverage value="7.13203" />			<stddev value="1.21022" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-12-28 21:03:19" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="161383" subtype="boardgame" collid="32282415">
-	<name sortindex="1">LIE</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559567.jpg</image>
+		<stats maxplayers="5" maxplaytime="90" minplayers="2" minplaytime="90" numowned="13523" playingtime="90">
+			<rating value="8.6">
+				<usersrated value="14038"/>
+				<average value="7.2497"/>
+				<bayesaverage value="7.13203"/>
+				<stddev value="1.21022"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-12-28 21:03:19" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32282415" objectid="161383" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">LIE</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559567.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559567_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="538" >
-				<rating value="N/A">			<usersrated value="100" />			<average value="6.151" />
-			<bayesaverage value="5.57" />			<stddev value="1.30359" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:21" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="823" subtype="boardgame" collid="21855010">
-	<name sortindex="1">Lord of the Rings</name>
-		<yearpublished>2001</yearpublished>			<image>//cf.geekdo-images.com/images/pic479124.jpg</image>
+		<stats maxplayers="6" maxplaytime="20" minplayers="2" minplaytime="20" numowned="538" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="100"/>
+				<average value="6.151"/>
+				<bayesaverage value="5.57"/>
+				<stddev value="1.30359"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="21855010" objectid="823" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Lord of the Rings</name>
+		<yearpublished>2001</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic479124.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic479124_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="16868" >
-				<rating value="N/A">			<usersrated value="11264" />			<average value="6.80107" />
-			<bayesaverage value="6.6868" />			<stddev value="1.4852" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-01-11 01:06:04" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="129622" subtype="boardgame" collid="21844143">
-	<name sortindex="1">Love Letter</name>
-		<yearpublished>2012</yearpublished>			<image>//cf.geekdo-images.com/images/pic1401448.jpg</image>
+		<stats maxplayers="5" maxplaytime="60" minplayers="2" minplaytime="60" numowned="16868" playingtime="60">
+			<rating value="N/A">
+				<usersrated value="11264"/>
+				<average value="6.80107"/>
+				<bayesaverage value="6.6868"/>
+				<stddev value="1.4852"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-01-11 01:06:04" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="21844143" objectid="129622" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Love Letter</name>
+		<yearpublished>2012</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1401448.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1401448_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="51072" >
-				<rating value="N/A">			<usersrated value="30350" />			<average value="7.34694" />
-			<bayesaverage value="7.26731" />			<stddev value="1.31549" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-01-10 02:26:59" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="228" subtype="boardgame" collid="23147746">
-	<name sortindex="1">Lunch Money</name>
-		<yearpublished>1996</yearpublished>			<image>//cf.geekdo-images.com/images/pic11310.jpg</image>
+		<stats maxplayers="4" maxplaytime="20" minplayers="2" minplaytime="20" numowned="51072" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="30350"/>
+				<average value="7.34694"/>
+				<bayesaverage value="7.26731"/>
+				<stddev value="1.31549"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-01-10 02:26:59" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23147746" objectid="228" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Lunch Money</name>
+		<yearpublished>1996</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic11310.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic11310_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="3560" >
-				<rating value="N/A">			<usersrated value="2267" />			<average value="5.66704" />
-			<bayesaverage value="5.54775" />			<stddev value="1.79073" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 01:51:16" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="99777" subtype="boardgame" collid="16713557">
-	<name sortindex="1">Lupin the 3rd</name>
-		<yearpublished>2011</yearpublished>			<image>//cf.geekdo-images.com/images/pic1051822.png</image>
+		<stats maxplayers="4" maxplaytime="20" minplayers="2" minplaytime="20" numowned="3560" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="2267"/>
+				<average value="5.66704"/>
+				<bayesaverage value="5.54775"/>
+				<stddev value="1.79073"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 01:51:16" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="16713557" objectid="99777" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Lupin the 3rd</name>
+		<yearpublished>2011</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1051822.png</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1051822_t.png</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="386" >
-				<rating value="N/A">			<usersrated value="118" />			<average value="6.22881" />
-			<bayesaverage value="5.57693" />			<stddev value="1.97815" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-03-19 00:46:22" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="590" subtype="boardgame" collid="36105962">
-	<name sortindex="1">Mille Bornes</name>
-		<yearpublished>1964</yearpublished>			<image>//cf.geekdo-images.com/images/pic1063916.jpg</image>
+		<stats maxplayers="5" maxplaytime="90" minplayers="2" minplaytime="90" numowned="386" playingtime="90">
+			<rating value="N/A">
+				<usersrated value="118"/>
+				<average value="6.22881"/>
+				<bayesaverage value="5.57693"/>
+				<stddev value="1.97815"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-03-19 00:46:22" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="36105962" objectid="590" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Mille Bornes</name>
+		<yearpublished>1964</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1063916.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1063916_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="9647" >
-				<rating value="N/A">			<usersrated value="5390" />			<average value="5.67255" />
-			<bayesaverage value="5.59439" />			<stddev value="1.52826" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-07 12:33:15" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="1520" subtype="boardgame" collid="27622000">
-	<name sortindex="1">Monad</name>
-		<yearpublished>1969</yearpublished>			<image>//cf.geekdo-images.com/images/pic1428004.jpg</image>
+		<stats maxplayers="6" maxplaytime="45" minplayers="2" minplaytime="45" numowned="9647" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="5390"/>
+				<average value="5.67255"/>
+				<bayesaverage value="5.59439"/>
+				<stddev value="1.52826"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-07 12:33:15" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="27622000" objectid="1520" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Monad</name>
+		<yearpublished>1969</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1428004.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1428004_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="45"																	maxplaytime="60"																	playingtime="60"																	numowned="1025" >
-				<rating value="N/A">			<usersrated value="348" />			<average value="6.34716" />
-			<bayesaverage value="5.75519" />			<stddev value="1.539" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-03-19 00:49:43" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="128475" subtype="boardgame" collid="32201947">
-	<name sortindex="1">Murder of Crows</name>
-		<yearpublished>2012</yearpublished>			<image>//cf.geekdo-images.com/images/pic1379539.jpg</image>
+		<stats maxplayers="4" maxplaytime="60" minplayers="2" minplaytime="45" numowned="1025" playingtime="60">
+			<rating value="N/A">
+				<usersrated value="348"/>
+				<average value="6.34716"/>
+				<bayesaverage value="5.75519"/>
+				<stddev value="1.539"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-03-19 00:49:43" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32201947" objectid="128475" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Murder of Crows</name>
+		<yearpublished>2012</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1379539.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1379539_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="618" >
-				<rating value="N/A">			<usersrated value="258" />			<average value="6.11337" />
-			<bayesaverage value="5.64377" />			<stddev value="1.35197" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-02 01:20:31" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="915" subtype="boardgame" collid="10259294">
-	<name sortindex="1">Mystery of the Abbey</name>
-		<yearpublished>1995</yearpublished>			<image>//cf.geekdo-images.com/images/pic897161.jpg</image>
+		<stats maxplayers="5" maxplaytime="20" minplayers="2" minplaytime="20" numowned="618" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="258"/>
+				<average value="6.11337"/>
+				<bayesaverage value="5.64377"/>
+				<stddev value="1.35197"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-02 01:20:31" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="10259294" objectid="915" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Mystery of the Abbey</name>
+		<yearpublished>1995</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic897161.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic897161_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="6"																	minplaytime="120"																	maxplaytime="120"																	playingtime="120"																	numowned="7672" >
-				<rating value="6.5">			<usersrated value="6475" />			<average value="6.54351" />
-			<bayesaverage value="6.40214" />			<stddev value="1.39528" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2010-12-30 05:17:38" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="12942" subtype="boardgame" collid="8169447">
-	<name sortindex="1">No Thanks!</name>
-		<yearpublished>2005</yearpublished>			<image>//cf.geekdo-images.com/images/pic117996.jpg</image>
+		<stats maxplayers="6" maxplaytime="120" minplayers="3" minplaytime="120" numowned="7672" playingtime="120">
+			<rating value="6.5">
+				<usersrated value="6475"/>
+				<average value="6.54351"/>
+				<bayesaverage value="6.40214"/>
+				<stddev value="1.39528"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2010-12-30 05:17:38" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169447" objectid="12942" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">No Thanks!</name>
+		<yearpublished>2005</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic117996.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic117996_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="5"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="16485" >
-				<rating value="7">			<usersrated value="12998" />			<average value="7.04212" />
-			<bayesaverage value="6.94631" />			<stddev value="1.16896" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2010-04-02 06:05:21" />
-	<numplays>17</numplays>							</item>
-		<item objecttype="thing" objectid="1549" subtype="boardgame" collid="23148282">
-	<name sortindex="1">Password New 12th Edition</name>
-	<originalname>Password</originalname>	<yearpublished>1962</yearpublished>			<image>//cf.geekdo-images.com/images/pic42588.jpg</image>
+		<stats maxplayers="5" maxplaytime="20" minplayers="3" minplaytime="20" numowned="16485" playingtime="20">
+			<rating value="7">
+				<usersrated value="12998"/>
+				<average value="7.04212"/>
+				<bayesaverage value="6.94631"/>
+				<stddev value="1.16896"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2010-04-02 06:05:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>17</numplays>
+	</item>
+	<item collid="23148282" objectid="1549" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Password New 12th Edition</name>
+		<originalname>Password</originalname>
+		<yearpublished>1962</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic42588.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic42588_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="1476" >
-				<rating value="N/A">			<usersrated value="770" />			<average value="6.12221" />
-			<bayesaverage value="5.79141" />			<stddev value="1.59483" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 03:51:55" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="1775" subtype="boardgame" collid="23148321">
-	<name sortindex="1">Password Plus</name>
-		<yearpublished>1978</yearpublished>			<image>//cf.geekdo-images.com/images/pic776810.jpg</image>
+		<stats maxplayers="4" maxplaytime="30" minplayers="3" minplaytime="30" numowned="1476" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="770"/>
+				<average value="6.12221"/>
+				<bayesaverage value="5.79141"/>
+				<stddev value="1.59483"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 03:51:55" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23148321" objectid="1775" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Password Plus</name>
+		<yearpublished>1978</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic776810.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic776810_t.jpg</thumbnail>
-		<stats minplayers="4"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="79" >
-				<rating value="N/A">			<usersrated value="24" />			<average value="7.5625" />
-			<bayesaverage value="0" />			<stddev value="1.70973" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="1" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-12-24 12:26:35" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="2987" subtype="boardgame" collid="8169429">
-	<name sortindex="1">Pirate&#039;s Cove</name>
-		<yearpublished>2007</yearpublished>			<image>//cf.geekdo-images.com/images/pic162248.jpg</image>
+		<stats maxplayers="4" maxplaytime="30" minplayers="4" minplaytime="30" numowned="79" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="24"/>
+				<average value="7.5625"/>
+				<bayesaverage value="0"/>
+				<stddev value="1.70973"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="1" lastmodified="2015-12-24 12:26:35" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169429" objectid="2987" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Pirate's Cove</name>
+		<yearpublished>2007</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic162248.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic162248_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="5"																	minplaytime="60"																	maxplaytime="90"																	playingtime="90"																	numowned="8272" >
-				<rating value="7.3">			<usersrated value="6923" />			<average value="6.60269" />
-			<bayesaverage value="6.45143" />			<stddev value="1.36634" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:50:04" />
-	<numplays>11</numplays>							</item>
-		<item objecttype="thing" objectid="2651" subtype="boardgame" collid="8169370">
-	<name sortindex="1">Power Grid</name>
-		<yearpublished>2007</yearpublished>			<image>//cf.geekdo-images.com/images/pic173153.jpg</image>
+		<stats maxplayers="5" maxplaytime="90" minplayers="3" minplaytime="60" numowned="8272" playingtime="90">
+			<rating value="7.3">
+				<usersrated value="6923"/>
+				<average value="6.60269"/>
+				<bayesaverage value="6.45143"/>
+				<stddev value="1.36634"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:50:04" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>11</numplays>
+	</item>
+	<item collid="8169370" objectid="2651" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Power Grid</name>
+		<yearpublished>2007</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic173153.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic173153_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="120"																	maxplaytime="120"																	playingtime="120"																	numowned="43415" >
-				<rating value="8.7">			<usersrated value="38549" />			<average value="7.97008" />
-			<bayesaverage value="7.8961" />			<stddev value="1.33138" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:50:22" />
-	<numplays>1</numplays>							</item>
-		<item objecttype="thing" objectid="624" subtype="boardgame" collid="25170447">
-	<name sortindex="1">Quoridor</name>
-		<yearpublished>1997</yearpublished>			<image>//cf.geekdo-images.com/images/pic2963423.jpg</image>
+		<stats maxplayers="6" maxplaytime="120" minplayers="2" minplaytime="120" numowned="43415" playingtime="120">
+			<rating value="8.7">
+				<usersrated value="38549"/>
+				<average value="7.97008"/>
+				<bayesaverage value="7.8961"/>
+				<stddev value="1.33138"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:50:22" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>1</numplays>
+	</item>
+	<item collid="25170447" objectid="624" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Quoridor</name>
+		<yearpublished>1997</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2963423.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2963423_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="5032" >
-				<rating value="N/A">			<usersrated value="3842" />			<average value="6.69622" />
-			<bayesaverage value="6.45489" />			<stddev value="1.37402" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-10-15 00:18:32" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="128882" subtype="boardgame" collid="22206940">
-	<name sortindex="5">The Resistance: Avalon</name>
-		<yearpublished>2012</yearpublished>			<image>//cf.geekdo-images.com/images/pic1398895.jpg</image>
+		<stats maxplayers="4" maxplaytime="15" minplayers="2" minplaytime="15" numowned="5032" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="3842"/>
+				<average value="6.69622"/>
+				<bayesaverage value="6.45489"/>
+				<stddev value="1.37402"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-10-15 00:18:32" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="22206940" objectid="128882" objecttype="thing" subtype="boardgame">
+		<name sortindex="5">The Resistance: Avalon</name>
+		<yearpublished>2012</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1398895.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1398895_t.jpg</thumbnail>
-		<stats minplayers="5"																	maxplayers="10"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="18527" >
-				<rating value="8">			<usersrated value="13033" />			<average value="7.77354" />
-			<bayesaverage value="7.60234" />			<stddev value="1.48688" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-02-07 20:10:35" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="9220" subtype="boardgame" collid="32443660">
-	<name sortindex="1">Saboteur</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2602139.jpg</image>
+		<stats maxplayers="10" maxplaytime="30" minplayers="5" minplaytime="30" numowned="18527" playingtime="30">
+			<rating value="8">
+				<usersrated value="13033"/>
+				<average value="7.77354"/>
+				<bayesaverage value="7.60234"/>
+				<stddev value="1.48688"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-02-07 20:10:35" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32443660" objectid="9220" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Saboteur</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2602139.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2602139_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="10"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="20563" >
-				<rating value="N/A">			<usersrated value="14679" />			<average value="6.65295" />
-			<bayesaverage value="6.5566" />			<stddev value="1.25588" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-11 21:25:20" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="128667" subtype="boardgame" collid="23124082">
-	<name sortindex="1">Samurai Sword</name>
-		<yearpublished>2012</yearpublished>			<image>//cf.geekdo-images.com/images/pic1411222.jpg</image>
+		<stats maxplayers="10" maxplaytime="30" minplayers="3" minplaytime="30" numowned="20563" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="14679"/>
+				<average value="6.65295"/>
+				<bayesaverage value="6.5566"/>
+				<stddev value="1.25588"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-11 21:25:20" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23124082" objectid="128667" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Samurai Sword</name>
+		<yearpublished>2012</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1411222.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1411222_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="7"																	minplaytime="20"																	maxplaytime="40"																	playingtime="40"																	numowned="3126" >
-				<rating value="N/A">			<usersrated value="1834" />			<average value="6.73951" />
-			<bayesaverage value="6.3267" />			<stddev value="1.32232" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-11 21:26:23" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="438" subtype="boardgame" collid="32000836">
-	<name sortindex="1">Scotland Yard</name>
-		<yearpublished>1991</yearpublished>			<image>//cf.geekdo-images.com/images/pic270272.jpg</image>
+		<stats maxplayers="7" maxplaytime="40" minplayers="3" minplaytime="20" numowned="3126" playingtime="40">
+			<rating value="N/A">
+				<usersrated value="1834"/>
+				<average value="6.73951"/>
+				<bayesaverage value="6.3267"/>
+				<stddev value="1.32232"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-11 21:26:23" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32000836" objectid="438" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Scotland Yard</name>
+		<yearpublished>1991</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic270272.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic270272_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="6"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="14071" >
-				<rating value="N/A">			<usersrated value="9508" />			<average value="6.51457" />
-			<bayesaverage value="6.40616" />			<stddev value="1.25222" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-12-24 12:29:56" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="1198" subtype="boardgame" collid="23124284">
-	<name sortindex="1">SET</name>
-		<yearpublished>1988</yearpublished>			<image>//cf.geekdo-images.com/images/pic73045.jpg</image>
+		<stats maxplayers="6" maxplaytime="45" minplayers="3" minplaytime="45" numowned="14071" playingtime="45">
+			<rating value="N/A">
+				<usersrated value="9508"/>
+				<average value="6.51457"/>
+				<bayesaverage value="6.40616"/>
+				<stddev value="1.25222"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-12-24 12:29:56" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23124284" objectid="1198" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">SET</name>
+		<yearpublished>1988</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic73045.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic73045_t.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="20"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="10477" >
-				<rating value="N/A">			<usersrated value="7301" />			<average value="6.49412" />
-			<bayesaverage value="6.33999" />			<stddev value="1.54257" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-06-29 11:42:14" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="15062" subtype="boardgame" collid="8169366">
-	<name sortindex="1">Shadows over Camelot</name>
-		<yearpublished>2005</yearpublished>			<image>//cf.geekdo-images.com/images/pic70547.jpg</image>
+		<stats maxplayers="20" maxplaytime="30" minplayers="1" minplaytime="30" numowned="10477" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="7301"/>
+				<average value="6.49412"/>
+				<bayesaverage value="6.33999"/>
+				<stddev value="1.54257"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-06-29 11:42:14" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169366" objectid="15062" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Shadows over Camelot</name>
+		<yearpublished>2005</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic70547.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic70547_t.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="7"																	minplaytime="60"																	maxplaytime="80"																	playingtime="80"																	numowned="21556" >
-				<rating value="9.6">			<usersrated value="18599" />			<average value="7.15891" />
-			<bayesaverage value="7.05159" />			<stddev value="1.39133" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:51:15" />
-	<numplays>3</numplays>							</item>
-		<item objecttype="thing" objectid="164158" subtype="boardgame" collid="32282410">
-	<name sortindex="1">SHH</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559568.jpg</image>
+		<stats maxplayers="7" maxplaytime="80" minplayers="3" minplaytime="60" numowned="21556" playingtime="80">
+			<rating value="9.6">
+				<usersrated value="18599"/>
+				<average value="7.15891"/>
+				<bayesaverage value="7.05159"/>
+				<stddev value="1.39133"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:51:15" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>3</numplays>
+	</item>
+	<item collid="32282410" objectid="164158" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">SHH</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559568.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559568_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="10"																	maxplaytime="10"																	playingtime="10"																	numowned="598" >
-				<rating value="N/A">			<usersrated value="159" />			<average value="6.62805" />
-			<bayesaverage value="5.68836" />			<stddev value="1.20835" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:36" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="40692" subtype="boardgame" collid="8169516">
-	<name sortindex="1">Small World</name>
-		<yearpublished>2009</yearpublished>			<image>//cf.geekdo-images.com/images/pic428828.jpg</image>
+		<stats maxplayers="4" maxplaytime="10" minplayers="2" minplaytime="10" numowned="598" playingtime="10">
+			<rating value="N/A">
+				<usersrated value="159"/>
+				<average value="6.62805"/>
+				<bayesaverage value="5.68836"/>
+				<stddev value="1.20835"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:36" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169516" objectid="40692" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Small World</name>
+		<yearpublished>2009</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic428828.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic428828_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="40"																	maxplaytime="80"																	playingtime="80"																	numowned="47241" >
-				<rating value="9">			<usersrated value="38378" />			<average value="7.38058" />
-			<bayesaverage value="7.30537" />			<stddev value="1.29083" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2010-03-31 22:41:38" />
-	<numplays>8</numplays>							</item>
-		<item objecttype="thing" objectid="148228" subtype="boardgame" collid="25170443">
-	<name sortindex="1">Splendor</name>
-		<yearpublished>2014</yearpublished>			<image>//cf.geekdo-images.com/images/pic1904079.jpg</image>
+		<stats maxplayers="5" maxplaytime="80" minplayers="2" minplaytime="40" numowned="47241" playingtime="80">
+			<rating value="9">
+				<usersrated value="38378"/>
+				<average value="7.38058"/>
+				<bayesaverage value="7.30537"/>
+				<stddev value="1.29083"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2010-03-31 22:41:38" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>8</numplays>
+	</item>
+	<item collid="25170443" objectid="148228" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Splendor</name>
+		<yearpublished>2014</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1904079.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1904079_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="29436" >
-				<rating value="N/A">			<usersrated value="22251" />			<average value="7.57414" />
-			<bayesaverage value="7.46473" />			<stddev value="1.25372" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-10-15 00:17:51" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="133473" subtype="boardgame" collid="32201942">
-	<name sortindex="1">Sushi Go!</name>
-		<yearpublished>2014</yearpublished>			<image>//cf.geekdo-images.com/images/pic1900075.jpg</image>
+		<stats maxplayers="4" maxplaytime="30" minplayers="2" minplaytime="30" numowned="29436" playingtime="30">
+			<rating value="N/A">
+				<usersrated value="22251"/>
+				<average value="7.57414"/>
+				<bayesaverage value="7.46473"/>
+				<stddev value="1.25372"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-10-15 00:17:51" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32201942" objectid="133473" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Sushi Go!</name>
+		<yearpublished>2014</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1900075.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1900075_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="22162" >
-				<rating value="N/A">			<usersrated value="12654" />			<average value="7.15883" />
-			<bayesaverage value="7.03259" />			<stddev value="1.1066" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-02 01:20:16" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="1111" subtype="boardgame" collid="23148327">
-	<name sortindex="1">Taboo</name>
-		<yearpublished>1989</yearpublished>			<image>//cf.geekdo-images.com/images/pic1875289.jpg</image>
+		<stats maxplayers="5" maxplaytime="15" minplayers="2" minplaytime="15" numowned="22162" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="12654"/>
+				<average value="7.15883"/>
+				<bayesaverage value="7.03259"/>
+				<stddev value="1.1066"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-02 01:20:16" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="23148327" objectid="1111" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Taboo</name>
+		<yearpublished>1989</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic1875289.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic1875289_t.jpg</thumbnail>
-		<stats minplayers="4"																	maxplayers="10"																	minplaytime="20"																	maxplaytime="20"																	playingtime="20"																	numowned="9490" >
-				<rating value="N/A">			<usersrated value="6617" />			<average value="6.28231" />
-			<bayesaverage value="6.14693" />			<stddev value="1.52369" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 03:52:51" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="158916" subtype="boardgame" collid="32282420">
-	<name sortindex="1">TAJ</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559569.jpg</image>
+		<stats maxplayers="10" maxplaytime="20" minplayers="4" minplaytime="20" numowned="9490" playingtime="20">
+			<rating value="N/A">
+				<usersrated value="6617"/>
+				<average value="6.28231"/>
+				<bayesaverage value="6.14693"/>
+				<stddev value="1.52369"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 03:52:51" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="32282420" objectid="158916" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">TAJ</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559569.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559569_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="10"																	maxplaytime="10"																	playingtime="10"																	numowned="542" >
-				<rating value="N/A">			<usersrated value="81" />			<average value="6.35123" />
-			<bayesaverage value="5.5732" />			<stddev value="1.15588" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:56" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="130176" subtype="boardgame" collid="36090512">
-	<name sortindex="1">Tales &amp; Games: The Hare &amp; the Tortoise</name>
-		<yearpublished>2011</yearpublished>			<image>//cf.geekdo-images.com/images/pic2433578.jpg</image>
+		<stats maxplayers="4" maxplaytime="10" minplayers="2" minplaytime="10" numowned="542" playingtime="10">
+			<rating value="N/A">
+				<usersrated value="81"/>
+				<average value="6.35123"/>
+				<bayesaverage value="5.5732"/>
+				<stddev value="1.15588"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:56" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="36090512" objectid="130176" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Tales &amp; Games: The Hare &amp; the Tortoise</name>
+		<yearpublished>2011</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2433578.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2433578_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="2913" >
-				<rating value="N/A">			<usersrated value="1621" />			<average value="7.22659" />
-			<bayesaverage value="6.63916" />			<stddev value="1.08867" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:42:09" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="34119" subtype="boardgame" collid="8686115">
-	<name sortindex="1">Tales of the Arabian Nights</name>
-		<yearpublished>2009</yearpublished>			<image>//cf.geekdo-images.com/images/pic486114.jpg</image>
+		<stats maxplayers="5" maxplaytime="15" minplayers="2" minplaytime="15" numowned="2913" playingtime="15">
+			<rating value="N/A">
+				<usersrated value="1621"/>
+				<average value="7.22659"/>
+				<bayesaverage value="6.63916"/>
+				<stddev value="1.08867"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:42:09" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8686115" objectid="34119" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Tales of the Arabian Nights</name>
+		<yearpublished>2009</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic486114.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic486114_t.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="6"																	minplaytime="120"																	maxplaytime="120"																	playingtime="120"																	numowned="10701" >
-				<rating value="9.2">			<usersrated value="7548" />			<average value="7.2976" />
-			<bayesaverage value="7.08686" />			<stddev value="1.57338" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:49:37" />
-	<numplays>6</numplays>			<comment>Good game for 3 players. Any more and there is just too much waiting. I also like to give extra skills at the game start to reduce play time a little bit.</comment>				</item>
-		<item objecttype="thing" objectid="9209" subtype="boardgame" collid="23147753">
-	<name sortindex="1">Ticket to Ride</name>
-		<yearpublished>2004</yearpublished>			<image>//cf.geekdo-images.com/images/pic38668.jpg</image>
+		<stats maxplayers="6" maxplaytime="120" minplayers="1" minplaytime="120" numowned="10701" playingtime="120">
+			<rating value="9.2">
+				<usersrated value="7548"/>
+				<average value="7.2976"/>
+				<bayesaverage value="7.08686"/>
+				<stddev value="1.57338"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-08-06 14:49:37" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>6</numplays>
+		<comment>Good game for 3 players. Any more and there is just too much waiting. I also like to give extra skills at the game start to reduce play time a little bit.</comment>
+	</item>
+	<item collid="23147753" objectid="9209" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Ticket to Ride</name>
+		<yearpublished>2004</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic38668.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic38668_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="60"																	playingtime="60"																	numowned="51689" >
-				<rating value="N/A">			<usersrated value="42890" />			<average value="7.49562" />
-			<bayesaverage value="7.40621" />			<stddev value="1.28381" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 01:54:20" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="14996" subtype="boardgame" collid="8169356">
-	<name sortindex="1">Ticket to Ride: Europe</name>
-		<yearpublished>2005</yearpublished>			<image>//cf.geekdo-images.com/images/pic66668.jpg</image>
+		<stats maxplayers="5" maxplaytime="60" minplayers="2" minplaytime="30" numowned="51689" playingtime="60">
+			<rating value="N/A">
+				<usersrated value="42890"/>
+				<average value="7.49562"/>
+				<bayesaverage value="7.40621"/>
+				<stddev value="1.28381"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2014-04-26 01:54:20" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169356" objectid="14996" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Ticket to Ride: Europe</name>
+		<yearpublished>2005</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic66668.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic66668_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="60"																	playingtime="60"																	numowned="37467" >
-				<rating value="8.1">			<usersrated value="30777" />			<average value="7.59688" />
-			<bayesaverage value="7.49145" />			<stddev value="1.19248" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:51:42" />
-	<numplays>7</numplays>							</item>
-		<item objecttype="thing" objectid="158917" subtype="boardgame" collid="32282430">
-	<name sortindex="1">TKO</name>
-		<yearpublished>2015</yearpublished>			<image>//cf.geekdo-images.com/images/pic2559562.jpg</image>
+		<stats maxplayers="5" maxplaytime="60" minplayers="2" minplaytime="30" numowned="37467" playingtime="60">
+			<rating value="8.1">
+				<usersrated value="30777"/>
+				<average value="7.59688"/>
+				<bayesaverage value="7.49145"/>
+				<stddev value="1.19248"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:51:42" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>7</numplays>
+	</item>
+	<item collid="32282430" objectid="158917" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">TKO</name>
+		<yearpublished>2015</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic2559562.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic2559562_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="5"																	maxplaytime="5"																	playingtime="5"																	numowned="478" >
-				<rating value="N/A">			<usersrated value="80" />			<average value="4.875" />
-			<bayesaverage value="5.43895" />			<stddev value="1.68124" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:59" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="21804" subtype="boardgame" collid="30892626">
-	<name sortindex="1">Traditional Card Games</name>
-					<image>//cf.geekdo-images.com/images/pic111209.jpg</image>
+		<stats maxplayers="2" maxplaytime="5" minplayers="2" minplaytime="5" numowned="478" playingtime="5">
+			<rating value="N/A">
+				<usersrated value="80"/>
+				<average value="4.875"/>
+				<bayesaverage value="5.43895"/>
+				<stddev value="1.68124"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2016-01-04 21:07:59" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="30892626" objectid="21804" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Traditional Card Games</name>
+		<image>//cf.geekdo-images.com/images/pic111209.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic111209_t.jpg</thumbnail>
-		<stats 																																																																																					numowned="942" >
-				<rating value="N/A">			<usersrated value="591" />			<average value="6.53454" />
-			<bayesaverage value="5.93409" />			<stddev value="1.73008" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-10-22 16:30:18" />
-	<numplays>0</numplays>							</item>
-		<item objecttype="thing" objectid="16992" subtype="boardgame" collid="8169442">
-	<name sortindex="1">Tsuro</name>
-		<yearpublished>2004</yearpublished>			<image>//cf.geekdo-images.com/images/pic262539.jpg</image>
+		<stats numowned="942">
+			<rating value="N/A">
+				<usersrated value="591"/>
+				<average value="6.53454"/>
+				<bayesaverage value="5.93409"/>
+				<stddev value="1.73008"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2015-10-22 16:30:18" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>0</numplays>
+	</item>
+	<item collid="8169442" objectid="16992" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Tsuro</name>
+		<yearpublished>2004</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic262539.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic262539_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="8"																	minplaytime="15"																	maxplaytime="15"																	playingtime="15"																	numowned="17437" >
-				<rating value="7.9">			<usersrated value="13208" />			<average value="6.67886" />
-			<bayesaverage value="6.57469" />			<stddev value="1.32971" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:51:50" />
-	<numplays>7</numplays>							</item>
-		<item objecttype="thing" objectid="27588" subtype="boardgame" collid="8384525">
-	<name sortindex="1">Zooloretto</name>
-		<yearpublished>2007</yearpublished>			<image>//cf.geekdo-images.com/images/pic221529.jpg</image>
+		<stats maxplayers="8" maxplaytime="15" minplayers="2" minplaytime="15" numowned="17437" playingtime="15">
+			<rating value="7.9">
+				<usersrated value="13208"/>
+				<average value="6.67886"/>
+				<bayesaverage value="6.57469"/>
+				<stddev value="1.32971"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:51:50" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>7</numplays>
+	</item>
+	<item collid="8384525" objectid="27588" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Zooloretto</name>
+		<yearpublished>2007</yearpublished>
+		<image>//cf.geekdo-images.com/images/pic221529.jpg</image>
 		<thumbnail>//cf.geekdo-images.com/images/pic221529_t.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="13395" >
-				<rating value="8">			<usersrated value="11107" />			<average value="6.88642" />
-			<bayesaverage value="6.76906" />			<stddev value="1.16958" />
-			<median value="0" />		</rating>
-			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:52:01" />
-	<numplays>9</numplays>							</item>
-		
+		<stats maxplayers="5" maxplaytime="45" minplayers="2" minplaytime="45" numowned="13395" playingtime="45">
+			<rating value="8">
+				<usersrated value="11107"/>
+				<average value="6.88642"/>
+				<bayesaverage value="6.76906"/>
+				<stddev value="1.16958"/>
+				<median value="0"/>
+			</rating>
+		</stats>
+		<status fortrade="0" lastmodified="2009-12-27 05:52:01" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
+		<numplays>9</numplays>
+	</item>
 </items>
