@@ -23,16 +23,16 @@
 										      	               				<yearpublished value="1987" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="2" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="44">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="45">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="1" />
-					<result value="Not Recommended" numvotes="18" />
+					<result value="Not Recommended" numvotes="19" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="35" />
+					<result value="Best" numvotes="36" />
 					<result value="Recommended" numvotes="8" />
 					<result value="Not Recommended" numvotes="0" />
 				</results>					
@@ -40,20 +40,20 @@
 		<results numplayers="2+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="4" />
-					<result value="Not Recommended" numvotes="17" />
+					<result value="Not Recommended" numvotes="18" />
 				</results>					
 	</poll> 
 			               				<playingtime value="30" />
 						               				<minplaytime value="30" />
 						               				<maxplaytime value="30" />
 						               				<minage value="7" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="18">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="19">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
 					<result value="4" numvotes="0" />
 					<result value="5" numvotes="0" />
-					<result value="6" numvotes="3" />
+					<result value="6" numvotes="4" />
 					<result value="8" numvotes="10" />
 					<result value="10" numvotes="2" />
 					<result value="12" numvotes="2" />
@@ -66,11 +66,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="32">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="32" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="32" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -414,24 +414,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="4269" />
-			<average value="6.43344" />
-			<bayesaverage value="6.24504" />
+			<usersrated value="4274" />
+			<average value="6.43212" />
+			<bayesaverage value="6.24377" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1239" bayesaverage="6.24504" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="132" bayesaverage="6.23969" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1243" bayesaverage="6.24377" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="133" bayesaverage="6.23699" />
 												</ranks>
 
-			<stddev value="1.41555" />
+			<stddev value="1.41639" />
 			<median value="0" />
-			<owned value="6118" />
+			<owned value="6129" />
 			<trading value="324" />
-			<wanting value="26" />
-			<wishing value="198" />
-			<numcomments value="1157" />
-			<numweights value="401" />
-			<averageweight value="2.2244" />
+			<wanting value="25" />
+			<wishing value="197" />
+			<numcomments value="1159" />
+			<numweights value="402" />
+			<averageweight value="2.2214" />
 			</ratings>
 								</statistics>
      
@@ -526,11 +526,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="25">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="25" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="25" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -786,22 +786,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="3955" />
-			<average value="6.62406" />
-			<bayesaverage value="6.41259" />
+			<usersrated value="3958" />
+			<average value="6.62358" />
+			<bayesaverage value="6.4125" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="920" bayesaverage="6.41259" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="217" bayesaverage="6.48544" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="230" bayesaverage="6.45876" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="922" bayesaverage="6.4125" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="218" bayesaverage="6.48544" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="230" bayesaverage="6.45865" />
 												</ranks>
 
-			<stddev value="1.22822" />
+			<stddev value="1.22787" />
 			<median value="0" />
-			<owned value="4710" />
+			<owned value="4714" />
 			<trading value="186" />
-			<wanting value="263" />
-			<wishing value="1076" />
+			<wanting value="261" />
+			<wishing value="1077" />
 			<numcomments value="1337" />
 			<numweights value="344" />
 			<averageweight value="1.6686" />
@@ -891,11 +891,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="13">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="4" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="4" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -1135,23 +1135,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="2767" />
-			<average value="7.57014" />
-			<bayesaverage value="7.08959" />
+			<usersrated value="2772" />
+			<average value="7.56908" />
+			<bayesaverage value="7.08893" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.08959" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.1859" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="7.22554" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.08893" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.18536" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="7.22444" />
 												</ranks>
 
-			<stddev value="1.12419" />
+			<stddev value="1.1243" />
 			<median value="0" />
-			<owned value="5283" />
+			<owned value="5295" />
 			<trading value="85" />
-			<wanting value="251" />
-			<wishing value="969" />
-			<numcomments value="701" />
+			<wanting value="253" />
+			<wishing value="974" />
+			<numcomments value="702" />
 			<numweights value="151" />
 			<averageweight value="2.3444" />
 			</ratings>
@@ -1414,22 +1414,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1347" />
-			<average value="6.97579" />
-			<bayesaverage value="6.42" />
+			<usersrated value="1348" />
+			<average value="6.97581" />
+			<bayesaverage value="6.42028" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="905" bayesaverage="6.42" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="185" bayesaverage="6.5419" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="907" bayesaverage="6.42028" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="185" bayesaverage="6.54216" />
 												</ranks>
 
-			<stddev value="1.20847" />
+			<stddev value="1.20802" />
 			<median value="0" />
-			<owned value="1743" />
+			<owned value="1746" />
 			<trading value="87" />
 			<wanting value="78" />
 			<wishing value="274" />
-			<numcomments value="616" />
+			<numcomments value="617" />
 			<numweights value="195" />
 			<averageweight value="1.9231" />
 			</ratings>
@@ -1508,11 +1508,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="3" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="3" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -1664,22 +1664,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="520" />
-			<average value="6.475" />
-			<bayesaverage value="5.88757" />
+			<usersrated value="525" />
+			<average value="6.47333" />
+			<bayesaverage value="5.8883" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2347" bayesaverage="5.88757" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="134" bayesaverage="6.22936" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2346" bayesaverage="5.8883" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="135" bayesaverage="6.22844" />
 												</ranks>
 
-			<stddev value="1.17879" />
+			<stddev value="1.17556" />
 			<median value="0" />
-			<owned value="944" />
-			<trading value="39" />
+			<owned value="959" />
+			<trading value="44" />
 			<wanting value="16" />
-			<wishing value="77" />
-			<numcomments value="156" />
+			<wishing value="76" />
+			<numcomments value="159" />
 			<numweights value="55" />
 			<averageweight value="2.0182" />
 			</ratings>
@@ -1924,20 +1924,20 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="3093" />
-			<average value="6.89869" />
-			<bayesaverage value="6.5973" />
+			<usersrated value="3096" />
+			<average value="6.89808" />
+			<bayesaverage value="6.59667" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="673" bayesaverage="6.5973" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="46" bayesaverage="6.71188" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="135" bayesaverage="6.67211" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="675" bayesaverage="6.59667" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="47" bayesaverage="6.71151" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="135" bayesaverage="6.67136" />
 												</ranks>
 
-			<stddev value="1.37053" />
+			<stddev value="1.37004" />
 			<median value="0" />
-			<owned value="3720" />
-			<trading value="143" />
+			<owned value="3727" />
+			<trading value="145" />
 			<wanting value="225" />
 			<wishing value="812" />
 			<numcomments value="1141" />
@@ -2051,11 +2051,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="115">
 			
 		<results>		
-					<result level="31" value="No necessary in-game text" numvotes="10" />
-					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="81" />
-					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="24" />
-					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="35" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="10" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="81" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="24" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -2559,21 +2559,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="18210" />
-			<average value="6.57628" />
-			<bayesaverage value="6.46473" />
+			<usersrated value="18236" />
+			<average value="6.5765" />
+			<bayesaverage value="6.46469" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="839" bayesaverage="6.46473" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="103" bayesaverage="6.27166" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="839" bayesaverage="6.46469" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="103" bayesaverage="6.27115" />
 												</ranks>
 
-			<stddev value="1.46163" />
+			<stddev value="1.46165" />
 			<median value="0" />
-			<owned value="20263" />
-			<trading value="796" />
+			<owned value="20315" />
+			<trading value="797" />
 			<wanting value="119" />
-			<wishing value="1161" />
+			<wishing value="1164" />
 			<numcomments value="4778" />
 			<numweights value="1879" />
 			<averageweight value="1.6397" />
@@ -2744,17 +2744,17 @@
 			<bayesaverage value="5.6582" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4224" bayesaverage="5.6582" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1016" bayesaverage="5.7038" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4225" bayesaverage="5.6582" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1017" bayesaverage="5.7038" />
 												</ranks>
 
 			<stddev value="1.30045" />
 			<median value="0" />
-			<owned value="659" />
+			<owned value="660" />
 			<trading value="43" />
 			<wanting value="37" />
 			<wishing value="114" />
-			<numcomments value="184" />
+			<numcomments value="185" />
 			<numweights value="49" />
 			<averageweight value="1.1224" />
 			</ratings>
@@ -2995,21 +2995,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="220" />
-			<average value="7.00073" />
-			<bayesaverage value="5.79733" />
+			<usersrated value="222" />
+			<average value="6.99396" />
+			<bayesaverage value="5.79754" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2863" bayesaverage="5.79733" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="725" bayesaverage="5.9168" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2865" bayesaverage="5.79754" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="726" bayesaverage="5.91692" />
 												</ranks>
 
-			<stddev value="1.10799" />
+			<stddev value="1.10552" />
 			<median value="0" />
-			<owned value="427" />
+			<owned value="429" />
 			<trading value="8" />
-			<wanting value="36" />
-			<wishing value="164" />
+			<wanting value="34" />
+			<wishing value="165" />
 			<numcomments value="79" />
 			<numweights value="21" />
 			<averageweight value="1.2857" />
@@ -3282,17 +3282,17 @@
 			<bayesaverage value="6.01246" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1837" bayesaverage="6.01246" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1839" bayesaverage="6.01246" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="860" bayesaverage="6.08051" />
 												</ranks>
 
 			<stddev value="1.17763" />
 			<median value="0" />
-			<owned value="1819" />
-			<trading value="159" />
-			<wanting value="49" />
+			<owned value="1820" />
+			<trading value="160" />
+			<wanting value="48" />
 			<wishing value="151" />
-			<numcomments value="452" />
+			<numcomments value="453" />
 			<numweights value="152" />
 			<averageweight value="2.7237" />
 			</ratings>
@@ -3348,12 +3348,12 @@
 										      	               				<yearpublished value="1997" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="7" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="416">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="417">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="1" />
-					<result value="Not Recommended" numvotes="252" />
+					<result value="Not Recommended" numvotes="253" />
 				</results>					
 			
 		<results numplayers="2">		
@@ -3370,7 +3370,7 @@
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="176" />
-					<result value="Recommended" numvotes="186" />
+					<result value="Recommended" numvotes="187" />
 					<result value="Not Recommended" numvotes="6" />
 				</results>					
 			
@@ -3395,14 +3395,14 @@
 		<results numplayers="7+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="12" />
-					<result value="Not Recommended" numvotes="171" />
+					<result value="Not Recommended" numvotes="172" />
 				</results>					
 	</poll> 
 			               				<playingtime value="45" />
 						               				<minplaytime value="45" />
 						               				<maxplaytime value="45" />
 						               				<minage value="13" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="112">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="113">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -3410,7 +3410,7 @@
 					<result value="5" numvotes="1" />
 					<result value="6" numvotes="13" />
 					<result value="8" numvotes="60" />
-					<result value="10" numvotes="30" />
+					<result value="10" numvotes="31" />
 					<result value="12" numvotes="4" />
 					<result value="14" numvotes="0" />
 					<result value="16" numvotes="1" />
@@ -3421,11 +3421,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="133">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="125" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="125" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -4073,22 +4073,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="26201" />
-			<average value="7.07662" />
-			<bayesaverage value="6.99466" />
+			<usersrated value="26248" />
+			<average value="7.07629" />
+			<bayesaverage value="6.99449" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="317" bayesaverage="6.99466" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="51" bayesaverage="6.99253" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="317" bayesaverage="6.99449" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="51" bayesaverage="6.9923" />
 												</ranks>
 
-			<stddev value="1.27664" />
+			<stddev value="1.27662" />
 			<median value="0" />
-			<owned value="35643" />
-			<trading value="690" />
+			<owned value="35709" />
+			<trading value="687" />
 			<wanting value="290" />
-			<wishing value="1628" />
-			<numcomments value="6700" />
+			<wishing value="1633" />
+			<numcomments value="6704" />
 			<numweights value="2530" />
 			<averageweight value="1.6779" />
 			</ratings>
@@ -4171,11 +4171,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="21">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="1" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="10" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="9" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="1" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="10" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="9" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -4343,25 +4343,25 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="2271" />
-			<average value="7.3031" />
-			<bayesaverage value="6.83172" />
+			<usersrated value="2293" />
+			<average value="7.3046" />
+			<bayesaverage value="6.83606" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="441" bayesaverage="6.83172" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="264" bayesaverage="6.93034" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="59" bayesaverage="6.96222" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="437" bayesaverage="6.83606" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="263" bayesaverage="6.93385" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="58" bayesaverage="6.96574" />
 												</ranks>
 
-			<stddev value="1.23296" />
+			<stddev value="1.23018" />
 			<median value="0" />
-			<owned value="3851" />
-			<trading value="38" />
-			<wanting value="315" />
-			<wishing value="1012" />
-			<numcomments value="496" />
-			<numweights value="141" />
-			<averageweight value="2.3901" />
+			<owned value="3877" />
+			<trading value="40" />
+			<wanting value="312" />
+			<wishing value="1019" />
+			<numcomments value="499" />
+			<numweights value="142" />
+			<averageweight value="2.3944" />
 			</ratings>
 								</statistics>
      
@@ -4428,11 +4428,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="3" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="3" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -4573,15 +4573,15 @@
 			<bayesaverage value="5.62927" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4716" bayesaverage="5.62927" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4722" bayesaverage="5.62927" />
 												</ranks>
 
 			<stddev value="1.09263" />
 			<median value="0" />
-			<owned value="615" />
-			<trading value="9" />
-			<wanting value="15" />
-			<wishing value="37" />
+			<owned value="617" />
+			<trading value="11" />
+			<wanting value="14" />
+			<wishing value="36" />
 			<numcomments value="66" />
 			<numweights value="14" />
 			<averageweight value="1.4286" />
@@ -4626,56 +4626,56 @@
 										      	               				<yearpublished value="2000" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1342">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1345">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="4" />
 					<result value="Recommended" numvotes="34" />
-					<result value="Not Recommended" numvotes="740" />
+					<result value="Not Recommended" numvotes="742" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="701" />
+					<result value="Best" numvotes="704" />
 					<result value="Recommended" numvotes="463" />
 					<result value="Not Recommended" numvotes="77" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="563" />
-					<result value="Recommended" numvotes="598" />
+					<result value="Best" numvotes="564" />
+					<result value="Recommended" numvotes="600" />
 					<result value="Not Recommended" numvotes="27" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="364" />
-					<result value="Recommended" numvotes="692" />
+					<result value="Best" numvotes="365" />
+					<result value="Recommended" numvotes="694" />
 					<result value="Not Recommended" numvotes="102" />
 				</results>					
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="123" />
-					<result value="Recommended" numvotes="542" />
-					<result value="Not Recommended" numvotes="369" />
+					<result value="Recommended" numvotes="543" />
+					<result value="Not Recommended" numvotes="371" />
 				</results>					
 			
 		<results numplayers="5+">		
 					<result value="Best" numvotes="23" />
 					<result value="Recommended" numvotes="149" />
-					<result value="Not Recommended" numvotes="636" />
+					<result value="Not Recommended" numvotes="639" />
 				</results>					
 	</poll> 
 			               				<playingtime value="45" />
 						               				<minplaytime value="30" />
 						               				<maxplaytime value="45" />
 						               				<minage value="8" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="378">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="379">
 			<results>		
 					<result value="2" numvotes="2" />
 					<result value="3" numvotes="0" />
 					<result value="4" numvotes="2" />
 					<result value="5" numvotes="21" />
 					<result value="6" numvotes="103" />
-					<result value="8" numvotes="180" />
+					<result value="8" numvotes="181" />
 					<result value="10" numvotes="54" />
 					<result value="12" numvotes="12" />
 					<result value="14" numvotes="3" />
@@ -4687,11 +4687,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="420">
 			
 		<results>		
-					<result level="21" value="No necessary in-game text" numvotes="412" />
-					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
-					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
-					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="25" value="Unplayable in another language" numvotes="1" />
+					<result level="1" value="No necessary in-game text" numvotes="412" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="1" />
 				</results>					
 	</poll> 
 			      			 
@@ -5651,24 +5651,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="59817" />
-			<average value="7.43563" />
-			<bayesaverage value="7.33831" />
+			<usersrated value="59920" />
+			<average value="7.4357" />
+			<bayesaverage value="7.33809" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="121" bayesaverage="7.33831" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="12" bayesaverage="7.32896" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="121" bayesaverage="7.33809" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="12" bayesaverage="7.32869" />
 												</ranks>
 
 			<stddev value="1.30033" />
 			<median value="0" />
-			<owned value="80660" />
-			<trading value="1079" />
-			<wanting value="386" />
-			<wishing value="3560" />
-			<numcomments value="12813" />
-			<numweights value="6241" />
-			<averageweight value="1.9455" />
+			<owned value="80851" />
+			<trading value="1080" />
+			<wanting value="385" />
+			<wishing value="3568" />
+			<numcomments value="12831" />
+			<numweights value="6247" />
+			<averageweight value="1.9453" />
 			</ratings>
 								</statistics>
      
@@ -7573,22 +7573,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="18585" />
-			<average value="7.09481" />
-			<bayesaverage value="6.93957" />
+			<usersrated value="18606" />
+			<average value="7.09531" />
+			<bayesaverage value="6.93971" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="359" bayesaverage="6.93957" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="36" bayesaverage="6.74618" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="359" bayesaverage="6.93971" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="36" bayesaverage="6.74694" />
 												</ranks>
 
-			<stddev value="1.84021" />
+			<stddev value="1.84006" />
 			<median value="0" />
-			<owned value="24146" />
-			<trading value="132" />
+			<owned value="24186" />
+			<trading value="133" />
 			<wanting value="18" />
 			<wishing value="144" />
-			<numcomments value="4951" />
+			<numcomments value="4954" />
 			<numweights value="1786" />
 			<averageweight value="3.7503" />
 			</ratings>
@@ -7731,11 +7731,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="198">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="0" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="66" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="125" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
-					<result level="10" value="Unplayable in another language" numvotes="2" />
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="66" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="125" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
+					<result level="5" value="Unplayable in another language" numvotes="2" />
 				</results>					
 	</poll> 
 			      			 
@@ -8239,24 +8239,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="34594" />
-			<average value="7.16301" />
-			<bayesaverage value="7.07965" />
+			<usersrated value="34658" />
+			<average value="7.16291" />
+			<bayesaverage value="7.07936" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="253" bayesaverage="7.07965" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="206" bayesaverage="7.03047" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="39" bayesaverage="7.05561" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="253" bayesaverage="7.07936" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="208" bayesaverage="7.03019" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="40" bayesaverage="7.05532" />
 												</ranks>
 
-			<stddev value="1.24085" />
+			<stddev value="1.24029" />
 			<median value="0" />
-			<owned value="44855" />
-			<trading value="1018" />
-			<wanting value="402" />
-			<wishing value="2751" />
-			<numcomments value="7960" />
-			<numweights value="3289" />
+			<owned value="44944" />
+			<trading value="1026" />
+			<wanting value="406" />
+			<wishing value="2765" />
+			<numcomments value="7965" />
+			<numweights value="3290" />
 			<averageweight value="2.0626" />
 			</ratings>
 								</statistics>
@@ -8347,14 +8347,14 @@
 					<result value="21 and up" numvotes="0" />
 				</results>					
 	</poll> 
-			      			<poll name="language_dependence" title="Language Dependence" totalvotes="29">
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="30">
 			
 		<results>		
-					<result level="16" value="No necessary in-game text" numvotes="0" />
-					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="22" />
-					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="7" />
-					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="20" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="0" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="23" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="7" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -8546,25 +8546,25 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="5421" />
-			<average value="6.81922" />
-			<bayesaverage value="6.63207" />
+			<usersrated value="5422" />
+			<average value="6.8192" />
+			<bayesaverage value="6.63208" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="628" bayesaverage="6.63207" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="403" bayesaverage="6.66064" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="132" bayesaverage="6.68239" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="630" bayesaverage="6.63208" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="403" bayesaverage="6.66065" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="132" bayesaverage="6.6824" />
 												</ranks>
 
-			<stddev value="1.14851" />
+			<stddev value="1.1484" />
 			<median value="0" />
 			<owned value="6599" />
-			<trading value="271" />
-			<wanting value="270" />
+			<trading value="270" />
+			<wanting value="268" />
 			<wishing value="926" />
-			<numcomments value="1755" />
-			<numweights value="617" />
-			<averageweight value="2.2836" />
+			<numcomments value="1754" />
+			<numweights value="618" />
+			<averageweight value="2.2848" />
 			</ratings>
 								</statistics>
      
@@ -8627,11 +8627,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="20">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="18" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="36" value="No necessary in-game text" numvotes="18" />
+					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
+					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="40" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -8775,22 +8775,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1382" />
-			<average value="6.25951" />
-			<bayesaverage value="5.95359" />
+			<usersrated value="1385" />
+			<average value="6.25786" />
+			<bayesaverage value="5.9534" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2068" bayesaverage="5.95359" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="191" bayesaverage="6.07646" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2073" bayesaverage="5.9534" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="192" bayesaverage="6.07517" />
 												</ranks>
 
-			<stddev value="1.29368" />
+			<stddev value="1.2929" />
 			<median value="0" />
 			<owned value="4287" />
-			<trading value="307" />
-			<wanting value="23" />
+			<trading value="306" />
+			<wanting value="22" />
 			<wishing value="189" />
-			<numcomments value="599" />
+			<numcomments value="600" />
 			<numweights value="118" />
 			<averageweight value="1.322" />
 			</ratings>
@@ -8887,11 +8887,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="84">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="84" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="84" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -9195,22 +9195,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="12770" />
-			<average value="6.98236" />
-			<bayesaverage value="6.87911" />
+			<usersrated value="12785" />
+			<average value="6.98268" />
+			<bayesaverage value="6.87942" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="408" bayesaverage="6.87911" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="72" bayesaverage="6.9032" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="407" bayesaverage="6.87942" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="73" bayesaverage="6.9035" />
 												</ranks>
 
-			<stddev value="1.12179" />
+			<stddev value="1.12144" />
 			<median value="0" />
-			<owned value="15608" />
-			<trading value="240" />
-			<wanting value="260" />
-			<wishing value="1064" />
-			<numcomments value="3623" />
+			<owned value="15634" />
+			<trading value="237" />
+			<wanting value="262" />
+			<wishing value="1065" />
+			<numcomments value="3625" />
 			<numweights value="1290" />
 			<averageweight value="1.2946" />
 			</ratings>
@@ -9321,11 +9321,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="50">
 			
 		<results>		
-					<result level="31" value="No necessary in-game text" numvotes="9" />
-					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="39" />
-					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
-					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="35" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="9" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="39" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -9709,22 +9709,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="16606" />
-			<average value="7.16196" />
-			<bayesaverage value="7.04731" />
+			<usersrated value="16674" />
+			<average value="7.16297" />
+			<bayesaverage value="7.04729" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="279" bayesaverage="7.04731" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="26" bayesaverage="6.96862" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="279" bayesaverage="7.04729" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="26" bayesaverage="6.96879" />
 												</ranks>
 
-			<stddev value="1.39079" />
+			<stddev value="1.39067" />
 			<median value="0" />
-			<owned value="26068" />
-			<trading value="525" />
+			<owned value="26194" />
+			<trading value="527" />
 			<wanting value="217" />
-			<wishing value="1757" />
-			<numcomments value="3299" />
+			<wishing value="1759" />
+			<numcomments value="3304" />
 			<numweights value="837" />
 			<averageweight value="1.448" />
 			</ratings>
@@ -9787,11 +9787,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="10">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="1" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="3" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="5" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="1" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="3" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="5" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -9916,14 +9916,14 @@
 			<bayesaverage value="5.97287" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1983" bayesaverage="5.97287" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1987" bayesaverage="5.97287" />
 																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="119" bayesaverage="6.30817" />
 											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="865" bayesaverage="6.07246" />
 												</ranks>
 
 			<stddev value="1.46188" />
 			<median value="0" />
-			<owned value="774" />
+			<owned value="773" />
 			<trading value="64" />
 			<wanting value="63" />
 			<wishing value="290" />
@@ -10030,11 +10030,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="154">
 			
 		<results>		
-					<result level="26" value="No necessary in-game text" numvotes="152" />
-					<result level="27" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="28" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="29" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="30" value="Unplayable in another language" numvotes="2" />
+					<result level="11" value="No necessary in-game text" numvotes="152" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="2" />
 				</results>					
 	</poll> 
 			      			 
@@ -10434,22 +10434,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="26773" />
-			<average value="7.38334" />
-			<bayesaverage value="7.29126" />
+			<usersrated value="26835" />
+			<average value="7.38264" />
+			<bayesaverage value="7.2913" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="139" bayesaverage="7.29126" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="11" bayesaverage="7.26285" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="139" bayesaverage="7.2913" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="11" bayesaverage="7.26247" />
 												</ranks>
 
-			<stddev value="1.35645" />
+			<stddev value="1.35707" />
 			<median value="0" />
-			<owned value="33996" />
-			<trading value="387" />
-			<wanting value="461" />
-			<wishing value="3341" />
-			<numcomments value="4994" />
+			<owned value="34083" />
+			<trading value="389" />
+			<wanting value="460" />
+			<wishing value="3349" />
+			<numcomments value="4997" />
 			<numweights value="1463" />
 			<averageweight value="1.2775" />
 			</ratings>
@@ -10768,11 +10768,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="25">
 			
 		<results>		
-					<result level="16" value="No necessary in-game text" numvotes="25" />
-					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="20" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="25" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -12180,22 +12180,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="4152" />
-			<average value="5.42771" />
-			<bayesaverage value="5.40355" />
+			<usersrated value="4154" />
+			<average value="5.42678" />
+			<bayesaverage value="5.40312" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="12127" bayesaverage="5.40355" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="798" bayesaverage="5.22465" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="12149" bayesaverage="5.40312" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="798" bayesaverage="5.22448" />
 												</ranks>
 
-			<stddev value="1.59443" />
+			<stddev value="1.5942" />
 			<median value="0" />
-			<owned value="6917" />
+			<owned value="6929" />
 			<trading value="79" />
 			<wanting value="4" />
 			<wishing value="49" />
-			<numcomments value="1388" />
+			<numcomments value="1391" />
 			<numweights value="461" />
 			<averageweight value="1.4078" />
 			</ratings>
@@ -12272,11 +12272,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="4" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="4" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -12364,23 +12364,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="907" />
-			<average value="6.52024" />
-			<bayesaverage value="6.01198" />
+			<usersrated value="913" />
+			<average value="6.51847" />
+			<bayesaverage value="6.01045" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1840" bayesaverage="6.01198" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="156" bayesaverage="6.09892" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="538" bayesaverage="6.0865" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1845" bayesaverage="6.01045" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="156" bayesaverage="6.09682" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="542" bayesaverage="6.08452" />
 												</ranks>
 
-			<stddev value="1.56901" />
+			<stddev value="1.56797" />
 			<median value="0" />
-			<owned value="1868" />
-			<trading value="40" />
+			<owned value="1883" />
+			<trading value="41" />
 			<wanting value="11" />
-			<wishing value="62" />
-			<numcomments value="255" />
+			<wishing value="61" />
+			<numcomments value="257" />
 			<numweights value="51" />
 			<averageweight value="1.3333" />
 			</ratings>
@@ -12467,11 +12467,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="3" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="3" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -12783,18 +12783,18 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="585" />
-			<average value="7.80412" />
-			<bayesaverage value="6.45727" />
+			<usersrated value="589" />
+			<average value="7.8063" />
+			<bayesaverage value="6.4622" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.45727" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.4622" />
 												</ranks>
 
-			<stddev value="1.11188" />
+			<stddev value="1.11009" />
 			<median value="0" />
-			<owned value="1633" />
-			<trading value="33" />
+			<owned value="1637" />
+			<trading value="32" />
 			<wanting value="60" />
 			<wishing value="200" />
 			<numcomments value="177" />
@@ -12906,11 +12906,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="62">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="6" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="51" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="4" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="6" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="51" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="4" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -13286,23 +13286,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="11813" />
-			<average value="7.30991" />
-			<bayesaverage value="7.16841" />
+			<usersrated value="11848" />
+			<average value="7.30929" />
+			<bayesaverage value="7.1682" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="203" bayesaverage="7.16841" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="66" bayesaverage="7.16255" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="27" bayesaverage="7.18565" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="205" bayesaverage="7.1682" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="66" bayesaverage="7.16247" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="27" bayesaverage="7.18526" />
 												</ranks>
 
-			<stddev value="1.21873" />
+			<stddev value="1.2183" />
 			<median value="0" />
-			<owned value="18422" />
-			<trading value="529" />
-			<wanting value="463" />
-			<wishing value="2579" />
-			<numcomments value="2637" />
+			<owned value="18482" />
+			<trading value="534" />
+			<wanting value="467" />
+			<wishing value="2581" />
+			<numcomments value="2645" />
 			<numweights value="691" />
 			<averageweight value="2.2171" />
 			</ratings>
@@ -13490,13 +13490,13 @@
 			<bayesaverage value="5.50034" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="10052" bayesaverage="5.50034" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="10071" bayesaverage="5.50034" />
 												</ranks>
 
 			<stddev value="1.2582" />
 			<median value="0" />
-			<owned value="494" />
-			<trading value="5" />
+			<owned value="496" />
+			<trading value="4" />
 			<wanting value="3" />
 			<wishing value="7" />
 			<numcomments value="55" />
@@ -13537,7 +13537,7 @@
 										      	               				<yearpublished value="2013" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="86">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="87">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="3" />
@@ -13547,25 +13547,25 @@
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="9" />
-					<result value="Recommended" numvotes="58" />
+					<result value="Recommended" numvotes="59" />
 					<result value="Not Recommended" numvotes="4" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="24" />
+					<result value="Best" numvotes="25" />
 					<result value="Recommended" numvotes="46" />
 					<result value="Not Recommended" numvotes="1" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="39" />
+					<result value="Best" numvotes="40" />
 					<result value="Recommended" numvotes="27" />
 					<result value="Not Recommended" numvotes="3" />
 				</results>					
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="12" />
-					<result value="Recommended" numvotes="33" />
+					<result value="Recommended" numvotes="34" />
 					<result value="Not Recommended" numvotes="16" />
 				</results>					
 			
@@ -13598,11 +13598,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="29">
 			
 		<results>		
-					<result level="36" value="No necessary in-game text" numvotes="1" />
-					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="27" />
-					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
-					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="40" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="27" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -13834,24 +13834,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="11727" />
-			<average value="7.34024" />
-			<bayesaverage value="7.19209" />
+			<usersrated value="11780" />
+			<average value="7.33865" />
+			<bayesaverage value="7.1914" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="185" bayesaverage="7.19209" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="22" bayesaverage="7.21851" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="185" bayesaverage="7.1914" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="22" bayesaverage="7.21768" />
 												</ranks>
 
-			<stddev value="1.1085" />
+			<stddev value="1.10991" />
 			<median value="0" />
-			<owned value="20273" />
+			<owned value="20369" />
 			<trading value="337" />
-			<wanting value="527" />
-			<wishing value="3224" />
-			<numcomments value="2063" />
-			<numweights value="560" />
-			<averageweight value="2.0446" />
+			<wanting value="529" />
+			<wishing value="3233" />
+			<numcomments value="2073" />
+			<numweights value="562" />
+			<averageweight value="2.0445" />
 			</ratings>
 								</statistics>
      
@@ -13954,11 +13954,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="26">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="26" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="26" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -14118,21 +14118,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="2858" />
-			<average value="6.62962" />
-			<bayesaverage value="6.37269" />
+			<usersrated value="2859" />
+			<average value="6.62958" />
+			<bayesaverage value="6.37272" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1000" bayesaverage="6.37269" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="244" bayesaverage="6.43964" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1002" bayesaverage="6.37272" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="244" bayesaverage="6.43966" />
 												</ranks>
 
-			<stddev value="1.34827" />
+			<stddev value="1.34804" />
 			<median value="0" />
-			<owned value="3923" />
+			<owned value="3927" />
 			<trading value="124" />
-			<wanting value="76" />
-			<wishing value="279" />
+			<wanting value="78" />
+			<wishing value="282" />
 			<numcomments value="948" />
 			<numweights value="299" />
 			<averageweight value="1.5318" />
@@ -14284,11 +14284,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
 			
 		<results>		
-					<result level="21" value="No necessary in-game text" numvotes="0" />
-					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
-					<result level="25" value="Unplayable in another language" numvotes="3" />
+					<result level="6" value="No necessary in-game text" numvotes="0" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="10" value="Unplayable in another language" numvotes="3" />
 				</results>					
 	</poll> 
 			      			 
@@ -14440,22 +14440,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1154" />
-			<average value="6.13806" />
-			<bayesaverage value="5.81848" />
+			<usersrated value="1157" />
+			<average value="6.13727" />
+			<bayesaverage value="5.81919" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2717" bayesaverage="5.81848" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="209" bayesaverage="5.89145" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2719" bayesaverage="5.81919" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="209" bayesaverage="5.89238" />
 												</ranks>
 
-			<stddev value="1.7039" />
+			<stddev value="1.70256" />
 			<median value="0" />
-			<owned value="2160" />
-			<trading value="95" />
+			<owned value="2167" />
+			<trading value="94" />
 			<wanting value="24" />
 			<wishing value="100" />
-			<numcomments value="333" />
+			<numcomments value="334" />
 			<numweights value="72" />
 			<averageweight value="1.2639" />
 			</ratings>
@@ -14530,11 +14530,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="2">
 			
 		<results>		
-					<result level="21" value="No necessary in-game text" numvotes="2" />
-					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="25" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="2" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -14638,21 +14638,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="108" />
-			<average value="6.49653" />
+			<usersrated value="109" />
+			<average value="6.50115" />
 			<bayesaverage value="5.61458" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5033" bayesaverage="5.61458" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5041" bayesaverage="5.61458" />
 												</ranks>
 
-			<stddev value="1.16774" />
+			<stddev value="1.16337" />
 			<median value="0" />
-			<owned value="603" />
+			<owned value="608" />
 			<trading value="5" />
-			<wanting value="14" />
-			<wishing value="30" />
-			<numcomments value="53" />
+			<wanting value="13" />
+			<wishing value="29" />
+			<numcomments value="54" />
 			<numweights value="7" />
 			<averageweight value="2.1429" />
 			</ratings>
@@ -14871,22 +14871,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1209" />
-			<average value="6.55314" />
-			<bayesaverage value="6.10095" />
+			<usersrated value="1210" />
+			<average value="6.55351" />
+			<bayesaverage value="6.10141" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1589" bayesaverage="6.10095" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="111" bayesaverage="6.33149" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1589" bayesaverage="6.10141" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="110" bayesaverage="6.33217" />
 												</ranks>
 
-			<stddev value="1.24686" />
+			<stddev value="1.24641" />
 			<median value="0" />
-			<owned value="1924" />
-			<trading value="122" />
+			<owned value="1926" />
+			<trading value="123" />
 			<wanting value="26" />
 			<wishing value="124" />
-			<numcomments value="444" />
+			<numcomments value="445" />
 			<numweights value="104" />
 			<averageweight value="1.875" />
 			</ratings>
@@ -14920,29 +14920,29 @@
 										      	               				<yearpublished value="2010" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="239">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="240">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="1" />
-					<result value="Not Recommended" numvotes="148" />
+					<result value="Not Recommended" numvotes="149" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="26" />
-					<result value="Recommended" numvotes="114" />
+					<result value="Recommended" numvotes="115" />
 					<result value="Not Recommended" numvotes="62" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="69" />
+					<result value="Best" numvotes="70" />
 					<result value="Recommended" numvotes="123" />
 					<result value="Not Recommended" numvotes="6" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="142" />
-					<result value="Recommended" numvotes="62" />
+					<result value="Recommended" numvotes="63" />
 					<result value="Not Recommended" numvotes="2" />
 				</results>					
 			
@@ -14981,11 +14981,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="89">
 			
 		<results>		
-					<result level="36" value="No necessary in-game text" numvotes="89" />
-					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="40" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="89" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -15313,24 +15313,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="19877" />
-			<average value="7.26693" />
-			<bayesaverage value="7.18266" />
+			<usersrated value="19937" />
+			<average value="7.26658" />
+			<bayesaverage value="7.18253" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="193" bayesaverage="7.18266" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="26" bayesaverage="7.18572" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="194" bayesaverage="7.18253" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="26" bayesaverage="7.18536" />
 												</ranks>
 
-			<stddev value="1.33655" />
+			<stddev value="1.33617" />
 			<median value="0" />
-			<owned value="31569" />
-			<trading value="563" />
-			<wanting value="280" />
-			<wishing value="1954" />
-			<numcomments value="3730" />
-			<numweights value="1117" />
-			<averageweight value="1.6956" />
+			<owned value="31662" />
+			<trading value="570" />
+			<wanting value="284" />
+			<wishing value="1955" />
+			<numcomments value="3737" />
+			<numweights value="1118" />
+			<averageweight value="1.695" />
 			</ratings>
 								</statistics>
      
@@ -15463,11 +15463,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="67">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="67" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="41" value="No necessary in-game text" numvotes="67" />
+					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="45" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -15787,23 +15787,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="14221" />
-			<average value="6.79804" />
-			<bayesaverage value="6.71779" />
+			<usersrated value="14236" />
+			<average value="6.79783" />
+			<bayesaverage value="6.71765" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="539" bayesaverage="6.71779" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="33" bayesaverage="6.77901" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="116" bayesaverage="6.73321" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="540" bayesaverage="6.71765" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="33" bayesaverage="6.7789" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="116" bayesaverage="6.73295" />
 												</ranks>
 
-			<stddev value="1.08925" />
+			<stddev value="1.08907" />
 			<median value="0" />
-			<owned value="16987" />
+			<owned value="17010" />
 			<trading value="386" />
-			<wanting value="298" />
-			<wishing value="1335" />
-			<numcomments value="4067" />
+			<wanting value="300" />
+			<wishing value="1334" />
+			<numcomments value="4070" />
 			<numweights value="1388" />
 			<averageweight value="1.4654" />
 			</ratings>
@@ -16016,17 +16016,17 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="175" />
-			<average value="6.54534" />
-			<bayesaverage value="5.68757" />
+			<usersrated value="176" />
+			<average value="6.54224" />
+			<bayesaverage value="5.6879" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3838" bayesaverage="5.68757" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3842" bayesaverage="5.6879" />
 												</ranks>
 
-			<stddev value="0.992838" />
+			<stddev value="0.990862" />
 			<median value="0" />
-			<owned value="625" />
+			<owned value="628" />
 			<trading value="9" />
 			<wanting value="13" />
 			<wishing value="35" />
@@ -16105,11 +16105,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="18">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="18" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="18" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -16269,23 +16269,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1270" />
-			<average value="6.46956" />
-			<bayesaverage value="6.08109" />
+			<usersrated value="1271" />
+			<average value="6.46683" />
+			<bayesaverage value="6.07956" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1640" bayesaverage="6.08109" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="806" bayesaverage="6.14947" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="457" bayesaverage="6.16676" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1643" bayesaverage="6.07956" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="807" bayesaverage="6.14765" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="459" bayesaverage="6.1649" />
 												</ranks>
 
-			<stddev value="1.19445" />
+			<stddev value="1.19531" />
 			<median value="0" />
-			<owned value="1557" />
-			<trading value="134" />
-			<wanting value="82" />
+			<owned value="1560" />
+			<trading value="135" />
+			<wanting value="81" />
 			<wishing value="249" />
-			<numcomments value="477" />
+			<numcomments value="476" />
 			<numweights value="138" />
 			<averageweight value="2.1449" />
 			</ratings>
@@ -16398,11 +16398,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="7">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="0" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
-					<result level="15" value="Unplayable in another language" numvotes="2" />
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
+					<result level="5" value="Unplayable in another language" numvotes="2" />
 				</results>					
 	</poll> 
 			      			 
@@ -16570,22 +16570,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1130" />
-			<average value="5.55938" />
+			<usersrated value="1134" />
+			<average value="5.55564" />
 			<bayesaverage value="5.51143" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="9502" bayesaverage="5.51143" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="330" bayesaverage="5.48744" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="9521" bayesaverage="5.51143" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="331" bayesaverage="5.48744" />
 												</ranks>
 
-			<stddev value="1.55739" />
+			<stddev value="1.55619" />
 			<median value="0" />
-			<owned value="2013" />
+			<owned value="2023" />
 			<trading value="152" />
 			<wanting value="5" />
 			<wishing value="26" />
-			<numcomments value="382" />
+			<numcomments value="383" />
 			<numweights value="112" />
 			<averageweight value="1.2232" />
 			</ratings>
@@ -16648,11 +16648,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="52">
 			
 		<results>		
-					<result level="16" value="No necessary in-game text" numvotes="1" />
-					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="9" />
-					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="36" />
-					<result level="20" value="Unplayable in another language" numvotes="6" />
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="9" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="36" />
+					<result level="5" value="Unplayable in another language" numvotes="6" />
 				</results>					
 	</poll> 
 			      			 
@@ -16868,21 +16868,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="7108" />
-			<average value="7.07467" />
-			<bayesaverage value="6.90718" />
+			<usersrated value="7111" />
+			<average value="7.07464" />
+			<bayesaverage value="6.90733" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="388" bayesaverage="6.90718" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="261" bayesaverage="6.93634" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="388" bayesaverage="6.90733" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="261" bayesaverage="6.93643" />
 												</ranks>
 
-			<stddev value="1.20716" />
+			<stddev value="1.20685" />
 			<median value="0" />
-			<owned value="8678" />
-			<trading value="308" />
-			<wanting value="365" />
-			<wishing value="1399" />
+			<owned value="8683" />
+			<trading value="305" />
+			<wanting value="364" />
+			<wishing value="1401" />
 			<numcomments value="2330" />
 			<numweights value="788" />
 			<averageweight value="2.0736" />
@@ -16980,11 +16980,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="13">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="0" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="11" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="0" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="11" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -17176,22 +17176,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="4936" />
-			<average value="6.15863" />
+			<usersrated value="4943" />
+			<average value="6.15912" />
 			<bayesaverage value="6.01529" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1826" bayesaverage="6.01529" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1825" bayesaverage="6.01529" />
 																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="636" bayesaverage="5.99037" />
 												</ranks>
 
-			<stddev value="1.49492" />
+			<stddev value="1.49408" />
 			<median value="0" />
-			<owned value="7229" />
-			<trading value="290" />
-			<wanting value="97" />
-			<wishing value="529" />
-			<numcomments value="1608" />
+			<owned value="7244" />
+			<trading value="289" />
+			<wanting value="98" />
+			<wishing value="533" />
+			<numcomments value="1609" />
 			<numweights value="494" />
 			<averageweight value="1.6538" />
 			</ratings>
@@ -17239,7 +17239,7 @@
 										      	               				<yearpublished value="2011" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="6" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="471">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="472">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
@@ -17250,30 +17250,30 @@
 		<results numplayers="2">		
 					<result value="Best" numvotes="7" />
 					<result value="Recommended" numvotes="69" />
-					<result value="Not Recommended" numvotes="300" />
+					<result value="Not Recommended" numvotes="301" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="46" />
-					<result value="Recommended" numvotes="285" />
+					<result value="Recommended" numvotes="286" />
 					<result value="Not Recommended" numvotes="48" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="296" />
+					<result value="Best" numvotes="297" />
 					<result value="Recommended" numvotes="123" />
 					<result value="Not Recommended" numvotes="5" />
 				</results>					
 			
 		<results numplayers="5">		
-					<result value="Best" numvotes="206" />
+					<result value="Best" numvotes="207" />
 					<result value="Recommended" numvotes="159" />
 					<result value="Not Recommended" numvotes="16" />
 				</results>					
 			
 		<results numplayers="6">		
 					<result value="Best" numvotes="126" />
-					<result value="Recommended" numvotes="190" />
+					<result value="Recommended" numvotes="191" />
 					<result value="Not Recommended" numvotes="48" />
 				</results>					
 			
@@ -17287,14 +17287,14 @@
 						               				<minplaytime value="30" />
 						               				<maxplaytime value="30" />
 						               				<minage value="8" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="158">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="159">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="1" />
 					<result value="4" numvotes="7" />
 					<result value="5" numvotes="13" />
 					<result value="6" numvotes="67" />
-					<result value="8" numvotes="53" />
+					<result value="8" numvotes="54" />
 					<result value="10" numvotes="12" />
 					<result value="12" numvotes="5" />
 					<result value="14" numvotes="0" />
@@ -17306,11 +17306,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="123">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="2" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="17" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="93" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="11" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="2" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="17" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="93" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="11" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -17782,23 +17782,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="30986" />
-			<average value="7.33775" />
-			<bayesaverage value="7.2508" />
+			<usersrated value="31077" />
+			<average value="7.33707" />
+			<bayesaverage value="7.2503" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="153" bayesaverage="7.2508" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="20" bayesaverage="7.23055" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="153" bayesaverage="7.2503" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="20" bayesaverage="7.22999" />
 												</ranks>
 
-			<stddev value="1.30912" />
+			<stddev value="1.30903" />
 			<median value="0" />
-			<owned value="42361" />
-			<trading value="622" />
-			<wanting value="664" />
-			<wishing value="4010" />
-			<numcomments value="5752" />
-			<numweights value="1925" />
+			<owned value="42504" />
+			<trading value="633" />
+			<wanting value="662" />
+			<wishing value="4028" />
+			<numcomments value="5768" />
+			<numweights value="1927" />
 			<averageweight value="1.5179" />
 			</ratings>
 								</statistics>
@@ -17882,11 +17882,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="79">
 			
 		<results>		
-					<result level="36" value="No necessary in-game text" numvotes="2" />
-					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="26" />
-					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="49" />
-					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
-					<result level="40" value="Unplayable in another language" numvotes="0" />
+					<result level="16" value="No necessary in-game text" numvotes="2" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="26" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="49" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -18166,25 +18166,25 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="14041" />
-			<average value="7.24982" />
-			<bayesaverage value="7.13212" />
+			<usersrated value="14051" />
+			<average value="7.24971" />
+			<bayesaverage value="7.13201" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="215" bayesaverage="7.13212" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="160" bayesaverage="7.1453" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="29" bayesaverage="7.15731" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="216" bayesaverage="7.13201" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="160" bayesaverage="7.14519" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="29" bayesaverage="7.15713" />
 												</ranks>
 
-			<stddev value="1.21021" />
+			<stddev value="1.21031" />
 			<median value="0" />
-			<owned value="13528" />
-			<trading value="217" />
-			<wanting value="959" />
-			<wishing value="3494" />
-			<numcomments value="3251" />
-			<numweights value="1123" />
-			<averageweight value="2.4354" />
+			<owned value="13540" />
+			<trading value="219" />
+			<wanting value="958" />
+			<wishing value="3496" />
+			<numcomments value="3253" />
+			<numweights value="1124" />
+			<averageweight value="2.4359" />
 			</ratings>
 								</statistics>
      
@@ -18398,12 +18398,12 @@
 			<bayesaverage value="5.57163" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6392" bayesaverage="5.57163" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6403" bayesaverage="5.57163" />
 												</ranks>
 
 			<stddev value="1.29984" />
 			<median value="0" />
-			<owned value="540" />
+			<owned value="542" />
 			<trading value="7" />
 			<wanting value="8" />
 			<wishing value="25" />
@@ -18518,11 +18518,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="60">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="0" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="16" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="38" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
-					<result level="5" value="Unplayable in another language" numvotes="1" />
+					<result level="36" value="No necessary in-game text" numvotes="0" />
+					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="16" />
+					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="38" />
+					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
+					<result level="40" value="Unplayable in another language" numvotes="1" />
 				</results>					
 	</poll> 
 			      			 
@@ -18874,21 +18874,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="11264" />
-			<average value="6.801" />
-			<bayesaverage value="6.68671" />
+			<usersrated value="11272" />
+			<average value="6.80011" />
+			<bayesaverage value="6.68612" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="569" bayesaverage="6.68671" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="149" bayesaverage="6.70703" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="570" bayesaverage="6.68612" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="150" bayesaverage="6.70609" />
 												</ranks>
 
-			<stddev value="1.48518" />
+			<stddev value="1.48616" />
 			<median value="0" />
-			<owned value="16872" />
+			<owned value="16887" />
 			<trading value="1013" />
-			<wanting value="159" />
-			<wishing value="919" />
+			<wanting value="161" />
+			<wishing value="922" />
 			<numcomments value="3698" />
 			<numweights value="1209" />
 			<averageweight value="2.5765" />
@@ -18937,35 +18937,35 @@
 										      	               				<yearpublished value="2012" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="551">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="553">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="2" />
 					<result value="Recommended" numvotes="0" />
-					<result value="Not Recommended" numvotes="321" />
+					<result value="Not Recommended" numvotes="322" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="20" />
-					<result value="Recommended" numvotes="138" />
-					<result value="Not Recommended" numvotes="275" />
+					<result value="Recommended" numvotes="139" />
+					<result value="Not Recommended" numvotes="276" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="117" />
-					<result value="Recommended" numvotes="328" />
+					<result value="Recommended" numvotes="330" />
 					<result value="Not Recommended" numvotes="23" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="424" />
+					<result value="Best" numvotes="426" />
 					<result value="Recommended" numvotes="75" />
 					<result value="Not Recommended" numvotes="4" />
 				</results>					
 			
 		<results numplayers="4+">		
 					<result value="Best" numvotes="8" />
-					<result value="Recommended" numvotes="35" />
+					<result value="Recommended" numvotes="36" />
 					<result value="Not Recommended" numvotes="206" />
 				</results>					
 	</poll> 
@@ -18992,11 +18992,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="122">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="2" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="104" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="16" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="41" value="No necessary in-game text" numvotes="2" />
+					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="104" />
+					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="16" />
+					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="45" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -19436,22 +19436,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="30383" />
-			<average value="7.34672" />
-			<bayesaverage value="7.26693" />
+			<usersrated value="30473" />
+			<average value="7.34555" />
+			<bayesaverage value="7.26603" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="147" bayesaverage="7.26693" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="18" bayesaverage="7.2565" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="147" bayesaverage="7.26603" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="18" bayesaverage="7.25542" />
 												</ranks>
 
-			<stddev value="1.31573" />
+			<stddev value="1.31628" />
 			<median value="0" />
-			<owned value="51124" />
-			<trading value="668" />
-			<wanting value="190" />
-			<wishing value="1837" />
-			<numcomments value="5930" />
+			<owned value="51250" />
+			<trading value="670" />
+			<wanting value="191" />
+			<wishing value="1846" />
+			<numcomments value="5944" />
 			<numweights value="2009" />
 			<averageweight value="1.2101" />
 			</ratings>
@@ -19526,11 +19526,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
 			
 		<results>		
-					<result level="26" value="No necessary in-game text" numvotes="1" />
-					<result level="27" value="Some necessary text - easily memorized or small crib sheet" numvotes="4" />
-					<result level="28" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="29" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="30" value="Unplayable in another language" numvotes="0" />
+					<result level="16" value="No necessary in-game text" numvotes="1" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="4" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -19650,19 +19650,19 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="2268" />
-			<average value="5.66542" />
-			<bayesaverage value="5.54651" />
+			<usersrated value="2271" />
+			<average value="5.66763" />
+			<bayesaverage value="5.54702" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="7564" bayesaverage="5.54651" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="765" bayesaverage="5.49234" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="7554" bayesaverage="5.54702" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="766" bayesaverage="5.49305" />
 												</ranks>
 
-			<stddev value="1.79199" />
+			<stddev value="1.79339" />
 			<median value="0" />
-			<owned value="3561" />
-			<trading value="230" />
+			<owned value="3566" />
+			<trading value="231" />
 			<wanting value="20" />
 			<wishing value="111" />
 			<numcomments value="791" />
@@ -19870,21 +19870,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="118" />
-			<average value="6.22881" />
+			<usersrated value="119" />
+			<average value="6.2605" />
 			<bayesaverage value="5.57693" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6195" bayesaverage="5.57693" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="688" bayesaverage="5.61275" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6203" bayesaverage="5.57693" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="689" bayesaverage="5.61275" />
 												</ranks>
 
-			<stddev value="1.97815" />
+			<stddev value="1.99967" />
 			<median value="0" />
-			<owned value="386" />
+			<owned value="387" />
 			<trading value="19" />
 			<wanting value="26" />
-			<wishing value="85" />
+			<wishing value="84" />
 			<numcomments value="49" />
 			<numweights value="11" />
 			<averageweight value="2.4545" />
@@ -20022,11 +20022,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="16">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="6" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="10" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="6" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="10" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -20378,22 +20378,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="5393" />
-			<average value="5.67366" />
-			<bayesaverage value="5.59446" />
+			<usersrated value="5401" />
+			<average value="5.67415" />
+			<bayesaverage value="5.59416" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5546" bayesaverage="5.59446" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1274" bayesaverage="5.54336" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5565" bayesaverage="5.59416" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1276" bayesaverage="5.54305" />
 												</ranks>
 
-			<stddev value="1.52969" />
+			<stddev value="1.529" />
 			<median value="0" />
-			<owned value="9650" />
-			<trading value="464" />
+			<owned value="9668" />
+			<trading value="470" />
 			<wanting value="15" />
 			<wishing value="116" />
-			<numcomments value="1788" />
+			<numcomments value="1790" />
 			<numweights value="512" />
 			<averageweight value="1.2637" />
 			</ratings>
@@ -20470,11 +20470,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="1" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="16" value="No necessary in-game text" numvotes="1" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -20599,7 +20599,7 @@
 			<bayesaverage value="5.75519" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3167" bayesaverage="5.75519" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3174" bayesaverage="5.75519" />
 																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="187" bayesaverage="6.09183" />
 												</ranks>
 
@@ -20607,7 +20607,7 @@
 			<median value="0" />
 			<owned value="1025" />
 			<trading value="55" />
-			<wanting value="37" />
+			<wanting value="38" />
 			<wishing value="76" />
 			<numcomments value="170" />
 			<numweights value="32" />
@@ -20803,7 +20803,7 @@
 			<bayesaverage value="5.64377" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4467" bayesaverage="5.64377" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4470" bayesaverage="5.64377" />
 												</ranks>
 
 			<stddev value="1.35197" />
@@ -20913,11 +20913,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="24">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="0" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="17" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="7" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="0" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="17" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="7" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -21125,21 +21125,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="6477" />
-			<average value="6.5435" />
-			<bayesaverage value="6.40193" />
+			<usersrated value="6483" />
+			<average value="6.5443" />
+			<bayesaverage value="6.40212" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="942" bayesaverage="6.40193" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="260" bayesaverage="6.41809" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="946" bayesaverage="6.40212" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="262" bayesaverage="6.41829" />
 												</ranks>
 
-			<stddev value="1.39531" />
+			<stddev value="1.39595" />
 			<median value="0" />
-			<owned value="7677" />
-			<trading value="280" />
-			<wanting value="378" />
-			<wishing value="1407" />
+			<owned value="7675" />
+			<trading value="279" />
+			<wanting value="379" />
+			<wishing value="1408" />
 			<numcomments value="2103" />
 			<numweights value="679" />
 			<averageweight value="2.2135" />
@@ -21253,11 +21253,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="65">
 			
 		<results>		
-					<result level="41" value="No necessary in-game text" numvotes="65" />
-					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="45" value="Unplayable in another language" numvotes="0" />
+					<result level="6" value="No necessary in-game text" numvotes="65" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -21497,22 +21497,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="13005" />
-			<average value="7.04199" />
-			<bayesaverage value="6.94606" />
+			<usersrated value="13032" />
+			<average value="7.04291" />
+			<bayesaverage value="6.94644" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="353" bayesaverage="6.94606" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="56" bayesaverage="6.97388" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="353" bayesaverage="6.94644" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="56" bayesaverage="6.97416" />
 												</ranks>
 
-			<stddev value="1.16863" />
+			<stddev value="1.1688" />
 			<median value="0" />
-			<owned value="16498" />
-			<trading value="175" />
+			<owned value="16535" />
+			<trading value="176" />
 			<wanting value="298" />
-			<wishing value="1530" />
-			<numcomments value="3594" />
+			<wishing value="1531" />
+			<numcomments value="3600" />
 			<numweights value="1126" />
 			<averageweight value="1.1554" />
 			</ratings>
@@ -21605,11 +21605,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="0" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="3" />
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="3" />
 				</results>					
 	</poll> 
 			      			 
@@ -21793,18 +21793,18 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="770" />
-			<average value="6.12221" />
-			<bayesaverage value="5.79141" />
+			<usersrated value="771" />
+			<average value="6.12335" />
+			<bayesaverage value="5.79221" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2901" bayesaverage="5.79141" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="817" bayesaverage="5.8489" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2898" bayesaverage="5.79221" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="816" bayesaverage="5.84985" />
 												</ranks>
 
-			<stddev value="1.59483" />
+			<stddev value="1.59411" />
 			<median value="0" />
-			<owned value="1475" />
+			<owned value="1477" />
 			<trading value="88" />
 			<wanting value="4" />
 			<wishing value="28" />
@@ -22260,21 +22260,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="6926" />
-			<average value="6.60279" />
-			<bayesaverage value="6.45103" />
+			<usersrated value="6932" />
+			<average value="6.60328" />
+			<bayesaverage value="6.45153" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="854" bayesaverage="6.45103" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="228" bayesaverage="6.46035" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="856" bayesaverage="6.45153" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="228" bayesaverage="6.4609" />
 												</ranks>
 
-			<stddev value="1.36699" />
+			<stddev value="1.36689" />
 			<median value="0" />
-			<owned value="8276" />
+			<owned value="8284" />
 			<trading value="354" />
 			<wanting value="270" />
-			<wishing value="1143" />
+			<wishing value="1142" />
 			<numcomments value="2325" />
 			<numweights value="766" />
 			<averageweight value="2.0013" />
@@ -22392,11 +22392,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="301">
 			
 		<results>		
-					<result level="21" value="No necessary in-game text" numvotes="283" />
-					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="18" />
-					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="25" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="283" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="18" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -22948,24 +22948,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="38573" />
-			<average value="7.96984" />
-			<bayesaverage value="7.89607" />
+			<usersrated value="38625" />
+			<average value="7.96935" />
+			<bayesaverage value="7.89582" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="17" bayesaverage="7.89607" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="16" bayesaverage="7.88903" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="17" bayesaverage="7.89582" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="16" bayesaverage="7.88867" />
 												</ranks>
 
-			<stddev value="1.33153" />
+			<stddev value="1.33155" />
 			<median value="0" />
-			<owned value="43444" />
-			<trading value="626" />
-			<wanting value="1202" />
-			<wishing value="6854" />
-			<numcomments value="8061" />
+			<owned value="43516" />
+			<trading value="630" />
+			<wanting value="1205" />
+			<wishing value="6866" />
+			<numcomments value="8064" />
 			<numweights value="4172" />
-			<averageweight value="3.2898" />
+			<averageweight value="3.29" />
 			</ratings>
 								</statistics>
      
@@ -23058,11 +23058,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="24">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="24" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="24" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -23262,22 +23262,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="3846" />
-			<average value="6.69718" />
-			<bayesaverage value="6.45513" />
+			<usersrated value="3852" />
+			<average value="6.69823" />
+			<bayesaverage value="6.45492" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="849" bayesaverage="6.45513" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="62" bayesaverage="6.57058" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="851" bayesaverage="6.45492" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="62" bayesaverage="6.56997" />
 												</ranks>
 
-			<stddev value="1.3737" />
+			<stddev value="1.37428" />
 			<median value="0" />
-			<owned value="5040" />
+			<owned value="5050" />
 			<trading value="244" />
-			<wanting value="128" />
-			<wishing value="589" />
-			<numcomments value="1121" />
+			<wanting value="129" />
+			<wishing value="591" />
+			<numcomments value="1123" />
 			<numweights value="329" />
 			<averageweight value="1.921" />
 			</ratings>
@@ -23402,11 +23402,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="46">
 			
 		<results>		
-					<result level="21" value="No necessary in-game text" numvotes="14" />
-					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="32" />
-					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="25" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="14" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="32" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -23718,22 +23718,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="13053" />
-			<average value="7.77389" />
-			<bayesaverage value="7.60209" />
+			<usersrated value="13097" />
+			<average value="7.77377" />
+			<bayesaverage value="7.60185" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="50" bayesaverage="7.60209" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="2" bayesaverage="7.57009" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="51" bayesaverage="7.60185" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="2" bayesaverage="7.57004" />
 												</ranks>
 
-			<stddev value="1.4864" />
+			<stddev value="1.48664" />
 			<median value="0" />
-			<owned value="18557" />
-			<trading value="274" />
-			<wanting value="296" />
-			<wishing value="2006" />
-			<numcomments value="2167" />
+			<owned value="18626" />
+			<trading value="273" />
+			<wanting value="294" />
+			<wishing value="2014" />
+			<numcomments value="2169" />
 			<numweights value="610" />
 			<averageweight value="1.7869" />
 			</ratings>
@@ -23855,14 +23855,14 @@
 					<result value="21 and up" numvotes="0" />
 				</results>					
 	</poll> 
-			      			<poll name="language_dependence" title="Language Dependence" totalvotes="91">
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="92">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="87" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="3" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="88" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="3" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -24206,25 +24206,25 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="14692" />
-			<average value="6.65308" />
-			<bayesaverage value="6.55651" />
+			<usersrated value="14711" />
+			<average value="6.65264" />
+			<bayesaverage value="6.55615" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="726" bayesaverage="6.55651" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="72" bayesaverage="6.47297" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="182" bayesaverage="6.54951" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="728" bayesaverage="6.55615" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="72" bayesaverage="6.47268" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="182" bayesaverage="6.54934" />
 												</ranks>
 
-			<stddev value="1.25667" />
+			<stddev value="1.2566" />
 			<median value="0" />
-			<owned value="20579" />
+			<owned value="20613" />
 			<trading value="439" />
 			<wanting value="227" />
-			<wishing value="1313" />
-			<numcomments value="3152" />
-			<numweights value="1243" />
-			<averageweight value="1.3379" />
+			<wishing value="1314" />
+			<numcomments value="3153" />
+			<numweights value="1244" />
+			<averageweight value="1.3384" />
 			</ratings>
 								</statistics>
      
@@ -24323,11 +24323,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="14">
 			
 		<results>		
-					<result level="21" value="No necessary in-game text" numvotes="0" />
-					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="9" />
-					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="5" />
-					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="25" value="Unplayable in another language" numvotes="0" />
+					<result level="31" value="No necessary in-game text" numvotes="0" />
+					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="9" />
+					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="5" />
+					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="35" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -24559,22 +24559,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1838" />
-			<average value="6.73981" />
-			<bayesaverage value="6.32769" />
+			<usersrated value="1836" />
+			<average value="6.74143" />
+			<bayesaverage value="6.32854" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1077" bayesaverage="6.32769" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="282" bayesaverage="6.3938" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1076" bayesaverage="6.32854" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="280" bayesaverage="6.3949" />
 												</ranks>
 
-			<stddev value="1.32135" />
+			<stddev value="1.31431" />
 			<median value="0" />
-			<owned value="3127" />
-			<trading value="135" />
+			<owned value="3135" />
+			<trading value="136" />
 			<wanting value="66" />
-			<wishing value="452" />
-			<numcomments value="418" />
+			<wishing value="450" />
+			<numcomments value="419" />
 			<numweights value="128" />
 			<averageweight value="1.7422" />
 			</ratings>
@@ -25007,22 +25007,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="9510" />
-			<average value="6.51491" />
-			<bayesaverage value="6.40646" />
+			<usersrated value="9518" />
+			<average value="6.51524" />
+			<bayesaverage value="6.40685" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="934" bayesaverage="6.40646" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="266" bayesaverage="6.40972" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="939" bayesaverage="6.40685" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="267" bayesaverage="6.4097" />
 												</ranks>
 
-			<stddev value="1.25193" />
+			<stddev value="1.25168" />
 			<median value="0" />
-			<owned value="14082" />
-			<trading value="753" />
-			<wanting value="90" />
-			<wishing value="638" />
-			<numcomments value="2560" />
+			<owned value="14102" />
+			<trading value="752" />
+			<wanting value="92" />
+			<wishing value="640" />
+			<numcomments value="2564" />
 			<numweights value="842" />
 			<averageweight value="1.9656" />
 			</ratings>
@@ -25199,11 +25199,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="28">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="28" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="16" value="No necessary in-game text" numvotes="28" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -25491,23 +25491,23 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="7304" />
-			<average value="6.49378" />
-			<bayesaverage value="6.33968" />
+			<usersrated value="7312" />
+			<average value="6.49447" />
+			<bayesaverage value="6.34003" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1056" bayesaverage="6.33968" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="123" bayesaverage="6.28019" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="318" bayesaverage="6.33633" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1056" bayesaverage="6.34003" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="124" bayesaverage="6.28044" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="319" bayesaverage="6.33618" />
 												</ranks>
 
-			<stddev value="1.54228" />
+			<stddev value="1.54286" />
 			<median value="0" />
-			<owned value="10485" />
-			<trading value="309" />
-			<wanting value="35" />
+			<owned value="10510" />
+			<trading value="310" />
+			<wanting value="34" />
 			<wishing value="293" />
-			<numcomments value="1913" />
+			<numcomments value="1915" />
 			<numweights value="610" />
 			<averageweight value="1.7115" />
 			</ratings>
@@ -25535,7 +25535,7 @@
 										      	               				<yearpublished value="2005" />
 						               				<minplayers value="3" />
 						               				<maxplayers value="7" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="237">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="238">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
@@ -25557,19 +25557,19 @@
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="37" />
-					<result value="Recommended" numvotes="130" />
+					<result value="Recommended" numvotes="131" />
 					<result value="Not Recommended" numvotes="31" />
 				</results>					
 			
 		<results numplayers="5">		
-					<result value="Best" numvotes="117" />
+					<result value="Best" numvotes="118" />
 					<result value="Recommended" numvotes="87" />
 					<result value="Not Recommended" numvotes="2" />
 				</results>					
 			
 		<results numplayers="6">		
 					<result value="Best" numvotes="132" />
-					<result value="Recommended" numvotes="66" />
+					<result value="Recommended" numvotes="67" />
 					<result value="Not Recommended" numvotes="7" />
 				</results>					
 			
@@ -25608,11 +25608,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="86">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="0" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="5" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="61" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="20" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="5" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="61" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="20" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -25820,22 +25820,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="18609" />
-			<average value="7.15898" />
-			<bayesaverage value="7.05153" />
+			<usersrated value="18638" />
+			<average value="7.15936" />
+			<bayesaverage value="7.05128" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="277" bayesaverage="7.05153" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="95" bayesaverage="7.01556" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="277" bayesaverage="7.05128" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="96" bayesaverage="7.01537" />
 												</ranks>
 
-			<stddev value="1.3915" />
+			<stddev value="1.39146" />
 			<median value="0" />
-			<owned value="21568" />
-			<trading value="547" />
-			<wanting value="956" />
-			<wishing value="5028" />
-			<numcomments value="4773" />
+			<owned value="21597" />
+			<trading value="552" />
+			<wanting value="960" />
+			<wishing value="5041" />
+			<numcomments value="4780" />
 			<numweights value="1844" />
 			<averageweight value="2.5607" />
 			</ratings>
@@ -25996,21 +25996,21 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="160" />
-			<average value="6.63037" />
-			<bayesaverage value="5.68836" />
+			<usersrated value="162" />
+			<average value="6.61025" />
+			<bayesaverage value="5.68689" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3823" bayesaverage="5.68836" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3857" bayesaverage="5.68689" />
 												</ranks>
 
-			<stddev value="1.20493" />
+			<stddev value="1.21601" />
 			<median value="0" />
-			<owned value="600" />
+			<owned value="605" />
 			<trading value="6" />
-			<wanting value="16" />
-			<wishing value="42" />
-			<numcomments value="61" />
+			<wanting value="15" />
+			<wishing value="41" />
+			<numcomments value="62" />
 			<numweights value="10" />
 			<averageweight value="1.5" />
 			</ratings>
@@ -26095,11 +26095,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="256">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="123" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="98" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="32" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
-					<result level="15" value="Unplayable in another language" numvotes="1" />
+					<result level="36" value="No necessary in-game text" numvotes="123" />
+					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="98" />
+					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="32" />
+					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="40" value="Unplayable in another language" numvotes="1" />
 				</results>					
 	</poll> 
 			      			 
@@ -26451,25 +26451,25 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="38417" />
-			<average value="7.38026" />
-			<bayesaverage value="7.30512" />
+			<usersrated value="38494" />
+			<average value="7.37982" />
+			<bayesaverage value="7.30458" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="134" bayesaverage="7.30512" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="116" bayesaverage="7.26272" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="14" bayesaverage="7.29522" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="134" bayesaverage="7.30458" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="116" bayesaverage="7.26208" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="14" bayesaverage="7.2945" />
 												</ranks>
 
-			<stddev value="1.29085" />
+			<stddev value="1.29084" />
 			<median value="0" />
-			<owned value="47289" />
+			<owned value="47402" />
 			<trading value="1029" />
-			<wanting value="900" />
-			<wishing value="6171" />
-			<numcomments value="6710" />
-			<numweights value="2722" />
-			<averageweight value="2.374" />
+			<wanting value="901" />
+			<wishing value="6191" />
+			<numcomments value="6719" />
+			<numweights value="2723" />
+			<averageweight value="2.3739" />
 			</ratings>
 								</statistics>
      
@@ -26493,29 +26493,29 @@
 										      	               				<yearpublished value="2014" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="346">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="348">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="6" />
-					<result value="Not Recommended" numvotes="176" />
+					<result value="Not Recommended" numvotes="177" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="106" />
-					<result value="Recommended" numvotes="176" />
+					<result value="Recommended" numvotes="178" />
 					<result value="Not Recommended" numvotes="24" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="162" />
+					<result value="Best" numvotes="164" />
 					<result value="Recommended" numvotes="143" />
 					<result value="Not Recommended" numvotes="5" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="110" />
-					<result value="Recommended" numvotes="167" />
+					<result value="Recommended" numvotes="169" />
 					<result value="Not Recommended" numvotes="24" />
 				</results>					
 			
@@ -26529,14 +26529,14 @@
 						               				<minplaytime value="30" />
 						               				<maxplaytime value="30" />
 						               				<minage value="10" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="91">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="92">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
 					<result value="4" numvotes="2" />
 					<result value="5" numvotes="3" />
 					<result value="6" numvotes="18" />
-					<result value="8" numvotes="44" />
+					<result value="8" numvotes="45" />
 					<result value="10" numvotes="20" />
 					<result value="12" numvotes="3" />
 					<result value="14" numvotes="0" />
@@ -26548,11 +26548,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="117">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="114" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="2" />
+					<result level="41" value="No necessary in-game text" numvotes="114" />
+					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="45" value="Unplayable in another language" numvotes="2" />
 				</results>					
 	</poll> 
 			      			 
@@ -26792,24 +26792,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="22305" />
-			<average value="7.57434" />
-			<bayesaverage value="7.46458" />
+			<usersrated value="22401" />
+			<average value="7.57381" />
+			<bayesaverage value="7.46403" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="81" bayesaverage="7.46458" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="8" bayesaverage="7.47404" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="83" bayesaverage="7.46403" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="8" bayesaverage="7.47306" />
 												</ranks>
 
-			<stddev value="1.25351" />
+			<stddev value="1.25362" />
 			<median value="0" />
-			<owned value="29500" />
-			<trading value="205" />
-			<wanting value="787" />
-			<wishing value="3944" />
-			<numcomments value="3604" />
-			<numweights value="1303" />
-			<averageweight value="1.8526" />
+			<owned value="29630" />
+			<trading value="203" />
+			<wanting value="782" />
+			<wishing value="3956" />
+			<numcomments value="3621" />
+			<numweights value="1305" />
+			<averageweight value="1.8521" />
 			</ratings>
 								</statistics>
      
@@ -26873,13 +26873,13 @@
 						               				<minplaytime value="15" />
 						               				<maxplaytime value="15" />
 						               				<minage value="8" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="48">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="49">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
 					<result value="4" numvotes="0" />
 					<result value="5" numvotes="4" />
-					<result value="6" numvotes="29" />
+					<result value="6" numvotes="30" />
 					<result value="8" numvotes="14" />
 					<result value="10" numvotes="1" />
 					<result value="12" numvotes="0" />
@@ -26892,11 +26892,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="40">
 			
 		<results>		
-					<result level="36" value="No necessary in-game text" numvotes="26" />
-					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="14" />
-					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="40" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="26" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="14" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -27136,24 +27136,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="12695" />
-			<average value="7.15911" />
-			<bayesaverage value="7.0324" />
+			<usersrated value="12785" />
+			<average value="7.15857" />
+			<bayesaverage value="7.03222" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="290" bayesaverage="7.0324" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="42" bayesaverage="7.04479" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="290" bayesaverage="7.03222" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="42" bayesaverage="7.04425" />
 												</ranks>
 
-			<stddev value="1.10614" />
+			<stddev value="1.10533" />
 			<median value="0" />
-			<owned value="22211" />
-			<trading value="250" />
+			<owned value="22339" />
+			<trading value="249" />
 			<wanting value="230" />
-			<wishing value="1442" />
-			<numcomments value="2316" />
-			<numweights value="679" />
-			<averageweight value="1.1723" />
+			<wishing value="1436" />
+			<numcomments value="2328" />
+			<numweights value="681" />
+			<averageweight value="1.1718" />
 			</ratings>
 								</statistics>
      
@@ -27544,22 +27544,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="6622" />
-			<average value="6.2813" />
-			<bayesaverage value="6.14586" />
+			<usersrated value="6630" />
+			<average value="6.28254" />
+			<bayesaverage value="6.14684" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1475" bayesaverage="6.14586" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="149" bayesaverage="6.1243" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1478" bayesaverage="6.14684" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="149" bayesaverage="6.12545" />
 												</ranks>
 
-			<stddev value="1.52287" />
+			<stddev value="1.52244" />
 			<median value="0" />
-			<owned value="9499" />
+			<owned value="9523" />
 			<trading value="240" />
 			<wanting value="13" />
-			<wishing value="168" />
-			<numcomments value="1567" />
+			<wishing value="167" />
+			<numcomments value="1566" />
 			<numweights value="504" />
 			<averageweight value="1.244" />
 			</ratings>
@@ -27634,11 +27634,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="1" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -27727,16 +27727,16 @@
    		<statistics page="1">
 								<ratings >
 			<usersrated value="81" />
-			<average value="6.35123" />
-			<bayesaverage value="5.5732" />
+			<average value="6.33272" />
+			<bayesaverage value="5.57146" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6339" bayesaverage="5.5732" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6408" bayesaverage="5.57146" />
 												</ranks>
 
-			<stddev value="1.15588" />
+			<stddev value="1.18111" />
 			<median value="0" />
-			<owned value="544" />
+			<owned value="546" />
 			<trading value="6" />
 			<wanting value="6" />
 			<wishing value="21" />
@@ -28029,22 +28029,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1627" />
-			<average value="7.22662" />
-			<bayesaverage value="6.64025" />
+			<usersrated value="1633" />
+			<average value="7.22548" />
+			<bayesaverage value="6.6415" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="613" bayesaverage="6.64025" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="101" bayesaverage="6.77916" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="614" bayesaverage="6.6415" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="101" bayesaverage="6.77815" />
 												</ranks>
 
-			<stddev value="1.08777" />
+			<stddev value="1.09077" />
 			<median value="0" />
-			<owned value="2920" />
-			<trading value="36" />
+			<owned value="2938" />
+			<trading value="37" />
 			<wanting value="167" />
-			<wishing value="605" />
-			<numcomments value="352" />
+			<wishing value="608" />
+			<numcomments value="353" />
 			<numweights value="93" />
 			<averageweight value="1.4624" />
 			</ratings>
@@ -28133,11 +28133,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="121">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="0" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="70" />
-					<result level="5" value="Unplayable in another language" numvotes="51" />
+					<result level="6" value="No necessary in-game text" numvotes="0" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="70" />
+					<result level="10" value="Unplayable in another language" numvotes="51" />
 				</results>					
 	</poll> 
 			      			 
@@ -28345,22 +28345,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="7557" />
-			<average value="7.29672" />
-			<bayesaverage value="7.08682" />
+			<usersrated value="7569" />
+			<average value="7.29648" />
+			<bayesaverage value="7.08611" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="246" bayesaverage="7.08682" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="77" bayesaverage="7.11613" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="246" bayesaverage="7.08611" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="77" bayesaverage="7.11479" />
 												</ranks>
 
-			<stddev value="1.57463" />
+			<stddev value="1.57569" />
 			<median value="0" />
-			<owned value="10711" />
-			<trading value="232" />
-			<wanting value="678" />
-			<wishing value="2805" />
-			<numcomments value="2078" />
+			<owned value="10718" />
+			<trading value="235" />
+			<wanting value="679" />
+			<wishing value="2807" />
+			<numcomments value="2077" />
 			<numweights value="521" />
 			<averageweight value="2.1766" />
 			</ratings>
@@ -28400,42 +28400,42 @@
 										      	               				<yearpublished value="2004" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="634">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="637">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="4" />
-					<result value="Not Recommended" numvotes="408" />
+					<result value="Not Recommended" numvotes="411" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="59" />
-					<result value="Recommended" numvotes="313" />
+					<result value="Recommended" numvotes="316" />
 					<result value="Not Recommended" numvotes="163" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="164" />
-					<result value="Recommended" numvotes="363" />
+					<result value="Best" numvotes="166" />
+					<result value="Recommended" numvotes="364" />
 					<result value="Not Recommended" numvotes="33" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="414" />
-					<result value="Recommended" numvotes="169" />
+					<result value="Best" numvotes="416" />
+					<result value="Recommended" numvotes="170" />
 					<result value="Not Recommended" numvotes="12" />
 				</results>					
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="224" />
-					<result value="Recommended" numvotes="284" />
+					<result value="Recommended" numvotes="287" />
 					<result value="Not Recommended" numvotes="35" />
 				</results>					
 			
 		<results numplayers="5+">		
 					<result value="Best" numvotes="4" />
-					<result value="Recommended" numvotes="12" />
-					<result value="Not Recommended" numvotes="295" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="296" />
 				</results>					
 	</poll> 
 			               				<playingtime value="60" />
@@ -28461,11 +28461,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="196">
 			
 		<results>		
-					<result level="11" value="No necessary in-game text" numvotes="171" />
-					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="23" />
-					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
-					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="15" value="Unplayable in another language" numvotes="1" />
+					<result level="26" value="No necessary in-game text" numvotes="171" />
+					<result level="27" value="Some necessary text - easily memorized or small crib sheet" numvotes="23" />
+					<result level="28" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="29" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="30" value="Unplayable in another language" numvotes="1" />
 				</results>					
 	</poll> 
 			      			 
@@ -29176,6 +29176,14 @@
 
 			
 		
+					<link type="boardgameexpansion" id="206639" value="Serbia (fan expansion of Ticket to Ride)" />
+		
+									
+				
+		 			
+
+			
+		
 					<link type="boardgameexpansion" id="185215" value="Slovakia (fan expansion to Ticket to Ride)" />
 		
 									
@@ -29665,24 +29673,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="42923" />
-			<average value="7.4955" />
-			<bayesaverage value="7.406" />
+			<usersrated value="43015" />
+			<average value="7.49513" />
+			<bayesaverage value="7.40566" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="99" bayesaverage="7.406" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="10" bayesaverage="7.40359" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="99" bayesaverage="7.40566" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="10" bayesaverage="7.40319" />
 												</ranks>
 
-			<stddev value="1.28344" />
+			<stddev value="1.28312" />
 			<median value="0" />
-			<owned value="51745" />
-			<trading value="468" />
-			<wanting value="664" />
-			<wishing value="4014" />
-			<numcomments value="8916" />
-			<numweights value="3900" />
-			<averageweight value="1.8841" />
+			<owned value="51891" />
+			<trading value="475" />
+			<wanting value="665" />
+			<wishing value="4028" />
+			<numcomments value="8928" />
+			<numweights value="3902" />
+			<averageweight value="1.8844" />
 			</ratings>
 								</statistics>
      
@@ -29729,18 +29737,18 @@
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="3" />
-					<result value="Not Recommended" numvotes="253" />
+					<result value="Not Recommended" numvotes="252" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="17" />
-					<result value="Recommended" numvotes="236" />
+					<result value="Recommended" numvotes="235" />
 					<result value="Not Recommended" numvotes="132" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="105" />
-					<result value="Recommended" numvotes="263" />
+					<result value="Best" numvotes="104" />
+					<result value="Recommended" numvotes="264" />
 					<result value="Not Recommended" numvotes="16" />
 				</results>					
 			
@@ -29752,14 +29760,14 @@
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="163" />
-					<result value="Recommended" numvotes="202" />
+					<result value="Recommended" numvotes="201" />
 					<result value="Not Recommended" numvotes="21" />
 				</results>					
 			
 		<results numplayers="5+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="7" />
-					<result value="Not Recommended" numvotes="194" />
+					<result value="Not Recommended" numvotes="193" />
 				</results>					
 	</poll> 
 			               				<playingtime value="60" />
@@ -29785,11 +29793,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="140">
 			
 		<results>		
-					<result level="31" value="No necessary in-game text" numvotes="132" />
-					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
-					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="35" value="Unplayable in another language" numvotes="0" />
+					<result level="11" value="No necessary in-game text" numvotes="132" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -30477,24 +30485,24 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="30798" />
-			<average value="7.59695" />
-			<bayesaverage value="7.49126" />
+			<usersrated value="30862" />
+			<average value="7.59642" />
+			<bayesaverage value="7.4906" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="76" bayesaverage="7.49126" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="6" bayesaverage="7.49867" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="76" bayesaverage="7.4906" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="6" bayesaverage="7.49806" />
 												</ranks>
 
-			<stddev value="1.19232" />
+			<stddev value="1.19284" />
 			<median value="0" />
-			<owned value="37511" />
-			<trading value="276" />
-			<wanting value="739" />
-			<wishing value="3650" />
-			<numcomments value="5666" />
-			<numweights value="2764" />
-			<averageweight value="1.9682" />
+			<owned value="37616" />
+			<trading value="279" />
+			<wanting value="738" />
+			<wishing value="3661" />
+			<numcomments value="5672" />
+			<numweights value="2765" />
+			<averageweight value="1.9685" />
 			</ratings>
 								</statistics>
      
@@ -30662,12 +30670,12 @@
 			<bayesaverage value="5.4396" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="11800" bayesaverage="5.4396" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="11819" bayesaverage="5.4396" />
 												</ranks>
 
 			<stddev value="1.67544" />
 			<median value="0" />
-			<owned value="479" />
+			<owned value="482" />
 			<trading value="9" />
 			<wanting value="4" />
 			<wishing value="8" />
@@ -30844,19 +30852,19 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="592" />
-			<average value="6.53363" />
-			<bayesaverage value="5.93414" />
+			<usersrated value="593" />
+			<average value="6.53611" />
+			<bayesaverage value="5.93565" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2143" bayesaverage="5.93414" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="596" bayesaverage="6.03147" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2143" bayesaverage="5.93565" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="593" bayesaverage="6.03333" />
 												</ranks>
 
-			<stddev value="1.72876" />
+			<stddev value="1.72835" />
 			<median value="0" />
-			<owned value="942" />
-			<trading value="6" />
+			<owned value="943" />
+			<trading value="7" />
 			<wanting value="2" />
 			<wishing value="5" />
 			<numcomments value="268" />
@@ -30881,73 +30889,73 @@
 										      	               				<yearpublished value="2004" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="8" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="167">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="168">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="2" />
 					<result value="Recommended" numvotes="5" />
-					<result value="Not Recommended" numvotes="90" />
+					<result value="Not Recommended" numvotes="91" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="13" />
-					<result value="Recommended" numvotes="62" />
+					<result value="Recommended" numvotes="63" />
 					<result value="Not Recommended" numvotes="62" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="19" />
+					<result value="Best" numvotes="20" />
 					<result value="Recommended" numvotes="88" />
 					<result value="Not Recommended" numvotes="21" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="78" />
+					<result value="Best" numvotes="79" />
 					<result value="Recommended" numvotes="63" />
 					<result value="Not Recommended" numvotes="4" />
 				</results>					
 			
 		<results numplayers="5">		
-					<result value="Best" numvotes="57" />
+					<result value="Best" numvotes="58" />
 					<result value="Recommended" numvotes="71" />
 					<result value="Not Recommended" numvotes="5" />
 				</results>					
 			
 		<results numplayers="6">		
-					<result value="Best" numvotes="69" />
+					<result value="Best" numvotes="70" />
 					<result value="Recommended" numvotes="54" />
 					<result value="Not Recommended" numvotes="11" />
 				</results>					
 			
 		<results numplayers="7">		
 					<result value="Best" numvotes="38" />
-					<result value="Recommended" numvotes="61" />
+					<result value="Recommended" numvotes="62" />
 					<result value="Not Recommended" numvotes="19" />
 				</results>					
 			
 		<results numplayers="8">		
 					<result value="Best" numvotes="36" />
-					<result value="Recommended" numvotes="61" />
+					<result value="Recommended" numvotes="62" />
 					<result value="Not Recommended" numvotes="19" />
 				</results>					
 			
 		<results numplayers="8+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="2" />
-					<result value="Not Recommended" numvotes="59" />
+					<result value="Not Recommended" numvotes="60" />
 				</results>					
 	</poll> 
 			               				<playingtime value="15" />
 						               				<minplaytime value="15" />
 						               				<maxplaytime value="15" />
 						               				<minage value="8" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="66">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="67">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="1" />
 					<result value="4" numvotes="6" />
 					<result value="5" numvotes="16" />
-					<result value="6" numvotes="27" />
+					<result value="6" numvotes="28" />
 					<result value="8" numvotes="14" />
 					<result value="10" numvotes="2" />
 					<result value="12" numvotes="0" />
@@ -30960,11 +30968,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="60">
 			
 		<results>		
-					<result level="1" value="No necessary in-game text" numvotes="60" />
-					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
-					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="5" value="Unplayable in another language" numvotes="0" />
+					<result level="16" value="No necessary in-game text" numvotes="60" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -31156,25 +31164,25 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="13225" />
-			<average value="6.67862" />
-			<bayesaverage value="6.57413" />
+			<usersrated value="13270" />
+			<average value="6.67915" />
+			<bayesaverage value="6.57394" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="700" bayesaverage="6.57413" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="112" bayesaverage="6.32824" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="176" bayesaverage="6.5622" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="702" bayesaverage="6.57394" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="112" bayesaverage="6.32801" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="176" bayesaverage="6.56183" />
 												</ranks>
 
-			<stddev value="1.32949" />
+			<stddev value="1.33002" />
 			<median value="0" />
-			<owned value="17462" />
-			<trading value="376" />
-			<wanting value="345" />
-			<wishing value="2051" />
-			<numcomments value="3198" />
-			<numweights value="1079" />
-			<averageweight value="1.2669" />
+			<owned value="17519" />
+			<trading value="380" />
+			<wanting value="346" />
+			<wishing value="2054" />
+			<numcomments value="3202" />
+			<numweights value="1080" />
+			<averageweight value="1.2667" />
 			</ratings>
 								</statistics>
      
@@ -31403,11 +31411,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="6">
 			
 		<results>		
-					<result level="6" value="No necessary in-game text" numvotes="1" />
-					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="5" />
-					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="10" value="Unplayable in another language" numvotes="0" />
+					<result level="21" value="No necessary in-game text" numvotes="1" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="5" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -31567,22 +31575,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="1670" />
-			<average value="7.13652" />
-			<bayesaverage value="6.57954" />
+			<usersrated value="1678" />
+			<average value="7.13003" />
+			<bayesaverage value="6.57668" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="695" bayesaverage="6.57954" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="32" bayesaverage="6.85839" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="698" bayesaverage="6.57668" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="32" bayesaverage="6.8533" />
 												</ranks>
 
-			<stddev value="1.66807" />
+			<stddev value="1.67031" />
 			<median value="0" />
-			<owned value="2712" />
-			<trading value="55" />
-			<wanting value="208" />
-			<wishing value="1063" />
-			<numcomments value="494" />
+			<owned value="2729" />
+			<trading value="60" />
+			<wanting value="207" />
+			<wishing value="1068" />
+			<numcomments value="496" />
 			<numweights value="96" />
 			<averageweight value="1.4375" />
 			</ratings>
@@ -31675,11 +31683,11 @@
 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="59">
 			
 		<results>		
-					<result level="46" value="No necessary in-game text" numvotes="51" />
-					<result level="47" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
-					<result level="48" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
-					<result level="49" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
-					<result level="50" value="Unplayable in another language" numvotes="0" />
+					<result level="1" value="No necessary in-game text" numvotes="51" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
 				</results>					
 	</poll> 
 			      			 
@@ -32231,22 +32239,22 @@
 	
    		<statistics page="1">
 								<ratings >
-			<usersrated value="11111" />
-			<average value="6.8863" />
-			<bayesaverage value="6.76915" />
+			<usersrated value="11120" />
+			<average value="6.88579" />
+			<bayesaverage value="6.76881" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="499" bayesaverage="6.76915" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="97" bayesaverage="6.79664" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="499" bayesaverage="6.76881" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="97" bayesaverage="6.79627" />
 												</ranks>
 
-			<stddev value="1.16933" />
+			<stddev value="1.16932" />
 			<median value="0" />
-			<owned value="13404" />
+			<owned value="13417" />
 			<trading value="421" />
 			<wanting value="388" />
-			<wishing value="1504" />
-			<numcomments value="2916" />
+			<wishing value="1506" />
+			<numcomments value="2919" />
 			<numweights value="1059" />
 			<averageweight value="1.865" />
 			</ratings>
