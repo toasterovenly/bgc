@@ -6,15 +6,17 @@ import pdfWriter
 
 userName = "toasterovenly"
 playerName = None
+outPath = "output\\"
+outFile = outPath + userName + ".pdf"
 
 
-pdfWriter.writeToFile(userName + ".pdf", [])
+pdfWriter.writeToFile(outFile, [])
 
 
 ################################################################################
 
 def exportToCsv(gameData):
-	pdfWriter.writeToFile(userName + ".pdf", gameData)
+	pdfWriter.writeToFile(outFile, gameData)
 	lines = []
 	for game in gameData:
 
@@ -39,10 +41,10 @@ def exportToCsv(gameData):
 		lines.append(fileLine)
 
 	# mkdir_p("output")
-	with open("collection.csv", "w", encoding='utf-8') as text_file:
+	with open(outPath + "collection.csv", "w", encoding='utf-8') as text_file:
 		for line in lines:
 			text_file.write(line + "\n")
-	with open("userName.csv", "w", encoding='utf-8') as text_file:
+	with open(outPath + "userName.csv", "w", encoding='utf-8') as text_file:
 		if playerName != None:
 			text_file.write(playerName + "\n")
 		else:

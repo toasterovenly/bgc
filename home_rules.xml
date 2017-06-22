@@ -1,70 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<items pubdate="Sun, 14 Aug 2016 17:53:33 +0000" termsofuse="http://boardgamegeek.com/xmlapi/termsofuse" totalitems="76">
+<items>
 	<item collid="8169383" objectid="3955" objecttype="thing" subtype="boardgame">
 		<name sortindex="1">BANG!</name>
-		<stats maxplayers="12" maxplaytime="90">
-		</stats>
+		<stats maxplayers="12" maxplaytime="90"></stats>
 	</item>
 	<item collid="12115960" objectid="39856" objecttype="thing" subtype="boardgame">
 		<name sortindex="1">Dixit</name>
-		<yearpublished>2008</yearpublished>
-		<image>//cf.geekdo-images.com/images/pic455883.jpg</image>
-		<thumbnail>//cf.geekdo-images.com/images/pic455883_t.jpg</thumbnail>
-		<stats maxplayers="6" maxplaytime="30" minplayers="3" minplaytime="30" numowned="33996" playingtime="30">
-			<rating value="N/A">
-				<usersrated value="26773"/>
-				<average value="7.38334"/>
-				<bayesaverage value="7.29126"/>
-				<stddev value="1.35645"/>
-				<median value="0"/>
-				<ranks>
-					<rank bayesaverage="7.29126" friendlyname="Board Game Rank" id="1" name="boardgame" type="subtype" value="139"/>
-					<rank bayesaverage="7.26285" friendlyname="Party Game Rank" id="5498" name="partygames" type="family" value="11"/>
-				</ranks>
-			</rating>
-		</stats>
-		<status fortrade="0" lastmodified="2011-01-26 01:13:24" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
-		<numplays>1</numplays>
+		<stats maxplayers="6"></stats>
 	</item>
 	<item collid="8169447" objectid="12942" objecttype="thing" subtype="boardgame">
 		<name sortindex="1">No Thanks!</name>
-		<yearpublished>2005</yearpublished>
-		<image>//cf.geekdo-images.com/images/pic117996.jpg</image>
-		<thumbnail>//cf.geekdo-images.com/images/pic117996_t.jpg</thumbnail>
-		<stats maxplayers="5" maxplaytime="20" minplayers="3" minplaytime="20" numowned="16498" playingtime="20">
-			<rating value="7">
-				<usersrated value="13005"/>
-				<average value="7.04199"/>
-				<bayesaverage value="6.94606"/>
-				<stddev value="1.16863"/>
-				<median value="0"/>
-				<ranks>
-					<rank bayesaverage="6.94606" friendlyname="Board Game Rank" id="1" name="boardgame" type="subtype" value="353"/>
-					<rank bayesaverage="6.97388" friendlyname="Family Game Rank" id="5499" name="familygames" type="family" value="56"/>
-				</ranks>
-			</rating>
-		</stats>
-		<status fortrade="0" lastmodified="2010-04-02 06:05:21" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
-		<numplays>17</numplays>
-	</item>
-	<item collid="30892626" objectid="21804" objecttype="thing" subtype="boardgame">
-		<name sortindex="1">Traditional Card Games</name>
-		<image>//cf.geekdo-images.com/images/pic111209.jpg</image>
-		<thumbnail>//cf.geekdo-images.com/images/pic111209_t.jpg</thumbnail>
-		<stats numowned="942">
-			<rating value="N/A">
-				<usersrated value="592"/>
-				<average value="6.53363"/>
-				<bayesaverage value="5.93414"/>
-				<stddev value="1.72876"/>
-				<median value="0"/>
-				<ranks>
-					<rank bayesaverage="5.93414" friendlyname="Board Game Rank" id="1" name="boardgame" type="subtype" value="2143"/>
-					<rank bayesaverage="6.03147" friendlyname="Family Game Rank" id="5499" name="familygames" type="family" value="596"/>
-				</ranks>
-			</rating>
-		</stats>
-		<status fortrade="0" lastmodified="2015-10-22 16:30:18" own="1" preordered="0" prevowned="0" want="0" wanttobuy="0" wanttoplay="0" wishlist="0"/>
-		<numplays>0</numplays>
+		<stats maxplayers="5"></stats>
 	</item>
 </items>
