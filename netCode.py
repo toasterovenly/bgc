@@ -98,22 +98,21 @@ def getUserData(args):
         return args.outPath + args.userName + "-" + tag + args.filePostfix + ".xml"
 
     # request game data from bgg
-    collection = getUrl(urls["myBoardgames"], "get collection")
-    collectionRoot = getRoot(collection)
-    dumpToFile(collection, outFileName("collection"))
+    collectionXml = getUrl(urls["myBoardgames"], "get collection")
+    collectionRoot = getRoot(collectionXml)
+    if args.intermediate:
+        dumpToFile(collectionXml, outFileName("collection"))
 
-    gameIds = ""
-    gameData = []
+    gameIdsStr = ""
+    gamesById = {}
     for item in collectionRoot:
-        thing = {
-            "id": item.get("objectid"),
-            "name": item.find("name").text,
-        }
-        gameData.append(thing)
-        gameIds += str(thing["id"]) + ","
-    gameIds = gameIds[:-1]
-    games = getUrl(urls["games"] + gameIds, "get full game data")
-    dumpToFile(games, outFileName("games"))
-    gamesRoot = getRoot(games)
+        gameId = item.get("objectid")
+        gamesById[gameId] = {}
+        gameIdsStr += gameId + ","
+    gameIdsStr = gameIdsStr[:-1]
+    gamesXml = getUrl(urls["games"] + gameIdsStr, "get full game data")
+    if args.intermediate:
+        dumpToFile(gamesXml, outFileName("games"))
+    gamesRoot = getRoot(gamesXml)
 
-    return (gameData, gamesRoot)
+    return (gamesRoot, gamesById)

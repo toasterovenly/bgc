@@ -10,7 +10,7 @@ import reportlab.lib.pagesizes as pagesizes
 pageSize = pagesizes.LETTER
 styles = getSampleStyleSheet()
 
-print("pageSize", pageSize)
+# print("pageSize", pageSize)
 
 TEXT = """%s    page %d of %d
 a wonderful file
@@ -36,6 +36,9 @@ def make_pdf_file(output_filename, np):
 
 def writeToFile(filename, gameData):
     page = make_pdf_file(filename, 5)
-    print("page created?")
-    print(page)
-    print(gameData)
+    # print("page created?")
+    # print(page)
+    # print(gameData)
+
+# def makeRow(gameData):
+

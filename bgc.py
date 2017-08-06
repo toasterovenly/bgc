@@ -47,39 +47,43 @@ def exportToCsv(gameData):
 ################################################################################
 
 def process(args):
-    gameData, gamesRoot = netCode.getUserData(args)
+    gamesXmlRoot, gamesById = netCode.getUserData(args)
 
     print("")
+    gameData = [] # alphabetical
 
-    if len(gamesRoot) == 0:
-        return
+    # do it all in one pass!
+    for game in gamesXmlRoot:
+        thingId = game.get("id")
+        thingType = game.get("type")
+        data = gamesById.get(thingId)
 
-    i = 0
-    for game in gamesRoot:
-        data = gameData[i]
-        data["minplayers"] = data["eMinplayers"] = game.find("minplayers").get("value")
-        data["maxplayers"] = data["eMaxplayers"] = game.find("maxplayers").get("value")
-        data["minplaytime"] = data["eMinplaytime"] = game.find("minplaytime").get("value")
-        data["maxplaytime"] = data["eMaxplaytime"] = game.find("maxplaytime").get("value")
+        data["name"] = game.find("name").get("value")
+        data["minplayers"] = game.find("minplayers").get("value")
+        data["maxplayers"] = game.find("maxplayers").get("value")
+        data["minplaytime"] = game.find("minplaytime").get("value")
+        data["maxplaytime"] = game.find("maxplaytime").get("value")
         data["yearpublished"] = game.find("yearpublished").get("value")
         data["weight"] = game.find("statistics/ratings/averageweight").get("value")
 
-    print(gameData[i]["name"])
+        if thingType == "boardgameexpansion":
+            parents = game.findall("link[@type='boardgameexpansion']")
+            for p in parents:
+                parentId = p.get("id")
+                if parentId not in gamesById:
+                    continue
+                parent = gamesById.get(parentId)
+                if "expansions" not in parent:
+                    parent["expansions"] = []
+                parent["expansions"].append(data)
+        elif thingType == "boardgame":
+            if "expansions" not in data:
+                data["expansions"] = []
+            gameData.append(data)
+            gamesById[thingId] = data
 
-    expansions = gamesRoot.findall("link[@type='boardgameexpansion']")
-    for e in expansions:
-        eId = e.get("id")
-        eFromCollection = eRoot.findall("item[@objectid='" + eId + "']")
-        if len(eFromCollection) > 0:
-            eFromCollection = eFromCollection[0]
-            name = eFromCollection.find("name").text
-            print("\t" + name)
-            stats = eFromCollection.find("stats")
-            data["eMinplayers"] = min(data["eMinplayers"], stats.get("minplayers"))
-            data["eMaxplayers"] = max(data["eMaxplayers"], stats.get("maxplayers"))
-            data["eMinplaytime"] = min(data["eMinplaytime"], stats.get("minplaytime"))
-            data["eMaxplaytime"] = max(data["eMaxplaytime"], stats.get("maxplaytime"))
-    i += 1
+        if args.verbose:
+            print(data["name"])
 
     # todo:
     # read homerules and adjust stats
@@ -91,7 +95,8 @@ def process(args):
 # handle command line args
 
 def parse():
-    parser = argparse.ArgumentParser(description="Get your boardgame collection from Board Game Geek.")
+    parser = argparse.ArgumentParser(description="Get your boardgame collection"
+                                     + " from Board Game Geek.")
     parser.add_argument("userName",
                         help="The username of the player whose collection you want.")
     parser.add_argument("-p", "--playerName",
@@ -102,6 +107,11 @@ def parse():
                         + " this if you delete items from your collection.")
     parser.add_argument("-t", "--timestamp", action='store_true',
                         help="Output files will have a timestamp appended to their name.")
+    parser.add_argument("-i", "--intermediate", action='store_true',
+                        help="Output intermediate xml files. This is useful if you want"
+                        + " to create homerules.")
+    parser.add_argument("-v", "--verbose", action='store_true',
+                        help="Print verbose output.")
 
     args = parser.parse_args()
     args.time = datetime.now()
@@ -112,7 +122,9 @@ def parse():
     args.outFile = outPath + args.userName + args.filePostfix + ".pdf"
     args.outPath = outPath
 
-    print("got args", args)
+    if args.verbose:
+        print("got args", args)
     return args
 
 process(parse())
+print("done.")
