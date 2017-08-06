@@ -27,6 +27,7 @@ def generateURLs(userName):
         "id": "id=",
         "stats": "stats=1",
         "brief": "brief=1",
+        "modifiedsince": "modifiedsince=",
     }
     global urls
     urls = {
@@ -72,9 +73,9 @@ def getRoot(someBytes):
 
 def dumpToFile(someBytes, fileName):
     pass
-    # with open(fileName, "w", encoding='utf-8') as text_file:
-    #     someBytes = str(someBytes, 'utf-8')
-    #     text_file.write(someBytes)
+    with open(fileName, "w", encoding='utf-8') as text_file:
+        someBytes = str(someBytes, 'utf-8')
+        text_file.write(someBytes)
 
 def getHomeRules():
     tree = ET.parse("home_rules.xml")
@@ -98,7 +99,7 @@ def getUserData(userName, playerName):
     # request game data from bgg
     collection = getUrl(urls["myBoardgames"], "get collection")
     root = getRoot(collection)
-    # dumpToFile(collection, "collection.xml")
+    dumpToFile(collection, "collection.xml")
 
     gameIds = ""
     gameData = []

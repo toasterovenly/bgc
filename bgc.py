@@ -1,37 +1,31 @@
 import sys
+import argparse
+from datetime import datetime
 import netCode
 import pdfWriter
 
 ################################################################################
 
-userName = "toasterovenly"
-playerName = None
 outPath = "output\\"
-outFile = outPath + userName + ".pdf"
-
-
-pdfWriter.writeToFile(outFile, [])
-
 
 ################################################################################
 
 def exportToCsv(gameData):
-    pdfWriter.writeToFile(outFile, gameData)
     lines = []
     for game in gameData:
 
         line = []
-        line.append(game["name"])
-        line.append(game["eMinplayers"])
-        line.append(game["minplayers"])
-        line.append(game["maxplayers"])
-        line.append(game["eMaxplayers"])
-        line.append(game["eMinplaytime"])
-        line.append(game["minplaytime"])
-        line.append(game["maxplaytime"])
-        line.append(game["eMaxplaytime"])
-        line.append(game["weight"])
-        line.append(game["yearpublished"])
+        line.append(game.get("name"))
+        line.append(game.get("eMinplayers", -1))
+        line.append(game.get("minplayers", -1))
+        line.append(game.get("maxplayers", -1))
+        line.append(game.get("eMaxplayers", -1))
+        line.append(game.get("eMinplaytime", -1))
+        line.append(game.get("minplaytime", -1))
+        line.append(game.get("maxplaytime", -1))
+        line.append(game.get("eMaxplaytime", -1))
+        line.append(game.get("weight", -1))
+        line.append(game.get("yearpublished", -1))
 
         # convert to csv
         fileLine = ""
@@ -52,50 +46,72 @@ def exportToCsv(gameData):
 
 ################################################################################
 
-# # handle command line args
-# if len(sys.argv) < 2 or len(sys.argv) > 3:
-#   print("usage: python bgc.py userName [player name]")
-#   exit()
+def process(args):
+    gameData, root, gamesRoot, eRoot = netCode.getUserData(args.userName, args.playerName)
 
-# userName = sys.argv[1]
+    print("")
 
-# if len(sys.argv) > 2:
-#   playerName = sys.argv[2]
-# else:
-#   playerName = userName
+    if len(gamesRoot) == 0:
+        return
 
-# gameData, root, gamesRoot, eRoot = netCode.getUserData(userName, playerName)
+    i = 0
+    for game in gamesRoot:
+        data = gameData[i]
+        data["minplayers"] = data["eMinplayers"] = game.find("minplayers").get("value")
+        data["maxplayers"] = data["eMaxplayers"] = game.find("maxplayers").get("value")
+        data["minplaytime"] = data["eMinplaytime"] = game.find("minplaytime").get("value")
+        data["maxplaytime"] = data["eMaxplaytime"] = game.find("maxplaytime").get("value")
+        data["yearpublished"] = game.find("yearpublished").get("value")
+        data["weight"] = game.find("statistics/ratings/averageweight").get("value")
 
-# print("")
+    print(gameData[i]["name"])
 
-# i = 0
-# for game in gamesRoot:
-#   data = gameData[i]
-#   data["minplayers"] = data["eMinplayers"] = game.find("minplayers").get("value")
-#   data["maxplayers"] = data["eMaxplayers"] = game.find("maxplayers").get("value")
-#   data["minplaytime"] = data["eMinplaytime"] = game.find("minplaytime").get("value")
-#   data["maxplaytime"] = data["eMaxplaytime"] = game.find("maxplaytime").get("value")
-#   data["yearpublished"] = game.find("yearpublished").get("value")
-#   data["weight"] = game.find("statistics/ratings/averageweight").get("value")
+    expansions = gamesRoot.findall("link[@type='boardgameexpansion']")
+    for e in expansions:
+        eId = e.get("id")
+        eFromCollection = eRoot.findall("item[@objectid='" + eId + "']")
+        if len(eFromCollection) > 0:
+            eFromCollection = eFromCollection[0]
+            name = eFromCollection.find("name").text
+            print("\t" + name)
+            stats = eFromCollection.find("stats")
+            data["eMinplayers"] = min(data["eMinplayers"], stats.get("minplayers"))
+            data["eMaxplayers"] = max(data["eMaxplayers"], stats.get("maxplayers"))
+            data["eMinplaytime"] = min(data["eMinplaytime"], stats.get("minplaytime"))
+            data["eMaxplaytime"] = max(data["eMaxplaytime"], stats.get("maxplaytime"))
+    i += 1
 
-#   print(gameData[i]["name"])
+    # todo:
+    # read homerules and adjust stats
 
-#   expansions = game.findall("link[@type='boardgameexpansion']")
-#   for e in expansions:
-#       eId = e.get("id")
-#       eFromCollection = eRoot.findall("item[@objectid='" + eId + "']")
-#       if len(eFromCollection) > 0:
-#           eFromCollection = eFromCollection[0]
-#           name = eFromCollection.find("name").text
-#           print("\t" + name)
-#           stats = eFromCollection.find("stats")
-#           data["eMinplayers"] = min(data["eMinplayers"], stats.get("minplayers"))
-#           data["eMaxplayers"] = max(data["eMaxplayers"], stats.get("maxplayers"))
-#           data["eMinplaytime"] = min(data["eMinplaytime"], stats.get("minplaytime"))
-#           data["eMaxplaytime"] = max(data["eMaxplaytime"], stats.get("maxplaytime"))
-#   i += 1
+    # exportToCsv(gameData)
+    pdfWriter.writeToFile(args.outFile, gameData)
 
-#   # todo:
-#   # read homerules and adjust stats
+###############################################################################
+# handle command line args
 
-# exportToCsv(gameData)
+def parse():
+    parser = argparse.ArgumentParser(description="Get your boardgame collection from Board Game Geek.")
+    parser.add_argument("userName",
+                       help="the username of the player whose collection you want")
+    parser.add_argument("-p", "--playerName",
+                        help="the name of the human player that this user represents")
+    parser.add_argument("-f", "--force", action='store_true',
+                        help="force retrieve the user's full collection from bgg.com,"
+                        + " otherwise only updates will be retrieved")
+    parser.add_argument("-t", "--timestamp", action='store_true',
+                        help="output files will have a timestamp appended to their name")
+
+    args = parser.parse_args()
+    args.time = datetime.now()
+    if args.timestamp:
+        args.filePostfix = args.time.strftime("-%Y%m%d%H%M%S")
+    else:
+        args.filePostfix = ""
+    args.outFile = outPath + args.userName + args.filePostfix + ".pdf"
+
+    print("got args", args)
+    return args
+
+process(parse())
+
