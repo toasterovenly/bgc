@@ -44,6 +44,17 @@ def exportToCsv(gameData):
         else:
             text_file.write(userName + "\n")
 
+def setv(obj, k, v, pred):
+    """
+    sets or updates a value
+    if pred is supplied, the new value is the result of pred(oldVal, newVal)
+    """
+    if pred and k in obj:
+        obj[k] = pred(obj[k], v)
+        return
+    obj[k] = v
+
+
 ################################################################################
 
 def process(args):
@@ -51,6 +62,8 @@ def process(args):
 
     print("")
     gameData = [] # alphabetical
+    collectionStats = {
+    }
 
     # do it all in one pass!
     for game in gamesXmlRoot:
@@ -66,27 +79,36 @@ def process(args):
         data["yearpublished"] = game.find("yearpublished").get("value")
         data["weight"] = game.find("statistics/ratings/averageweight").get("value")
 
-        if thingType == "boardgameexpansion":
+        # there are issues with some games that have 0 as values
+        # TODO: figure out a valid range
+        setv(collectionStats, "minPlayers", data["minplayers"], min)
+        setv(collectionStats, "maxPlayers", data["maxplayers"], max)
+        setv(collectionStats, "minplaytime", data["minplaytime"], min)
+        setv(collectionStats, "maxplaytime", data["maxplaytime"], max)
+        setv(collectionStats, "minweight", data["weight"], min)
+        setv(collectionStats, "maxweight", data["weight"], max)
+
+        if thingType == "boardgame":
+            data["index"] = len(gameData)
+            data.setdefault("expansions", [])
+            gameData.append(data)
+            gamesById[thingId] = data
+        elif thingType == "boardgameexpansion":
             parents = game.findall("link[@type='boardgameexpansion']")
             for p in parents:
                 parentId = p.get("id")
                 if parentId not in gamesById:
                     continue
                 parent = gamesById.get(parentId)
-                if "expansions" not in parent:
-                    parent["expansions"] = []
+                parent.setdefault("expansions", [])
                 parent["expansions"].append(data)
-        elif thingType == "boardgame":
-            if "expansions" not in data:
-                data["expansions"] = []
-            gameData.append(data)
-            gamesById[thingId] = data
 
         if args.verbose:
             print(data["name"])
 
     # todo:
     # read homerules and adjust stats
+    print("collectionStats", collectionStats)
 
     # exportToCsv(gameData)
     pdfWriter.writeToFile(args.outFile, gameData)
