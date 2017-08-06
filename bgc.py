@@ -99,17 +99,17 @@ def parse():
                                      + " from Board Game Geek.")
     parser.add_argument("userName",
                         help="The username of the player whose collection you want.")
-    parser.add_argument("-p", "--playerName",
-                        help="The name of the human player that this user represents.")
-    parser.add_argument("-f", "--force", action='store_true',
-                        help="Force retrieve the user's full collection from bgg.com,"
-                        + " otherwise only updates will be retrieved. You'll need to do"
-                        + " this if you delete items from your collection.")
-    parser.add_argument("-t", "--timestamp", action='store_true',
-                        help="Output files will have a timestamp appended to their name.")
+    # parser.add_argument("-f", "--force", action='store_true',
+    #                     help="Force retrieve the user's full collection from bgg.com,"
+    #                     + " otherwise only updates will be retrieved. You'll need to do"
+    #                     + " this if you delete items from your collection.")
     parser.add_argument("-i", "--intermediate", action='store_true',
                         help="Output intermediate xml files. This is useful if you want"
                         + " to create homerules.")
+    parser.add_argument("-p", "--playerName",
+                        help="The name of the human player that this user represents.")
+    parser.add_argument("-t", "--timestamp", action='store_true',
+                        help="Output files will have a timestamp appended to their name.")
     parser.add_argument("-v", "--verbose", action='store_true',
                         help="Print verbose output.")
 
