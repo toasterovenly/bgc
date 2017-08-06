@@ -1,0 +1,14 @@
+{
+	"page-size": "LETTER",
+	"page-border": 1,
+	"unit": "inch",
+	"font-size": 8,
+	"columns": {
+		"#": 0.25,
+		"Game": 2,
+		"Player Count": 1.5,
+		"Play Time": 1.5,
+		"Weight": 1,
+		"Year": 0.4,
+	},
+}
