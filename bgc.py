@@ -47,7 +47,7 @@ def exportToCsv(gameData):
 ################################################################################
 
 def process(args):
-    gameData, root, gamesRoot, eRoot = netCode.getUserData(args.userName, args.playerName)
+    gameData, gamesRoot = netCode.getUserData(args)
 
     print("")
 
@@ -93,14 +93,15 @@ def process(args):
 def parse():
     parser = argparse.ArgumentParser(description="Get your boardgame collection from Board Game Geek.")
     parser.add_argument("userName",
-                       help="the username of the player whose collection you want")
+                        help="The username of the player whose collection you want.")
     parser.add_argument("-p", "--playerName",
-                        help="the name of the human player that this user represents")
+                        help="The name of the human player that this user represents.")
     parser.add_argument("-f", "--force", action='store_true',
-                        help="force retrieve the user's full collection from bgg.com,"
-                        + " otherwise only updates will be retrieved")
+                        help="Force retrieve the user's full collection from bgg.com,"
+                        + " otherwise only updates will be retrieved. You'll need to do"
+                        + " this if you delete items from your collection.")
     parser.add_argument("-t", "--timestamp", action='store_true',
-                        help="output files will have a timestamp appended to their name")
+                        help="Output files will have a timestamp appended to their name.")
 
     args = parser.parse_args()
     args.time = datetime.now()
@@ -109,9 +110,9 @@ def parse():
     else:
         args.filePostfix = ""
     args.outFile = outPath + args.userName + args.filePostfix + ".pdf"
+    args.outPath = outPath
 
     print("got args", args)
     return args
 
 process(parse())
-

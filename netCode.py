@@ -34,8 +34,7 @@ def generateURLs(userName):
         "myBoardgames": baseurl + commands["collection"]
                         + filters["userName"] + "&"
                         + filters["brief"] + "&"
-                        + filters["own"] + "&"
-                        + filters["noexpansions"],
+                        + filters["own"],
         "myExpansions": baseurl + commands["collection"]
                         + filters["userName"] + "&"
                         + filters["stats"] + "&"
@@ -72,7 +71,7 @@ def getRoot(someBytes):
     return None
 
 def dumpToFile(someBytes, fileName):
-    pass
+    # pass
     with open(fileName, "w", encoding='utf-8') as text_file:
         someBytes = str(someBytes, 'utf-8')
         text_file.write(someBytes)
@@ -93,17 +92,19 @@ def mkdir_p(path):
 
 ################################################################################
 
-def getUserData(userName, playerName):
-    generateURLs(userName)
+def getUserData(args):
+    generateURLs(args.userName)
+    def outFileName(tag):
+        return args.outPath + args.userName + "-" + tag + args.filePostfix + ".xml"
 
     # request game data from bgg
     collection = getUrl(urls["myBoardgames"], "get collection")
-    root = getRoot(collection)
-    dumpToFile(collection, "collection.xml")
+    collectionRoot = getRoot(collection)
+    dumpToFile(collection, outFileName("collection"))
 
     gameIds = ""
     gameData = []
-    for item in root:
+    for item in collectionRoot:
         thing = {
             "id": item.get("objectid"),
             "name": item.find("name").text,
@@ -112,11 +113,7 @@ def getUserData(userName, playerName):
         gameIds += str(thing["id"]) + ","
     gameIds = gameIds[:-1]
     games = getUrl(urls["games"] + gameIds, "get full game data")
-    dumpToFile(games, "allDataForCollection.xml")
+    dumpToFile(games, outFileName("games"))
     gamesRoot = getRoot(games)
 
-    eCollection = getUrl(urls["myExpansions"], "get expansions in collection")
-    eRoot = getRoot(eCollection)
-    dumpToFile(eCollection, "eCollection.xml")
-
-    return (gameData, root, gamesRoot, eRoot)
+    return (gameData, gamesRoot)
