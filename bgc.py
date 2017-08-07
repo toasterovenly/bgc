@@ -111,7 +111,7 @@ def process(args):
     print("collectionStats", collectionStats)
 
     # exportToCsv(gameData)
-    pdfWriter.writeToFile(args.outFile, gameData)
+    pdfWriter.writeToFile(args.outFile, gameData, collectionStats)
 
 ###############################################################################
 # handle command line args

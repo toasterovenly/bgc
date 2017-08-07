@@ -29,6 +29,53 @@ TEXT = """%s    page %d of %d
 a wonderful file
 created with Sample_Code/makesimple.py"""
 
+def remap(number, oldMin, oldMax, newMin, newMax):
+    return newMin + (number - oldMin) * (newMax - newMin) / (oldMax - oldMin)
+
+class RangeGraph:
+    extensionColor = 0.5
+    filledColor = 0
+    textColor = 1
+
+    def __init__(self, canvas, minVal, maxVal, drawWidth):
+        self.c = canvas
+        self.minVal = minVal
+        self.maxVal = maxVal
+        self.valWidth = maxVal - minVal
+        self.drawWidth = drawWidth
+
+    def draw(self, x, y, minFill, maxFill, minExt, maxExt):
+        right = x + self.drawWidth
+
+        # if minExt and maxExt:
+        minExt = max(minExt, self.minVal)
+        minExtPos = remap(minExt, self.minVal, self.maxVal, x, right)
+        maxExt = min(maxExt, self.maxVal)
+        maxExtPos = remap(maxExt + 1, self.minVal, self.maxVal, x, right)
+
+        self.c.setFillGray(self.extensionColor)
+        self.c.rect(minExtPos, y, maxExtPos - minExtPos, -ROW_HEIGHT, fill=1, stroke=0)
+        self.c.setFillGray(self.textColor)
+        if minExt < minFill:
+            self.c.drawString(minExtPos, y - FONT_SIZE, str(minExt))
+        if maxExt > maxFill:
+            self.c.drawRightString(maxExtPos, y - FONT_SIZE, str(maxExt))
+
+        minFill = max(minFill, self.minVal)
+        minFillPos = remap(minFill, self.minVal, self.maxVal, x, right)
+        maxFill = min(maxFill, self.maxVal)
+        maxFillPos = remap(maxFill + 1, self.minVal, self.maxVal, x, right)
+
+        self.c.setFillGray(self.filledColor)
+        self.c.rect(minFillPos, y, maxFillPos - minFillPos, -ROW_HEIGHT, fill=1, stroke=0)
+        self.c.setFillGray(self.textColor)
+        if minFill == maxFill:
+            self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, str(maxFill))
+        else:
+            self.c.drawString(minFillPos, y - FONT_SIZE, str(minFill))
+            self.c.drawRightString(maxFillPos, y - FONT_SIZE, str(maxFill))
+
+
 
 def rectTlwh(t, l, w, h):
     return (l * inch, -t * inch, w * inch, -h * inch)
@@ -54,7 +101,7 @@ def make_pdf_file(output_filename, np):
     #     c.showPage()
     return c
 
-def writeToFile(filename, gameData):
+def writeToFile(filename, gameData, collectionStats):
     c = make_pdf_file(filename, 1)
 
     # c.setFillGray(0.8)
@@ -63,7 +110,7 @@ def writeToFile(filename, gameData):
     x = SAFE_AREA["left"]
     y = SAFE_AREA["top"]
     for game in gameData:
-        makeRow(c, game, x, y)
+        makeRow(c, game, x, y, collectionStats)
         y -= ROW_HEIGHT
     c.save()
     # print("page created?")
@@ -82,7 +129,7 @@ def makeColumn(c, colData, x, y, bgColor, rightAlign=False, colWidth=1):
         c.drawString(x + SPACE_AROUND, y - FONT_SIZE, str(colData))
     return colWidth
 
-def makeRow(c, rowData, x, y):
+def makeRow(c, rowData, x, y, collectionStats):
     # print("makeRow", rowData)
 
 
@@ -99,5 +146,7 @@ def makeRow(c, rowData, x, y):
     x += makeColumn(c, rowData["index"] + 1, x, y, bgColor, rightAlign=True, colWidth=0.25)
     x += makeColumn(c, rowData["name"], x, y, bgColor, colWidth=2)
     x += makeColumn(c, rowData["yearpublished"], x, y, bgColor, rightAlign=True, colWidth=0.45)
+    playerCount = RangeGraph(c, int(collectionStats["minPlayers"]), int(collectionStats["maxPlayers"]), 2 * inch)
+    playerCount.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
 
 
