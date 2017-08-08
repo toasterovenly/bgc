@@ -109,9 +109,14 @@ def writeToFile(filename, gameData, collectionStats):
 
     x = SAFE_AREA["left"]
     y = SAFE_AREA["top"]
+
+    makeHeader(c, x, y, collectionStats)
+    y -= ROW_HEIGHT
+
     for game in gameData:
         makeRow(c, game, x, y, collectionStats)
         y -= ROW_HEIGHT
+
     c.save()
     # print("page created?")
     # print(page)
@@ -146,7 +151,18 @@ def makeRow(c, rowData, x, y, collectionStats):
     x += makeColumn(c, rowData["index"] + 1, x, y, bgColor, rightAlign=True, colWidth=0.25)
     x += makeColumn(c, rowData["name"], x, y, bgColor, colWidth=2)
     x += makeColumn(c, rowData["yearpublished"], x, y, bgColor, rightAlign=True, colWidth=0.45)
-    playerCount = RangeGraph(c, int(collectionStats["minPlayers"]), int(collectionStats["maxPlayers"]), 2 * inch)
+    playerCount = RangeGraph(c, int(collectionStats["minplayers"]), int(collectionStats["maxplayers"]), 2 * inch)
     playerCount.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
+
+def makeHeader(c, x, y, collectionStats):
+    bgColor = 0.8
+    c.setFont('Helvetica-Bold', FONT_SIZE)
+    x += makeColumn(c, "#", x, y, bgColor, rightAlign=True, colWidth=0.25)
+    x += makeColumn(c, "Game", x, y, bgColor, colWidth=2)
+    x += makeColumn(c, "Year", x, y, bgColor, rightAlign=True, colWidth=0.45)
+    x += makeColumn(c, "Player Count", x, y, bgColor, colWidth=1.5)
+    x += makeColumn(c, "Play Time", x, y, bgColor, colWidth=1.5)
+    x += makeColumn(c, "Weight", x, y, bgColor, colWidth=1.5)
+    c.setFont('Helvetica', FONT_SIZE)
 
 

@@ -81,8 +81,8 @@ def process(args):
 
         # there are issues with some games that have 0 as values
         # TODO: figure out a valid range
-        setv(collectionStats, "minPlayers", data["minplayers"], min)
-        setv(collectionStats, "maxPlayers", data["maxplayers"], max)
+        setv(collectionStats, "minplayers", data["minplayers"], min)
+        setv(collectionStats, "maxplayers", data["maxplayers"], max)
         setv(collectionStats, "minplaytime", data["minplaytime"], min)
         setv(collectionStats, "maxplaytime", data["maxplaytime"], max)
         setv(collectionStats, "minweight", data["weight"], min)
