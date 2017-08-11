@@ -23,14 +23,20 @@ FONT_SIZE = 8
 SPACE_AROUND = 3
 ROW_HEIGHT = toLength(str(FONT_SIZE + SPACE_AROUND) + "pt")
 
-# print("pageSize", PAGE_SIZE, (toLength("8.5in"), toLength("11in")))
-
-TEXT = """%s    page %d of %d
-a wonderful file
-created with Sample_Code/makesimple.py"""
+################################################################################
+# generic helper functions
 
 def remap(number, oldMin, oldMax, newMin, newMax):
     return newMin + (number - oldMin) * (newMax - newMin) / (oldMax - oldMin)
+
+def rectTlwh(t, l, w, h):
+    return (l * inch, -t * inch, w * inch, -h * inch)
+
+def rectTlbr(t, l, b, r):
+    return rectTlwh(t, l, b - t, r - l)
+
+################################################################################
+# class for drawing graphs
 
 class RangeGraph:
     extensionColor = 0.5
@@ -75,38 +81,82 @@ class RangeGraph:
             self.c.drawString(minFillPos, y - FONT_SIZE, str(minFill))
             self.c.drawRightString(maxFillPos, y - FONT_SIZE, str(maxFill))
 
+################################################################################
+# row and column helpers
 
+def rowColor(row):
+    if row["index"] % 2 == 1:
+        return 0.8 # light gray
+    return 1 # white
 
-def rectTlwh(t, l, w, h):
-    return (l * inch, -t * inch, w * inch, -h * inch)
+def colAlign(column):
+    return column["align"]
 
-def rectTlbr(t, l, b, r):
-    return rectTlwh(t, l, b - t, r - l)
+def colWidth(column, c):
+    if "width" in column:
+        return toLength(column["width"])
+    return c.stringWidth(column["autoWidth"])
 
-def gameDataToPdfData(gameData):
+################################################################################
+# read data and write to the .pdf
+
+def makeStringColumn(c, x, y, column, row, data=""):
+    align = colAlign(column)
+    width = colWidth(column, c)
+    c.setFillGray(0)
+    if align == "right":
+        c.drawRightString(x + width, y - FONT_SIZE, str(data))
+    elif align == "center":
+        c.drawCentredString(x + width, y - FONT_SIZE, str(data))
+    else:
+        c.drawString(x + SPACE_AROUND, y - FONT_SIZE, str(data))
+
+def makeGraphColumn(c, x, y, column, row):
+    # minFill = float(row["min" + colData])
+    # playerCount = RangeGraph(c, int(collectionStats["minplayers"]), int(collectionStats["maxplayers"]), 2 * inch)
+    # playerCount.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
     pass
 
+def makeColumn(c, x, y, column, row):
+    width = colWidth(column, c)
+
+    c.setFillGray(rowColor(row))
+    c.rect(x, y, width, -ROW_HEIGHT, fill=1, stroke=0)
+
+    if column["type"] == "string":
+        data = row[column["param"]]
+        makeStringColumn(c, x, y, column, row, data=data)
+    elif column["type"] == "graph":
+        makeGraphColumn(c, x, y, column, row)
+
+    return width
+
+def makeRow(c, row, x, y, collectionStats):
+    from settings import settings
+    columns = settings["columns"]
+
+    for column in columns:
+        x += makeColumn(c, x, y, column, row)
+
+def makeHeader(c, x, y, collectionStats):
+    from settings import settings
+    columns = settings["columns"]
+    c.setFont('Helvetica-Bold', FONT_SIZE)
+    for column in columns:
+        makeStringColumn(c, x, y, column, {}, data=column["label"])
+        x += colWidth(column, c)
+    c.setFont('Helvetica', FONT_SIZE)
+
 def make_pdf_file(output_filename, np):
-    # title = output_filename
     c = canvas.Canvas(output_filename, pagesize=PAGE_SIZE)
     c.setStrokeColorRGB(0, 0, 0)
     c.setFillColorRGB(0, 0, 0)
     c.setFont("Helvetica", FONT_SIZE)
     c.setLineWidth(0.5)
-    # for pn in range(1, np + 1):
-    #     v = toLength("1in")
-    #     for subtline in (TEXT % (output_filename, pn, np)).split('\n'):
-    #         c.drawString(toLength("1in"), v, subtline)
-    #         v -= toLength("12pt")
-    #     c.showPage()
     return c
 
 def writeToFile(filename, gameData, collectionStats):
     c = make_pdf_file(filename, 1)
-
-    # c.setFillGray(0.8)
-    # c.rect(SAFE_AREA["left"], SAFE_AREA["top"], inch, -inch, fill=1)
-
     x = SAFE_AREA["left"]
     y = SAFE_AREA["top"]
 
@@ -118,51 +168,3 @@ def writeToFile(filename, gameData, collectionStats):
         y -= ROW_HEIGHT
 
     c.save()
-    # print("page created?")
-    # print(page)
-    # print(gameData)
-
-def makeColumn(c, colData, x, y, bgColor, rightAlign=False, colWidth=1):
-    colWidth = colWidth * inch
-    width = SAFE_AREA["right"] - x
-    c.setFillGray(bgColor)
-    c.rect(x, y, width, -ROW_HEIGHT, fill=1, stroke=0)
-    c.setFillGray(0)
-    if rightAlign:
-        c.drawRightString(x + colWidth, y - FONT_SIZE, str(colData))
-    else:
-        c.drawString(x + SPACE_AROUND, y - FONT_SIZE, str(colData))
-    return colWidth
-
-def makeRow(c, rowData, x, y, collectionStats):
-    # print("makeRow", rowData)
-
-
-    if rowData["index"] % 2 == 0:
-        bgColor = 1
-    else:
-        bgColor = 0.8
-    # c.rect(x, y, SAFE_AREA["width"], -ROW_HEIGHT, fill=1, stroke=0)
-
-    # c.setFillGray(0)
-    # ummmm = c.stringWidth(rowData["name"])
-    # print("umm", rowData["name"], ummmm)
-    # c.drawString(x + SPACE_AROUND, y - FONT_SIZE, rowData["name"])
-    x += makeColumn(c, rowData["index"] + 1, x, y, bgColor, rightAlign=True, colWidth=0.25)
-    x += makeColumn(c, rowData["name"], x, y, bgColor, colWidth=2)
-    x += makeColumn(c, rowData["yearpublished"], x, y, bgColor, rightAlign=True, colWidth=0.45)
-    playerCount = RangeGraph(c, int(collectionStats["minplayers"]), int(collectionStats["maxplayers"]), 2 * inch)
-    playerCount.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
-
-def makeHeader(c, x, y, collectionStats):
-    bgColor = 0.8
-    c.setFont('Helvetica-Bold', FONT_SIZE)
-    x += makeColumn(c, "#", x, y, bgColor, rightAlign=True, colWidth=0.25)
-    x += makeColumn(c, "Game", x, y, bgColor, colWidth=2)
-    x += makeColumn(c, "Year", x, y, bgColor, rightAlign=True, colWidth=0.45)
-    x += makeColumn(c, "Player Count", x, y, bgColor, colWidth=1.5)
-    x += makeColumn(c, "Play Time", x, y, bgColor, colWidth=1.5)
-    x += makeColumn(c, "Weight", x, y, bgColor, colWidth=1.5)
-    c.setFont('Helvetica', FONT_SIZE)
-
-

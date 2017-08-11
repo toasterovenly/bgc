@@ -1,12 +1,17 @@
 import sys
 import argparse
 from datetime import datetime
+import json
 import netCode
 import pdfWriter
+from settings import settings
+from settings import load as settingsLoad
 
 ################################################################################
 
 outPath = "output\\"
+settings = {} # from settings file
+options = {} # from command line
 
 ################################################################################
 
@@ -89,7 +94,7 @@ def process(args):
         setv(collectionStats, "maxweight", data["weight"], max)
 
         if thingType == "boardgame":
-            data["index"] = len(gameData)
+            data["index"] = len(gameData) + 1
             data.setdefault("expansions", [])
             gameData.append(data)
             gamesById[thingId] = data
@@ -128,8 +133,10 @@ def parse():
     parser.add_argument("-i", "--intermediate", action='store_true',
                         help="Output intermediate xml files. This is useful if you want"
                         + " to create homerules.")
-    parser.add_argument("-p", "--playerName",
+    parser.add_argument("-p", "--player-name", dest="playerName",
                         help="The name of the human player that this user represents.")
+    parser.add_argument("-s", "--settings-file", dest="settingsFile", default="settings.json",
+                        help="Path to a settings file to load. Default is 'settings.json'.")
     parser.add_argument("-t", "--timestamp", action='store_true',
                         help="Output files will have a timestamp appended to their name.")
     parser.add_argument("-v", "--verbose", action='store_true',
@@ -148,5 +155,15 @@ def parse():
         print("got args", args)
     return args
 
-process(parse())
+def parseSettings(args):
+    with open(args.settingsFile) as file:
+        data = json.load(file)
+        print("json", type(data), data)
+    return data
+
+options = parse()
+settingsLoad(options.settingsFile)
+
+
+process(options)
 print("done.")
