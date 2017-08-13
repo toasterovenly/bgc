@@ -58,7 +58,7 @@ def waitFunc(n):
 def getUrl(url, message):
     message = message or ""
     result = urllib.request.urlopen(url)
-    print(result.code, result.reason, message)
+    print(message, "-", result.code, result.reason)
     if result.code == http.HTTPStatus.ACCEPTED.value:
         raise http.client.ResponseNotReady(result.reason)
     elif result.code == http.HTTPStatus.OK.value:

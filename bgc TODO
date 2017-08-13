@@ -2,7 +2,6 @@ bgc TODO
 --------
 make sure column spacing is correct
 center numbers in cells of graph (if integers)
-start using settings file for sizing and stuff
 make classes for things to increase code clarity?
 make columns more dynamic so users can add columns i never wanted
 get names from user's collection so if they specify a version or special name, that will be used
@@ -12,7 +11,6 @@ add info to top of document
 	player name
 	total game count
 	date of creation
-	header for rows
 add info to bottom of document
 	page numbers
 	range of games in collection: aba-ORC / 1-65
@@ -26,7 +24,6 @@ options
 	word wrap
 	add markers for "best" number of players?
 	add marker for average playtime?
-	have an "auto" column size that will be as small as possible
 	handle metric measurements
 
 

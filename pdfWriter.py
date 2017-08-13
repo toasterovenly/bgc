@@ -112,6 +112,8 @@ def makeStringColumn(c, x, y, column, row, data=""):
         c.drawString(x + SPACE_AROUND, y - FONT_SIZE, str(data))
 
 def makeGraphColumn(c, x, y, column, row):
+    # candlestick vs bar chart
+
     # minFill = float(row["min" + colData])
     # playerCount = RangeGraph(c, int(collectionStats["minplayers"]), int(collectionStats["maxplayers"]), 2 * inch)
     # playerCount.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
@@ -138,7 +140,7 @@ def makeRow(c, row, x, y, collectionStats):
     for column in columns:
         x += makeColumn(c, x, y, column, row)
 
-def makeHeader(c, x, y, collectionStats):
+def makeRowHeader(c, x, y, collectionStats):
     from settings import settings
     columns = settings["columns"]
     c.setFont('Helvetica-Bold', FONT_SIZE)
@@ -147,24 +149,35 @@ def makeHeader(c, x, y, collectionStats):
         x += colWidth(column, c)
     c.setFont('Helvetica', FONT_SIZE)
 
-def make_pdf_file(output_filename, np):
-    c = canvas.Canvas(output_filename, pagesize=PAGE_SIZE)
-    c.setStrokeColorRGB(0, 0, 0)
-    c.setFillColorRGB(0, 0, 0)
-    c.setFont("Helvetica", FONT_SIZE)
-    c.setLineWidth(0.5)
-    return c
-
-def writeToFile(filename, gameData, collectionStats):
-    c = make_pdf_file(filename, 1)
+def makePage(c, gameData, collectionStats):
     x = SAFE_AREA["left"]
     y = SAFE_AREA["top"]
 
-    makeHeader(c, x, y, collectionStats)
+    makeRowHeader(c, x, y, collectionStats)
     y -= ROW_HEIGHT
 
-    for game in gameData:
+    c.setFont("Helvetica", FONT_SIZE)
+    while collectionStats["currentGameIndex"] < len(gameData):
+        if y < SAFE_AREA["bottom"]:
+            break
+        game = gameData[collectionStats["currentGameIndex"]]
         makeRow(c, game, x, y, collectionStats)
         y -= ROW_HEIGHT
+        collectionStats["currentGameIndex"] += 1
+    else:
+        return True # all games done
 
+    c.showPage()
+    return False
+
+def writeToFile(filename, gameData, collectionStats):
+    c = canvas.Canvas(filename, pagesize=PAGE_SIZE)
+
+    collectionStats["currentGameIndex"] = 0
+    print("collectionStats", collectionStats)
+    print("gameData", gameData)
+
+    endOfDocument = False
+    while not endOfDocument:
+        endOfDocument = makePage(c, gameData, collectionStats)
     c.save()
