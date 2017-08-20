@@ -23,6 +23,8 @@ FONT_SIZE = 8
 SPACE_AROUND = 3
 ROW_HEIGHT = toLength(str(FONT_SIZE + SPACE_AROUND) + "pt")
 
+collectionStats = {}
+
 ################################################################################
 # generic helper functions
 
@@ -38,16 +40,33 @@ def rectTlbr(t, l, b, r):
 ################################################################################
 # class for drawing graphs
 
+# candlestick graph:
+#      |---[###|##]--------|
+# ^    ^   ^   ^  ^        ^   ^
+# |    |   |   |  |        |   +- column max
+# |    |   |   |  |        +- bar max
+# |    |   |   |  +- fill max
+# |    |   |   +- center
+# |    |   +- fill min
+# |    +- bar min
+# +- column min
+
+
+
+# bar graph:
+# [##########]-------|
+
 class RangeGraph:
-    extensionColor = 0.5
+    extensionColorL = 0.5
+    extensionColorR = 0.5
     filledColor = 0
     textColor = 1
 
-    def __init__(self, canvas, minVal, maxVal, drawWidth):
-        self.c = canvas
-        self.minVal = minVal
-        self.maxVal = maxVal
-        self.valWidth = maxVal - minVal
+    def __init__(self, c, minVal, maxVal, drawWidth):
+        self.c = c
+        self.minVal = int(minVal) # left extrema
+        self.maxVal = int(maxVal) # right extrema
+        self.valWidth = self.maxVal - self.minVal
         self.drawWidth = drawWidth
 
     def draw(self, x, y, minFill, maxFill, minExt, maxExt):
@@ -59,8 +78,10 @@ class RangeGraph:
         maxExt = min(maxExt, self.maxVal)
         maxExtPos = remap(maxExt + 1, self.minVal, self.maxVal, x, right)
 
-        self.c.setFillGray(self.extensionColor)
-        self.c.rect(minExtPos, y, maxExtPos - minExtPos, -ROW_HEIGHT, fill=1, stroke=0)
+        self.c.setFillGray(self.extensionColorL)
+        self.c.rect(minExtPos, y, minFill - minExtPos, -ROW_HEIGHT, fill=1, stroke=0)
+        self.c.setFillGray(self.extensionColorR)
+        self.c.rect(maxFill, y, maxExtPos - maxFill, -ROW_HEIGHT, fill=1, stroke=0)
         self.c.setFillGray(self.textColor)
         if minExt < minFill:
             self.c.drawString(minExtPos, y - FONT_SIZE, str(minExt))
@@ -97,6 +118,15 @@ def colWidth(column, c):
         return toLength(column["width"])
     return c.stringWidth(column["autoWidth"])
 
+def drawRect(c, left, top, right, bottom):
+    path = c.beginPath()
+    path.moveTo(left, top)
+    path.lineTo(right, top)
+    path.lineTo(right, bottom)
+    path.lineTo(left, bottom)
+    path.lineTo(left, top)
+    c.drawPath(path)
+
 ################################################################################
 # read data and write to the .pdf
 
@@ -114,10 +144,27 @@ def makeStringColumn(c, x, y, column, row, data=""):
 def makeGraphColumn(c, x, y, column, row):
     # candlestick vs bar chart
 
+    paramMin = "min" + column["param"]
+    paramMax = "min" + column["param"]
+
+    if not "graphObj" in column:
+        colMin = collectionStats[paramMin]
+        colMax = collectionStats[paramMax]
+        colWid = colWidth(column, c)
+        graph = column.setdefault("graphObj", RangeGraph(c, colMin, colMax, colWid))
+        if column["graphType"] == "bar":
+            graph.extensionColorL = 0
+    else:
+        graph = column["graphObj"]
+
     # minFill = float(row["min" + colData])
+
+
+    rowMin
+    graph.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
     # playerCount = RangeGraph(c, int(collectionStats["minplayers"]), int(collectionStats["maxplayers"]), 2 * inch)
     # playerCount.draw(x, y, int(rowData["minplayers"]), int(rowData["maxplayers"]), int(rowData["minplayers"]) - 1, int(rowData["maxplayers"]) + 1)
-    pass
+
 
 def makeColumn(c, x, y, column, row):
     width = colWidth(column, c)
@@ -133,14 +180,14 @@ def makeColumn(c, x, y, column, row):
 
     return width
 
-def makeRow(c, row, x, y, collectionStats):
+def makeRow(c, row, x, y):
     from settings import settings
     columns = settings["columns"]
 
     for column in columns:
         x += makeColumn(c, x, y, column, row)
 
-def makeRowHeader(c, x, y, collectionStats):
+def makeRowHeader(c, x, y):
     from settings import settings
     columns = settings["columns"]
     c.setFont('Helvetica-Bold', FONT_SIZE)
@@ -149,11 +196,12 @@ def makeRowHeader(c, x, y, collectionStats):
         x += colWidth(column, c)
     c.setFont('Helvetica', FONT_SIZE)
 
-def makePage(c, gameData, collectionStats):
+def makePage(c, gameData):
     x = SAFE_AREA["left"]
     y = SAFE_AREA["top"]
 
-    makeRowHeader(c, x, y, collectionStats)
+
+    makeRowHeader(c, x, y)
     y -= ROW_HEIGHT
 
     c.setFont("Helvetica", FONT_SIZE)
@@ -161,23 +209,25 @@ def makePage(c, gameData, collectionStats):
         if y < SAFE_AREA["bottom"]:
             break
         game = gameData[collectionStats["currentGameIndex"]]
-        makeRow(c, game, x, y, collectionStats)
+        makeRow(c, game, x, y)
         y -= ROW_HEIGHT
         collectionStats["currentGameIndex"] += 1
     else:
+        drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
         return True # all games done
 
+    drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
     c.showPage()
     return False
 
-def writeToFile(filename, gameData, collectionStats):
+def writeToFile(filename, gameData, _collectionStats):
     c = canvas.Canvas(filename, pagesize=PAGE_SIZE)
 
+    global collectionStats
+    collectionStats = _collectionStats
     collectionStats["currentGameIndex"] = 0
-    print("collectionStats", collectionStats)
-    print("gameData", gameData)
 
     endOfDocument = False
     while not endOfDocument:
-        endOfDocument = makePage(c, gameData, collectionStats)
+        endOfDocument = makePage(c, gameData)
     c.save()

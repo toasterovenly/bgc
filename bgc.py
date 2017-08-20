@@ -1,10 +1,10 @@
-import sys
+import collections
 import argparse
 from datetime import datetime
 import json
+import re
 import netCode
 import pdfWriter
-from settings import settings
 from settings import load as settingsLoad
 
 ################################################################################
@@ -62,10 +62,23 @@ def setv(obj, k, v, pred):
 
 ################################################################################
 
+def getParamFromGameXml(game, param, output, shortParam):
+    if isinstance(param, collections.Mapping):
+        for p in param:
+            getParamFromGameXml(game, param[p], output, None)
+        return
+
+    shortParam = shortParam or param
+    output[shortParam] = game.find(param).get("value")
+
 def process(args):
+    from settings import settings
+    columns = settings["columns"]
+
     gamesXmlRoot, gamesById = netCode.getUserData(args)
 
     print("")
+    print("args for processing", args)
     gameData = [] # alphabetical
     collectionStats = {
     }
@@ -76,13 +89,18 @@ def process(args):
         thingType = game.get("type")
         data = gamesById.get(thingId)
 
-        data["name"] = game.find("name").get("value")
-        data["minplayers"] = game.find("minplayers").get("value")
-        data["maxplayers"] = game.find("maxplayers").get("value")
-        data["minplaytime"] = game.find("minplaytime").get("value")
-        data["maxplaytime"] = game.find("maxplaytime").get("value")
-        data["yearpublished"] = game.find("yearpublished").get("value")
-        data["weight"] = game.find("statistics/ratings/averageweight").get("value")
+        for column in columns:
+            if column["label"] == "#":
+                continue
+            getParamFromGameXml(game, column["param"], data, column.get("shortParam"))
+
+        # data["name"] = game.find("name").get("value")
+        # data["minplayers"] = game.find("minplayers").get("value")
+        # data["maxplayers"] = game.find("maxplayers").get("value")
+        # data["minplaytime"] = game.find("minplaytime").get("value")
+        # data["maxplaytime"] = game.find("maxplaytime").get("value")
+        # data["yearpublished"] = game.find("yearpublished").get("value")
+        # data["weight"] = game.find("statistics/ratings/averageweight").get("value")
 
         # there are issues with some games that have 0 as values
         # TODO: figure out a valid range
@@ -165,7 +183,5 @@ def parseSettings(args):
 
 options = parse()
 settingsLoad(options.settingsFile)
-
-
 process(options)
 print("done.")

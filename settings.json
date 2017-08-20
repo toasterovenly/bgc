@@ -5,46 +5,50 @@
 	"font-size": 8,
 	"columns": [
 		{
-			"param": "index",
 			"label": "#",
+			"param": "index",
 			"autoWidth": "888",
 			"align": "right",
 			"type": "string"
 		},
 		{
-			"param": "name",
 			"label": "Game",
+			"param": "name",
 			"width": "2in",
 			"align": "left",
 			"type": "string"
 		},
 		{
-			"param": "playercount",
 			"label": "Player Count",
+			"param": {
+				"min": "minplayers",
+				"max": "maxplayers"
+			},
 			"width": "1.5in",
 			"align": "left",
-			"type": "graph",
-			"graphType": "int"
+			"type": "graph-candleStick"
 		},
 		{
-			"param": "playtime",
 			"label": "Play Time",
+			"param": {
+				"min": "minplaytime",
+				"max": "maxplaytime"
+			},
 			"width": "1.5in",
 			"align": "left",
-			"type": "graph",
-			"graphType": "float"
+			"type": "graph-bar"
 		},
 		{
-			"param": "weight",
 			"label": "Weight",
+			"param": "statistics/ratings/averageweight",
+			"shortParam": "weight",
 			"width": "1.5in",
 			"align": "left",
-			"type": "graph",
-			"graphType": "float"
+			"type": "graph-bar"
 		},
 		{
-			"param": "yearpublished",
 			"label": "Year",
+			"param": "yearpublished",
 			"autoWidth": "8888",
 			"align": "right",
 			"type": "string"
