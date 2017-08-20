@@ -16,6 +16,7 @@ commands = {
 }
 filters = {}
 urls = {}
+
 def generateURLs(userName):
     global filters
     filters = {
@@ -51,18 +52,21 @@ def generateURLs(userName):
 
 def waitFunc(n):
     out = 2 ** (n-1) # 1,2,4,8,16
-    print("retrying in " + str(out))
+    print("BGG has queued the request, retrying in " + str(out) + "s")
     return out
 
-@retries(max_attempts=5, wait=waitFunc, exceptions=http.client.ResponseNotReady)
-def getUrl(url, message):
-    message = message or ""
-    result = urllib.request.urlopen(url)
-    print(message, "-", result.code, result.reason)
-    if result.code == http.HTTPStatus.ACCEPTED.value:
-        raise http.client.ResponseNotReady(result.reason)
-    elif result.code == http.HTTPStatus.OK.value:
-        return result.read()
+def getUrlFactory(args):
+    """sets up the getUrl function to have a dynamic number of retries"""
+    @retries(max_attempts=args.retries, wait=waitFunc, exceptions=http.client.ResponseNotReady)
+    def getUrl(url, message):
+        message = message or ""
+        result = urllib.request.urlopen(url)
+        print(message, "-", result.code, result.reason)
+        if result.code == http.HTTPStatus.ACCEPTED.value:
+            raise http.client.ResponseNotReady(result.reason)
+        elif result.code == http.HTTPStatus.OK.value:
+            return result.read()
+    return getUrl
 
 def getRoot(someBytes):
     if isinstance(someBytes, bytes):
@@ -93,6 +97,7 @@ def mkdir_p(path):
 ################################################################################
 
 def getUserData(args):
+    getUrl = getUrlFactory(args)
     generateURLs(args.userName)
     def outFileName(tag):
         return args.outPath + args.userName + "-" + tag + args.filePostfix + ".xml"

@@ -135,6 +135,8 @@ def parse():
                         + " to create homerules.")
     parser.add_argument("-p", "--player-name", dest="playerName",
                         help="The name of the human player that this user represents.")
+    parser.add_argument("-r", "--retries", type=int, default=5,
+                        help="Number of times to request info from BGG before giving up.")
     parser.add_argument("-s", "--settings-file", dest="settingsFile", default="settings.json",
                         help="Path to a settings file to load. Default is 'settings.json'.")
     parser.add_argument("-t", "--timestamp", action='store_true',
