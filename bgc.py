@@ -65,7 +65,9 @@ def setv(obj, k, v, pred):
 def getParamFromGameXml(game, param, output, shortParam):
     if isinstance(param, collections.Mapping):
         for p in param:
-            getParamFromGameXml(game, param[p], output, None)
+            subParam = param[p]
+            shortParam = subParam.setdefault("shortParam", subParam["param"])
+            getParamFromGameXml(game, subParam["param"], output, shortParam)
         return
 
     shortParam = shortParam or param
@@ -80,8 +82,7 @@ def process(args):
     print("")
     print("args for processing", args)
     gameData = [] # alphabetical
-    collectionStats = {
-    }
+    collectionStats = {}
 
     # do it all in one pass!
     for game in gamesXmlRoot:
@@ -94,22 +95,13 @@ def process(args):
                 continue
             getParamFromGameXml(game, column["param"], data, column.get("shortParam"))
 
-        # data["name"] = game.find("name").get("value")
-        # data["minplayers"] = game.find("minplayers").get("value")
-        # data["maxplayers"] = game.find("maxplayers").get("value")
-        # data["minplaytime"] = game.find("minplaytime").get("value")
-        # data["maxplaytime"] = game.find("maxplaytime").get("value")
-        # data["yearpublished"] = game.find("yearpublished").get("value")
-        # data["weight"] = game.find("statistics/ratings/averageweight").get("value")
-
         # there are issues with some games that have 0 as values
         # TODO: figure out a valid range
-        setv(collectionStats, "minplayers", data["minplayers"], min)
-        setv(collectionStats, "maxplayers", data["maxplayers"], max)
-        setv(collectionStats, "minplaytime", data["minplaytime"], min)
-        setv(collectionStats, "maxplaytime", data["maxplaytime"], max)
-        setv(collectionStats, "minweight", data["weight"], min)
-        setv(collectionStats, "maxweight", data["weight"], max)
+        for key in data:
+            if key.startswith("min"):
+                setv(collectionStats, key, data[key], min)
+            if key.startswith("max"):
+                setv(collectionStats, key, data[key], max)
 
         if thingType == "boardgame":
             data["index"] = len(gameData) + 1

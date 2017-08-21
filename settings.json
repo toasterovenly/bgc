@@ -21,8 +21,12 @@
 		{
 			"label": "Player Count",
 			"param": {
-				"min": "minplayers",
-				"max": "maxplayers"
+				"min": {
+					"param": "minplayers"
+				},
+				"max": {
+					"param": "maxplayers"
+				}
 			},
 			"width": "1.5in",
 			"align": "left",
@@ -31,8 +35,12 @@
 		{
 			"label": "Play Time",
 			"param": {
-				"min": "minplaytime",
-				"max": "maxplaytime"
+				"min": {
+					"param": "minplaytime"
+				},
+				"max": {
+					"param": "maxplaytime"
+				}
 			},
 			"width": "1.5in",
 			"align": "left",
@@ -40,8 +48,16 @@
 		},
 		{
 			"label": "Weight",
-			"param": "statistics/ratings/averageweight",
-			"shortParam": "weight",
+			"param": {
+				"min": {
+					"param": "statistics/ratings/averageweight",
+					"shortParam": "minweight"
+				},
+				"max": {
+					"param": "statistics/ratings/averageweight",
+					"shortParam": "maxweight"
+				}
+			},
 			"width": "1.5in",
 			"align": "left",
 			"type": "graph-bar"
