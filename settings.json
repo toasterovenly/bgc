@@ -30,7 +30,11 @@
 			},
 			"width": "1.5in",
 			"align": "left",
-			"type": "graph-candleStick"
+			"type": "graph",
+			"graph": {
+				"type": "candleStick",
+				"precision": 0
+			}
 		},
 		{
 			"label": "Play Time",
@@ -44,7 +48,11 @@
 			},
 			"width": "1.5in",
 			"align": "left",
-			"type": "graph-bar"
+			"type": "graph",
+			"graph": {
+				"type": "bar",
+				"precision": 2
+			}
 		},
 		{
 			"label": "Weight",
@@ -60,7 +68,11 @@
 			},
 			"width": "1.5in",
 			"align": "left",
-			"type": "graph-bar"
+			"type": "graph",
+			"graph": {
+				"type": "bar",
+				"precision": 2
+			}
 		},
 		{
 			"label": "Year",

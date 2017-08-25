@@ -112,7 +112,7 @@ def getUserData(args):
 
     for item in collectionRoot:
         gameId = item.get("objectid")
-        gamesById[gameId] = {}
+        gamesById[gameId] = { "name": item.find("name").text }
         gameIdsStr += gameId + ","
     gameIdsStr = gameIdsStr[:-1] # remove trailing comma
 

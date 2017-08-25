@@ -1,9 +1,4 @@
-# import PyPDF2
-# import pdftools
-import collections
 from reportlab.pdfgen import canvas
-
-# from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import toLength
 import reportlab.lib.pagesizes as pagesizes
@@ -38,13 +33,14 @@ def rectTlwh(t, l, w, h):
 def rectTlbr(t, l, b, r):
     return rectTlwh(t, l, b - t, r - l)
 
-def intOrFloat(n):
+def intOrFloat(n, precision):
+    orig = n
     n = float(n)
     if n.is_integer():
         n = int(n)
     else:
-        n = float(truncate(n, 2))
-    print("n is a number", n)
+        n = float(truncate(n, precision))
+    # print("intOrFloat", orig, "precision", precision, "->", n)
     return n
 
 def truncate(f, n):
@@ -80,19 +76,22 @@ def truncate(f, n):
 # |    +- bar min
 # +- column min
 
-class RangeGraph:
+class GraphObject:
     leftColor = 0.5
     rightColor = 0.5
     centerColor = 0
     textColor = 1
 
-    def __init__(self, c, minVal, maxVal, drawWidth):
+    def __init__(self, c, minVal, maxVal, drawWidth, precision):
         self.c = c
-        self.minVal = intOrFloat(minVal) # left extrema
-        self.maxVal = intOrFloat(maxVal) # right extrema
+        self.precision = int(precision)
+        self.step = 1 / (10 ** self.precision)
+        self.minVal = intOrFloat(minVal, precision) # left extrema
+        self.maxVal = intOrFloat(maxVal, precision) + self.step # right extrema
         self.valWidth = self.maxVal - self.minVal
         self.drawWidth = drawWidth
         self.forceMin = False
+        print(self.__dict__)
 
     def drawLeftSection(self, x, y, right, graphArgs):
         minBar = self.minVal if self.forceMin else max(graphArgs["minBar"], self.minVal)
@@ -119,8 +118,8 @@ class RangeGraph:
         if maxBar <= maxFill:
             return
 
-        maxBarPos = remap(maxBar, self.minVal, self.maxVal, x, right)
-        maxFillPos = remap(maxFill, self.minVal, self.maxVal, x, right)
+        maxBarPos = remap(maxBar + self.step, self.minVal, self.maxVal, x, right)
+        maxFillPos = remap(maxFill + self.step, self.minVal, self.maxVal, x, right)
         width = maxBarPos - maxFillPos
 
         self.c.setFillGray(self.rightColor)
@@ -132,7 +131,7 @@ class RangeGraph:
         minFill = self.minVal if self.forceMin else max(graphArgs["minFill"], self.minVal)
         maxFill = min(graphArgs["maxFill"], self.maxVal)
         minFillPos = remap(minFill, self.minVal, self.maxVal, x, right)
-        maxFillPos = remap(maxFill, self.minVal, self.maxVal, x, right)
+        maxFillPos = remap(maxFill + self.step, self.minVal, self.maxVal, x, right)
         width = maxFillPos - minFillPos
 
         self.c.setFillGray(self.centerColor)
@@ -141,52 +140,17 @@ class RangeGraph:
         if minFill == maxFill:
             self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, str(maxFill))
         else:
-            self.c.drawString(minFillPos, y - FONT_SIZE, str(minFill))
+            if not self.forceMin:
+                self.c.drawString(minFillPos, y - FONT_SIZE, str(minFill))
             self.c.drawRightString(maxFillPos, y - FONT_SIZE, str(maxFill))
 
     def draw(self, x, y, graphArgs):
-        # minBar = self.minVal if self.forceMin else graphArgs["minBar"]
-        # minFill = self.minVal if self.forceMin else graphArgs["minFill"]
-        # maxFill = graphArgs["maxFill"]
-        # maxBar = graphArgs["maxBar"]
-
-        print("draw graph")
-
+        # print("draw graph")
         right = x + self.drawWidth
         self.drawLeftSection(x, y, right, graphArgs)
         self.drawRightSection(x, y, right, graphArgs)
         self.drawCenterSection(x, y, right, graphArgs)
 
-        # if minBar and maxBar:
-        # minBar = max(minBar, self.minVal)
-        # minBarPos = remap(minBar, self.minVal, self.maxVal, x, right)
-        # maxBar = min(maxBar, self.maxVal)
-        # maxBarPos = remap(maxBar + 1, self.minVal, self.maxVal, x, right)
-        # minFill = max(minFill, self.minVal)
-        # minFillPos = remap(minFill, self.minVal, self.maxVal, x, right)
-        # maxFill = min(maxFill, self.maxVal)
-        # maxFillPos = remap(maxFill + 1, self.minVal, self.maxVal, x, right)
-
-        # self.c.setFillGray(self.leftColor)
-        # self.c.rect(minBarPos, y, minFill - minBarPos, -ROW_HEIGHT, fill=1, stroke=0)
-        # if minBar < minFill:
-        #     self.c.setFillGray(self.textColor)
-        #     self.c.drawString(minBarPos, y - FONT_SIZE, str(minBar))
-
-        # self.c.setFillGray(self.rightColor)
-        # self.c.rect(maxFill, y, maxBarPos - maxFill, -ROW_HEIGHT, fill=1, stroke=0)
-        # if maxBar > maxFill:
-        #     self.c.setFillGray(self.textColor)
-        #     self.c.drawRightString(maxBarPos, y - FONT_SIZE, str(maxBar))
-
-        # self.c.setFillGray(self.centerColor)
-        # self.c.rect(minFillPos, y, maxFillPos - minFillPos, -ROW_HEIGHT, fill=1, stroke=0)
-        # self.c.setFillGray(self.textColor)
-        # if minFill == maxFill:
-        #     self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, str(maxFill))
-        # else:
-        #     self.c.drawString(minFillPos, y - FONT_SIZE, str(minFill))
-        #     self.c.drawRightString(maxFillPos, y - FONT_SIZE, str(maxFill))
 
 ################################################################################
 # row and column helpers
@@ -232,23 +196,24 @@ def makeGraphColumn(c, x, y, column, row):
     param = column["param"]
     paramMin = param["min"]["shortParam"] or param["min"]["param"]
     paramMax = param["max"]["shortParam"] or param["max"]["param"]
+    precision = column["graph"]["precision"]
 
     if not "graphObj" in column:
         colMin = collectionStats[paramMin]
         colMax = collectionStats[paramMax]
         colWid = colWidth(column, c)
-        graph = column.setdefault("graphObj", RangeGraph(c, colMin, colMax, colWid))
-        if column["type"] == "graph-bar":
+        graph = column.setdefault("graphObj", GraphObject(c, colMin, colMax, colWid, precision))
+        if column["graph"]["type"] == "bar":
             graph.leftColor = 0
             graph.forceMin = True
     else:
         graph = column["graphObj"]
 
     graphArgs = {
-        "minBar": intOrFloat(row[paramMin]),
-        "minFill": intOrFloat(row[paramMin]),
-        "maxFill": intOrFloat(row[paramMax]),
-        "maxBar": intOrFloat(row[paramMax]),
+        "minBar": intOrFloat(row[paramMin], precision),
+        "minFill": intOrFloat(row[paramMin], precision),
+        "maxFill": intOrFloat(row[paramMax], precision),
+        "maxBar": intOrFloat(row[paramMax], precision),
     }
     graph.draw(x, y, graphArgs)
 
@@ -262,7 +227,7 @@ def makeColumn(c, x, y, column, row):
     if columnType == "string":
         data = row[column["param"]]
         makeStringColumn(c, x, y, column, row, data=data)
-    elif columnType == "graph-bar" or columnType == "graph-candleStick":
+    elif columnType == "graph":
         makeGraphColumn(c, x, y, column, row)
 
     return width

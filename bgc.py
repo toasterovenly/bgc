@@ -71,7 +71,7 @@ def getParamFromGameXml(game, param, output, shortParam):
         return
 
     shortParam = shortParam or param
-    output[shortParam] = game.find(param).get("value")
+    output.setdefault(shortParam, game.find(param).get("value"))
 
 def process(args):
     from settings import settings
@@ -99,6 +99,8 @@ def process(args):
         # TODO: figure out a valid range
         for key in data:
             if key.startswith("min"):
+                maxKey = "max" + key[3:]
+                print("min for", key[3:])
                 setv(collectionStats, key, data[key], min)
             if key.startswith("max"):
                 setv(collectionStats, key, data[key], max)
