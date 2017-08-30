@@ -104,7 +104,6 @@ def process(args):
                 column = paramToColumn[key]
                 val = float(data[key])
                 clamp = column["graph"].get("clampMin", val)
-                print("\nmin", key, val, clamp, type(clamp), type(val))
                 val = max(val, clamp)
                 setv(collectionStats, key, val, min)
             if key.startswith("max"):
