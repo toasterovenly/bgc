@@ -33,7 +33,9 @@
 			"type": "graph",
 			"graph": {
 				"type": "candleStick",
-				"precision": 0
+				"precision": 0,
+				"clampMin": 1,
+				"clampMax": 10
 			}
 		},
 		{
@@ -51,7 +53,9 @@
 			"type": "graph",
 			"graph": {
 				"type": "bar",
-				"precision": 2
+				"precision": 2,
+				"clampMin": 0,
+				"clampMax": 180
 			}
 		},
 		{
@@ -59,11 +63,11 @@
 			"param": {
 				"min": {
 					"param": "statistics/ratings/averageweight",
-					"shortParam": "minweight"
+					"dest": "minweight"
 				},
 				"max": {
 					"param": "statistics/ratings/averageweight",
-					"shortParam": "maxweight"
+					"dest": "maxweight"
 				}
 			},
 			"width": "1.5in",
@@ -71,7 +75,9 @@
 			"type": "graph",
 			"graph": {
 				"type": "bar",
-				"precision": 2
+				"precision": 2,
+				"clampMin": 0,
+				"clampMax": 5
 			}
 		},
 		{
@@ -81,7 +87,5 @@
 			"align": "right",
 			"type": "string"
 		}
-	],
-	"maxPlayerCount": 15
-
+	]
 }

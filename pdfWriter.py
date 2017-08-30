@@ -90,12 +90,12 @@ class GraphObject:
         self.maxVal = intOrFloat(maxVal, precision) + self.step # right extrema
         self.valWidth = self.maxVal - self.minVal
         self.drawWidth = drawWidth
-        self.forceMin = False
-        print(self.__dict__)
+        self.stepWidth = remap(self.step, self.minVal, self.maxVal, 0, drawWidth)
+        self.isBarGraph = False
 
     def drawLeftSection(self, x, y, right, graphArgs):
-        minBar = self.minVal if self.forceMin else max(graphArgs["minBar"], self.minVal)
-        minFill = self.minVal if self.forceMin else max(graphArgs["minFill"], self.minVal)
+        minBar = self.minVal if self.isBarGraph else max(graphArgs["minBar"], self.minVal)
+        minFill = self.minVal if self.isBarGraph else max(graphArgs["minFill"], self.minVal)
 
         if minBar >= minFill:
             return
@@ -106,7 +106,7 @@ class GraphObject:
 
         self.c.setFillGray(self.leftColor)
         self.c.rect(minBarPos, y, width, -ROW_HEIGHT, fill=1, stroke=0)
-        if not self.forceMin:
+        if not self.isBarGraph:
             strVal = "{}".format(minBar)
             self.c.setFillGray(self.textColor)
             self.c.drawString(minBarPos, y - FONT_SIZE, strVal)
@@ -128,7 +128,7 @@ class GraphObject:
         self.c.drawRightString(maxBarPos, y - FONT_SIZE, str(maxBar))
 
     def drawCenterSection(self, x, y, right, graphArgs):
-        minFill = self.minVal if self.forceMin else max(graphArgs["minFill"], self.minVal)
+        minFill = self.minVal if self.isBarGraph else max(graphArgs["minFill"], self.minVal)
         maxFill = min(graphArgs["maxFill"], self.maxVal)
         minFillPos = remap(minFill, self.minVal, self.maxVal, x, right)
         maxFillPos = remap(maxFill + self.step, self.minVal, self.maxVal, x, right)
@@ -140,9 +140,20 @@ class GraphObject:
         if minFill == maxFill:
             self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, str(maxFill))
         else:
-            if not self.forceMin:
-                self.c.drawString(minFillPos, y - FONT_SIZE, str(minFill))
-            self.c.drawRightString(maxFillPos, y - FONT_SIZE, str(maxFill))
+            if not self.isBarGraph:
+                leftText = str(minFill)
+                if self.c.stringWidth(leftText) < self.stepWidth:
+                    leftTextPos = minFillPos + self.stepWidth * 0.5
+                    self.c.drawCentredString(leftTextPos, y - FONT_SIZE, leftText)
+                else:
+                    self.c.drawString(minFillPos, y - FONT_SIZE, leftText)
+
+            rightText = str(maxFill)
+            if self.c.stringWidth(rightText) < self.stepWidth:
+                rightTextPos = maxFillPos - self.stepWidth * 0.5
+                self.c.drawCentredString(rightTextPos, y - FONT_SIZE, rightText)
+            else:
+                self.c.drawRightString(maxFillPos, y - FONT_SIZE, rightText)
 
     def draw(self, x, y, graphArgs):
         # print("draw graph")
@@ -194,18 +205,25 @@ def makeStringColumn(c, x, y, column, row, data=""):
 def makeGraphColumn(c, x, y, column, row):
     # candlestick or bar chart
     param = column["param"]
-    paramMin = param["min"]["shortParam"] or param["min"]["param"]
-    paramMax = param["max"]["shortParam"] or param["max"]["param"]
+    paramMin = param["min"]["dest"]
+    paramMax = param["max"]["dest"]
     precision = column["graph"]["precision"]
 
     if not "graphObj" in column:
         colMin = collectionStats[paramMin]
         colMax = collectionStats[paramMax]
-        colWid = colWidth(column, c)
+        colWid = colWidth(column, c) - SPACE_AROUND
+        colGraph = column["graph"]
+        if "clampMin" in colGraph:
+            clampMin = colGraph["clampMin"]
+            colMin = max(colMin, clampMin)
+        if "clampMax" in colGraph:
+            clampMax = colGraph["clampMax"]
+            colMax = min(colMax, clampMax)
         graph = column.setdefault("graphObj", GraphObject(c, colMin, colMax, colWid, precision))
-        if column["graph"]["type"] == "bar":
+        if colGraph["type"] == "bar":
             graph.leftColor = 0
-            graph.forceMin = True
+            graph.isBarGraph = True
     else:
         graph = column["graphObj"]
 

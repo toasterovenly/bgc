@@ -62,16 +62,17 @@ def setv(obj, k, v, pred):
 
 ################################################################################
 
-def getParamFromGameXml(game, param, output, shortParam):
+def getParamFromGameXml(game, paramObj, column, output, paramToColumn):
+    param = paramObj["param"]
+
     if isinstance(param, collections.Mapping):
         for p in param:
-            subParam = param[p]
-            shortParam = subParam.setdefault("shortParam", subParam["param"])
-            getParamFromGameXml(game, subParam["param"], output, shortParam)
+            getParamFromGameXml(game, param[p], column, output, paramToColumn)
         return
 
-    shortParam = shortParam or param
-    output.setdefault(shortParam, game.find(param).get("value"))
+    dest = paramObj.setdefault("dest", param)
+    output.setdefault(dest, game.find(param).get("value"))
+    paramToColumn[dest] = column
 
 def process(args):
     from settings import settings
@@ -89,21 +90,29 @@ def process(args):
         thingId = game.get("id")
         thingType = game.get("type")
         data = gamesById.get(thingId)
+        paramToColumn = {}
 
         for column in columns:
             if column["label"] == "#":
                 continue
-            getParamFromGameXml(game, column["param"], data, column.get("shortParam"))
+            getParamFromGameXml(game, column, column, data, paramToColumn)
 
         # there are issues with some games that have 0 as values
         # TODO: figure out a valid range
         for key in data:
             if key.startswith("min"):
-                maxKey = "max" + key[3:]
-                print("min for", key[3:])
-                setv(collectionStats, key, data[key], min)
+                column = paramToColumn[key]
+                val = float(data[key])
+                clamp = column["graph"].get("clampMin", val)
+                print("\nmin", key, val, clamp, type(clamp), type(val))
+                val = max(val, clamp)
+                setv(collectionStats, key, val, min)
             if key.startswith("max"):
-                setv(collectionStats, key, data[key], max)
+                column = paramToColumn[key]
+                val = float(data[key])
+                clamp = column["graph"].get("clampMax", val)
+                val = min(val, clamp)
+                setv(collectionStats, key, val, max)
 
         if thingType == "boardgame":
             data["index"] = len(gameData) + 1
@@ -130,7 +139,7 @@ def process(args):
     # exportToCsv(gameData)
     pdfWriter.writeToFile(args.outFile, gameData, collectionStats)
 
-###############################################################################
+################################################################################
 # handle command line args
 
 def parse():
@@ -165,6 +174,7 @@ def parse():
     args.outFile = outPath + args.userName + args.filePostfix + ".pdf"
     args.outPath = outPath
 
+    print("get collection for user '" + args.userName + "'.")
     if args.verbose:
         print("got args", args)
     return args
@@ -174,6 +184,9 @@ def parseSettings(args):
         data = json.load(file)
         print("json", type(data), data)
     return data
+
+################################################################################
+
 
 options = parse()
 settingsLoad(options.settingsFile)
