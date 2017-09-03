@@ -86,8 +86,10 @@ class GraphObject:
         self.c = c
         self.precision = int(precision)
         self.step = 1 / (10 ** self.precision)
-        self.minVal = intOrFloat(minVal, precision) # left extrema
-        self.maxVal = intOrFloat(maxVal, precision) + self.step # right extrema
+        self.clampMin = intOrFloat(minVal, precision)
+        self.clampMax = intOrFloat(maxVal, precision)
+        self.minVal = self.clampMin # left extrema
+        self.maxVal = self.clampMax + self.step # right extrema
         self.valWidth = self.maxVal - self.minVal
         self.drawWidth = drawWidth
         self.stepWidth = remap(self.step, self.minVal, self.maxVal, 0, drawWidth)
@@ -141,14 +143,14 @@ class GraphObject:
             self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, str(maxFill))
         else:
             if not self.isBarGraph:
-                leftText = str(minFill)
+                leftText = graphArgs["minText"]
                 if self.c.stringWidth(leftText) < self.stepWidth:
                     leftTextPos = minFillPos + self.stepWidth * 0.5
                     self.c.drawCentredString(leftTextPos, y - FONT_SIZE, leftText)
                 else:
                     self.c.drawString(minFillPos, y - FONT_SIZE, leftText)
 
-            rightText = str(maxFill)
+            rightText = graphArgs["maxText"]
             if self.c.stringWidth(rightText) < self.stepWidth:
                 rightTextPos = maxFillPos - self.stepWidth * 0.5
                 self.c.drawCentredString(rightTextPos, y - FONT_SIZE, rightText)
@@ -227,11 +229,18 @@ def makeGraphColumn(c, x, y, column, row):
     else:
         graph = column["graphObj"]
 
+    minBar = intOrFloat(row[paramMin], precision)
+    minFill = intOrFloat(row[paramMin], precision)
+    maxFill = intOrFloat(row[paramMax], precision)
+    maxBar = intOrFloat(row[paramMax], precision)
+
     graphArgs = {
-        "minBar": intOrFloat(row[paramMin], precision),
-        "minFill": intOrFloat(row[paramMin], precision),
-        "maxFill": intOrFloat(row[paramMax], precision),
-        "maxBar": intOrFloat(row[paramMax], precision),
+        "minBar": max(minBar, graph.clampMin),
+        "minFill": max(minFill, graph.clampMin),
+        "maxFill": min(maxFill, graph.clampMax),
+        "maxBar": min(maxBar, graph.clampMax),
+        "minText": str(minFill),
+        "maxText": str(maxFill),
     }
     graph.draw(x, y, graphArgs)
 
