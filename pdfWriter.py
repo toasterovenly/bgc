@@ -92,8 +92,22 @@ class GraphObject:
         self.maxVal = self.clampMax + self.step # right extrema
         self.valWidth = self.maxVal - self.minVal
         self.drawWidth = drawWidth
-        self.stepWidth = remap(self.step, self.minVal, self.maxVal, 0, drawWidth)
+        self.stepWidth = remap(self.step + self.minVal, self.minVal, self.maxVal, 0, drawWidth)
         self.isBarGraph = False
+        print("===", self)
+
+    def __str__(self):
+        return ("GraphObject" +
+                ": precision " + str(self.precision) +
+                ", step " + str(self.step) +
+                ", clampMin " + str(self.clampMin) +
+                ", clampMax " + str(self.clampMax) +
+                ", minVal " + str(self.minVal) +
+                ", maxVal " + str(self.maxVal) +
+                ", valWidth  " + str(self.valWidth) +
+                ", drawWidth " + str(self.drawWidth) +
+                ", stepWidth " + str(self.stepWidth) +
+                ", isBarGraph " + str(self.isBarGraph))
 
     def drawLeftSection(self, x, y, right, graphArgs):
         minBar = self.minVal if self.isBarGraph else max(graphArgs["minBar"], self.minVal)
