@@ -73,13 +73,10 @@ def getParamFromGameXml(game, paramObj, column, output, paramToColumn):
     paramToColumn[dest] = column
 
 def process(args):
-    from settings import settings
     columns = settings["columns"]
 
     gamesXmlRoot, gamesById = netCode.getUserData(args)
 
-    print("")
-    print("args for processing", args)
     gameData = [] # alphabetical
     collectionStats = {}
 
@@ -131,7 +128,7 @@ def process(args):
 
     # todo:
     # read homerules and adjust stats
-    print("collectionStats", collectionStats)
+    # print("collectionStats", collectionStats)
 
     # exportToCsv(gameData)
     pdfWriter.writeToFile(args.outFile, gameData, collectionStats)
@@ -186,7 +183,8 @@ def parseSettings(args):
 
 
 options = parse()
-settingsLoad(options.settingsFile)
+settings = settingsLoad(options.settingsFile)
+settings["options"] = options
 # purposefully import these after settings are loaded
 import netCode
 import pdfWriter

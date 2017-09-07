@@ -3,6 +3,7 @@
 	"page-border": 1,
 	"unit": "inch",
 	"font-size": "8pt",
+	"title-font-size": "14pt",
 	"cell-padding": "3pt",
 	"columns": [
 		{
@@ -49,7 +50,7 @@
 					"param": "maxplaytime"
 				}
 			},
-			"width": 1.25,
+			"width": 1.5,
 			"align": "left",
 			"type": "graph",
 			"graph": {
@@ -71,7 +72,7 @@
 					"dest": "maxweight"
 				}
 			},
-			"width": 1.25,
+			"width": 1,
 			"align": "left",
 			"type": "graph",
 			"graph": {

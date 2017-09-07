@@ -1,5 +1,6 @@
 import sys
 import numbers
+from datetime import date
 import reportlab
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import toLength
@@ -314,26 +315,58 @@ def makeRowHeader(c, x, y):
         x += colWidth(column, c)
     c.setFont('Helvetica', FONT_SIZE)
 
-def makePage(c, gameData):
+def makePageHeader(c):
+    today = date.today().isoformat()
+    x = CONTENT_AREA["right"]
+    y = CONTENT_AREA["top"] + PAGE_BORDER * 0.5
+    c.drawRightString(x, y - FONT_SIZE * 0.5, today)
+
+    name = settings["options"].playerName or settings["options"].userName
+    message = str.format("{}'s Tabletop Games", name)
+    newFontSize = lengthOf(settings["title-font-size"])
+    c.setFont('Helvetica-Bold', newFontSize)
+    x = CONTENT_AREA["left"]
+    c.drawString(x, y - newFontSize * 0.5, message)
+
+    c.setFont("Helvetica", FONT_SIZE)
+
+def makePageFooter(c, gameData, pageNum):
+    totalPageCount = 1
+    pageHeight = CONTENT_AREA["top"]
+    for _ in gameData:
+        if pageHeight - ROW_HEIGHT < CONTENT_AREA["bottom"]:
+            totalPageCount += 1
+            pageHeight = CONTENT_AREA["top"]
+        pageHeight -= ROW_HEIGHT
+
+    message = str.format("{} / {}", pageNum, totalPageCount)
+    x = PAGE_SIZE[0] * 0.5
+    y = CONTENT_AREA["bottom"] - PAGE_BORDER * 0.5
+    c.drawCentredString(x, y - FONT_SIZE * 0.5, message)
+
+def makePage(c, gameData, pageNum):
+    c.setFont("Helvetica", FONT_SIZE)
+    makePageHeader(c)
+    makePageFooter(c, gameData, pageNum)
+
     x = CONTENT_AREA["left"]
     y = CONTENT_AREA["top"]
 
     makeRowHeader(c, x, y)
     y -= ROW_HEIGHT
 
-    c.setFont("Helvetica", FONT_SIZE)
     while collectionStats["currentGameIndex"] < len(gameData):
-        if y < CONTENT_AREA["bottom"]:
+        if y - ROW_HEIGHT < CONTENT_AREA["bottom"]:
             break
         game = gameData[collectionStats["currentGameIndex"]]
         makeRow(c, game, x, y)
         y -= ROW_HEIGHT
         collectionStats["currentGameIndex"] += 1
     else:
-        drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
+        # drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
         return True # all games done
 
-    drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
+    # drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
     c.showPage()
     return False
 
@@ -359,6 +392,8 @@ def writeToFile(filename, gameData, _collectionStats):
     collectionStats["currentGameIndex"] = 0
 
     endOfDocument = False
+    pageNum = 1
     while not endOfDocument:
-        endOfDocument = makePage(c, gameData)
+        endOfDocument = makePage(c, gameData, pageNum)
+        pageNum += 1
     c.save()
