@@ -42,6 +42,7 @@ SAFE_AREA = {
 FONT_SIZE = lengthOf(settings["font-size"])
 SPACE_AROUND = lengthOf(settings["cell-padding"])
 ROW_HEIGHT = FONT_SIZE + SPACE_AROUND
+CONTENT_AREA = {}
 
 collectionStats = {}
 
@@ -118,7 +119,7 @@ class GraphObject:
         self.drawWidth = drawWidth
         self.stepWidth = remap(self.step + self.minVal, self.minVal, self.maxVal, 0, drawWidth)
         self.isBarGraph = False
-        print("===", self)
+        # print("===", self)
 
     def __str__(self):
         return ("GraphObject" +
@@ -280,6 +281,7 @@ def makeGraphColumn(c, x, y, column, row):
         "minText": str(minFill),
         "maxText": str(maxFill),
     }
+    # print(row[paramMin], row[paramMax], "\n", graphArgs, "\n", column)
     graph.draw(x, y, graphArgs)
 
 def makeColumn(c, x, y, column, row):
@@ -298,6 +300,7 @@ def makeColumn(c, x, y, column, row):
     return width
 
 def makeRow(c, row, x, y):
+    # print("\n---\n", row["name"])
     columns = settings["columns"]
 
     for column in columns:
@@ -312,16 +315,15 @@ def makeRowHeader(c, x, y):
     c.setFont('Helvetica', FONT_SIZE)
 
 def makePage(c, gameData):
-    x = SAFE_AREA["left"]
-    y = SAFE_AREA["top"]
-
+    x = CONTENT_AREA["left"]
+    y = CONTENT_AREA["top"]
 
     makeRowHeader(c, x, y)
     y -= ROW_HEIGHT
 
     c.setFont("Helvetica", FONT_SIZE)
     while collectionStats["currentGameIndex"] < len(gameData):
-        if y < SAFE_AREA["bottom"]:
+        if y < CONTENT_AREA["bottom"]:
             break
         game = gameData[collectionStats["currentGameIndex"]]
         makeRow(c, game, x, y)
@@ -335,8 +337,22 @@ def makePage(c, gameData):
     c.showPage()
     return False
 
+def calculateContentArea(c):
+    c.setFont("Helvetica", FONT_SIZE)
+    columns = settings["columns"]
+    totalWidth = 0
+    for column in columns:
+        totalWidth += colWidth(column, c)
+    CONTENT_AREA["top"] = SAFE_AREA["top"]
+    CONTENT_AREA["bottom"] = SAFE_AREA["bottom"]
+    CONTENT_AREA["height"] = SAFE_AREA["height"]
+    CONTENT_AREA["width"] = totalWidth
+    CONTENT_AREA["left"] = (PAGE_SIZE[0] - totalWidth) * 0.5
+    CONTENT_AREA["right"] = CONTENT_AREA["left"] + totalWidth
+
 def writeToFile(filename, gameData, _collectionStats):
     c = canvas.Canvas(filename, pagesize=PAGE_SIZE)
+    calculateContentArea(c)
 
     global collectionStats
     collectionStats = _collectionStats
