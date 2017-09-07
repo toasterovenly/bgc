@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import http
 import errno
 import os
+import sys
 from tryagain import retries
 
 ################################################################################
@@ -57,7 +58,7 @@ def waitFunc(n):
 
 def getUrlFactory(args):
     """sets up the getUrl function to have a dynamic number of retries"""
-    @retries(max_attempts=args.retries, wait=waitFunc, exceptions=http.client.ResponseNotReady)
+    @retries(max_attempts=args.retries+1, wait=waitFunc, exceptions=http.client.ResponseNotReady)
     def getUrl(url, message):
         message = message or ""
         result = urllib.request.urlopen(url)
@@ -102,7 +103,11 @@ def getUserData(args):
     def outFileName(tag):
         return args.outPath + args.userName + "-" + tag + args.filePostfix + ".xml"
 
-    collectionXml = getUrl(urls["myBoardgames"], "get collection")
+    try:
+        collectionXml = getUrl(urls["myBoardgames"], "get collection")
+    except http.client.ResponseNotReady:
+        print("The server is processing your request. Try again in a little bit.")
+        sys.exit()
     collectionRoot = getRoot(collectionXml)
     if args.intermediate:
         dumpToFile(collectionXml, outFileName("collection"))
@@ -112,11 +117,15 @@ def getUserData(args):
 
     for item in collectionRoot:
         gameId = item.get("objectid")
-        gamesById[gameId] = { "name": item.find("name").text }
+        gamesById[gameId] = {"name": item.find("name").text}
         gameIdsStr += gameId + ","
     gameIdsStr = gameIdsStr[:-1] # remove trailing comma
 
-    gamesXml = getUrl(urls["games"] + gameIdsStr, "get full game data")
+    try:
+        gamesXml = getUrl(urls["games"] + gameIdsStr, "get full game data")
+    except http.client.ResponseNotReady:
+        print("The server is processing your request. Try again in a little bit.")
+        sys.exit()
     gamesRoot = getRoot(gamesXml)
     if args.intermediate:
         dumpToFile(gamesXml, outFileName("games"))
