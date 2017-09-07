@@ -2,7 +2,8 @@
 	"page-size": "LETTER",
 	"page-border": 1,
 	"unit": "inch",
-	"font-size": 8,
+	"font-size": "8pt",
+	"cell-padding": "3pt",
 	"columns": [
 		{
 			"label": "#",

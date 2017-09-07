@@ -3,8 +3,6 @@ import argparse
 from datetime import datetime
 import json
 import re
-import netCode
-import pdfWriter
 from settings import load as settingsLoad
 
 ################################################################################
@@ -189,5 +187,8 @@ def parseSettings(args):
 
 options = parse()
 settingsLoad(options.settingsFile)
+# purposefully import these after settings are loaded
+import netCode
+import pdfWriter
 process(options)
 print("done.")

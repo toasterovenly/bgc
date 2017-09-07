@@ -1,12 +1,36 @@
+import sys
+import numbers
+import reportlab
 from reportlab.pdfgen import canvas
-from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import toLength
 import reportlab.lib.pagesizes as pagesizes
+from settings import settings
 
-PAGE_SIZE = pagesizes.LETTER
-styles = getSampleStyleSheet()
-inch = toLength("1in")
-PAGE_BORDER = 1 * inch
+################################################################################
+# file-scoped variables
+
+try:
+    requestedPagesize = settings["page-size"].upper()
+    PAGE_SIZE = getattr(pagesizes, requestedPagesize)
+except AttributeError:
+    print("Invalid 'page-size' in settings: " + settings["page-size"] + ".")
+    sys.exit()
+try:
+    UNIT = getattr(reportlab.lib.units, settings["unit"])
+except AttributeError:
+    print("Invalid 'unit' in settings: " + settings["unit"] + ".")
+    sys.exit()
+
+def lengthOf(num):
+    if isinstance(num, numbers.Real):
+        return num * UNIT
+    elif isinstance(num, str):
+        return toLength(num)
+    else:
+        print("Invalid value for length: " + num + ".")
+
+
+PAGE_BORDER = lengthOf(settings["page-border"])
 SAFE_AREA = {
     "top": PAGE_SIZE[1] - PAGE_BORDER,
     "left": PAGE_BORDER,
@@ -15,9 +39,9 @@ SAFE_AREA = {
     "width": PAGE_SIZE[0] - 2 * PAGE_BORDER,
     "height": PAGE_SIZE[1] - 2 * PAGE_BORDER,
 }
-FONT_SIZE = 8
-SPACE_AROUND = 3
-ROW_HEIGHT = toLength(str(FONT_SIZE + SPACE_AROUND) + "pt")
+FONT_SIZE = lengthOf(settings["font-size"])
+SPACE_AROUND = lengthOf(settings["cell-padding"])
+ROW_HEIGHT = FONT_SIZE + SPACE_AROUND
 
 collectionStats = {}
 
@@ -28,13 +52,13 @@ def remap(number, oldMin, oldMax, newMin, newMax):
     return newMin + (number - oldMin) * (newMax - newMin) / (oldMax - oldMin)
 
 def rectTlwh(t, l, w, h):
-    return (l * inch, -t * inch, w * inch, -h * inch)
+    return (l * UNIT, -t * UNIT, w * UNIT, -h * UNIT)
 
 def rectTlbr(t, l, b, r):
     return rectTlwh(t, l, b - t, r - l)
 
 def intOrFloat(n, precision):
-    orig = n
+    # orig = n
     n = float(n)
     if n.is_integer():
         n = int(n)
@@ -48,7 +72,7 @@ def truncate(f, n):
     s = '{}'.format(f)
     if 'e' in s or 'E' in s:
         return '{0:.{1}f}'.format(f, n)
-    i, p, d = s.partition('.')
+    i, _, d = s.partition('.')
     return '.'.join([i, (d)[:n]])
 
 ################################################################################
@@ -192,7 +216,7 @@ def colAlign(column):
 
 def colWidth(column, c):
     if "width" in column:
-        return toLength(column["width"])
+        return lengthOf(column["width"])
     return c.stringWidth(column["autoWidth"])
 
 def drawRect(c, left, top, right, bottom):
@@ -207,7 +231,7 @@ def drawRect(c, left, top, right, bottom):
 ################################################################################
 # read data and write to the .pdf
 
-def makeStringColumn(c, x, y, column, row, data=""):
+def makeStringColumn(c, x, y, column, row, data):
     align = colAlign(column)
     width = colWidth(column, c)
     c.setFillGray(0)
@@ -267,25 +291,23 @@ def makeColumn(c, x, y, column, row):
     columnType = column["type"]
     if columnType == "string":
         data = row[column["param"]]
-        makeStringColumn(c, x, y, column, row, data=data)
+        makeStringColumn(c, x, y, column, row, data)
     elif columnType == "graph":
         makeGraphColumn(c, x, y, column, row)
 
     return width
 
 def makeRow(c, row, x, y):
-    from settings import settings
     columns = settings["columns"]
 
     for column in columns:
         x += makeColumn(c, x, y, column, row)
 
 def makeRowHeader(c, x, y):
-    from settings import settings
     columns = settings["columns"]
     c.setFont('Helvetica-Bold', FONT_SIZE)
     for column in columns:
-        makeStringColumn(c, x, y, column, {}, data=column["label"])
+        makeStringColumn(c, x, y, column, {}, column["label"])
         x += colWidth(column, c)
     c.setFont('Helvetica', FONT_SIZE)
 
