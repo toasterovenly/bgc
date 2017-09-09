@@ -1,107 +1,34 @@
-import urllib.request
-import urllib.error
-import xml.etree.ElementTree as ET
-import http
-import errno
-import os
-from tryagain import retries
+import collections
+import argparse
+from datetime import datetime
+import json
+import re
+from settings import load as settingsLoad
 
 ################################################################################
 
-username = "toasterovenly"
-commands = {
-    "collection": "collection?",
-    "thing": "thing?",
-    "user": "user?",
-}
-filters = {
-    "own": "own=1",
-    "boardgames": "subtype=boardgame",
-    "expansions": "subtype=boardgameexpansion",
-    "noexpansions": "excludesubtype=boardgameexpansion",
-    "username": "username="+username,
-    "id": "id=",
-    "stats": "stats=1",
-    "brief": "brief=1",
-}
-baseurl = "http://www.boardgamegeek.com/xmlapi2/"
-urls = {
-    "myBoardgames": baseurl + commands["collection"]
-                    + filters["username"] + "&"
-                    + filters["brief"] + "&"
-                    + filters["own"] + "&"
-                    + filters["noexpansions"],
-    "myExpansions": baseurl + commands["collection"]
-                    + filters["username"] + "&"
-                    + filters["stats"] + "&"
-                    + filters["own"] + "&"
-                    + filters["expansions"],
-    "games": baseurl + commands["thing"]
-             + filters["stats"] + "&"
-             + filters["id"],
-    "myProfile": baseurl + commands["user"]
-                 + filters["username"],
-}
+outPath = "output\\"
+settings = {} # from settings file
+options = {} # from command line
 
 ################################################################################
 
-def waitFunc(n):
-    out = 2 ** (n-1) # 1,2,4,8,16
-    print("retrying in " + str(out))
-    return out
-
-@retries(max_attempts=5, wait=waitFunc, exceptions=http.client.ResponseNotReady)
-def getUrl(url, message):
-    message = message or ""
-    result = urllib.request.urlopen(url)
-    print(result.code, result.reason, message)
-    if result.code == http.HTTPStatus.ACCEPTED.value:
-        raise http.client.ResponseNotReady(result.reason)
-    elif result.code == http.HTTPStatus.OK.value:
-        return result.read()
-
-def getRoot(someBytes):
-    if isinstance(someBytes, bytes):
-        someBytes = str(someBytes, 'utf-8')
-        return ET.fromstring(someBytes)
-    return None
-
-def dumpToFile(someBytes, fileName):
-    '''debug function to export data from html GET requests as xml'''
-    with open(fileName, "w", encoding='utf-8') as text_file:
-        someBytes = str(someBytes, 'utf-8')
-        text_file.write(someBytes)
-
-def getHomeRules():
-    tree = ET.parse("home_rules.xml")
-    if tree:
-        return tree.getroot()
-
-def mkdir_p(path):
-    try:
-        os.makedirs(path)
-    except OSError as exc:  # Python >2.5
-        if exc.errno == errno.EEXIST and os.path.isdir(path):
-            pass
-        else:
-            raise
-
-def exportToCsv(gameList):
+def exportToCsv(gameData):
     lines = []
-    for g in gameList:
+    for game in gameData:
 
         line = []
-        line.append(g["name"])
-        line.append(g["eMinplayers"])
-        line.append(g["minplayers"])
-        line.append(g["maxplayers"])
-        line.append(g["eMaxplayers"])
-        line.append(g["eMinplaytime"])
-        line.append(g["minplaytime"])
-        line.append(g["maxplaytime"])
-        line.append(g["eMaxplaytime"])
-        line.append(g["weight"])
-        line.append(g["yearpublished"])
+        line.append(game.get("name"))
+        line.append(game.get("eMinplayers", -1))
+        line.append(game.get("minplayers", -1))
+        line.append(game.get("maxplayers", -1))
+        line.append(game.get("eMaxplayers", -1))
+        line.append(game.get("eMinplaytime", -1))
+        line.append(game.get("minplaytime", -1))
+        line.append(game.get("maxplaytime", -1))
+        line.append(game.get("eMaxplaytime", -1))
+        line.append(game.get("weight", -1))
+        line.append(game.get("yearpublished", -1))
 
         # convert to csv
         fileLine = ""
@@ -110,64 +37,156 @@ def exportToCsv(gameList):
         fileLine = fileLine[:-1]
         lines.append(fileLine)
 
-    mkdir_p("output")
-    with open("output/collection_" + username + ".csv", "w", encoding='utf-8') as text_file:
+    # mkdir_p("output")
+    with open(outPath + "collection.csv", "w", encoding='utf-8') as text_file:
         for line in lines:
             text_file.write(line + "\n")
+    with open(outPath + "userName.csv", "w", encoding='utf-8') as text_file:
+        if playerName != None:
+            text_file.write(playerName + "\n")
+        else:
+            text_file.write(userName + "\n")
+
+def setv(obj, k, v, pred):
+    """
+    sets or updates a value
+    if pred is supplied, the new value is the result of pred(oldVal, newVal)
+    """
+    if pred and k in obj:
+        obj[k] = pred(obj[k], v)
+        return
+    obj[k] = v
+
 
 ################################################################################
 
-collection = getUrl(urls["myBoardgames"], "get collection")
-root = getRoot(collection)
-# dumpToFile(collection, "collection.xml")
+def getParamFromGameXml(game, paramObj, column, output, paramToColumn):
+    param = paramObj["param"]
 
-gameIds = ""
-gameData = []
-for item in root:
-    thing = {
-        "id": item.get("objectid"),
-        "name": item.find("name").text,
-    }
-    gameData.append(thing)
-    gameIds += str(thing["id"]) + ","
-gameIds = gameIds[:-1]
-games = getUrl(urls["games"] + gameIds, "get full game data")
-# dumpToFile(games, "allDataForCollection.xml")
-games = getRoot(games)
+    if isinstance(param, collections.Mapping):
+        for p in param:
+            getParamFromGameXml(game, param[p], column, output, paramToColumn)
+        return
 
-eCollection = getUrl(urls["myExpansions"], "get expansions in collection")
-eRoot = getRoot(eCollection)
-# dumpToFile(eCollection, "eCollection.xml")
+    dest = paramObj.setdefault("dest", param)
+    output.setdefault(dest, game.find(param).get("value"))
+    paramToColumn[dest] = column
 
-print("")
+def process(args):
+    columns = settings["columns"]
 
-i = 0
-for game in games:
-    data = gameData[i]
-    data["minplayers"] = data["eMinplayers"] = game.find("minplayers").get("value")
-    data["maxplayers"] = data["eMaxplayers"] = game.find("maxplayers").get("value")
-    data["minplaytime"] = data["eMinplaytime"] = game.find("minplaytime").get("value")
-    data["maxplaytime"] = data["eMaxplaytime"] = game.find("maxplaytime").get("value")
-    data["yearpublished"] = game.find("yearpublished").get("value")
-    data["weight"] = game.find("statistics/ratings/averageweight").get("value")
+    gamesXmlRoot, gamesById = netCode.getUserData(args)
 
-    print(gameData[i]["name"])
+    gameData = [] # alphabetical
+    collectionStats = {}
 
-    expansions = game.findall("link[@type='boardgameexpansion']")
-    for e in expansions:
-        eId = e.get("id")
-        eFromCollection = eRoot.findall("item[@objectid='" + eId + "']")
-        if len(eFromCollection) > 0:
-            eFromCollection = eFromCollection[0]
-            name = eFromCollection.find("name").text
-            print("\t" + name)
-            stats = eFromCollection.find("stats")
-            data["eMinplayers"] = min(data["eMinplayers"], stats.get("minplayers"))
-            data["eMaxplayers"] = max(data["eMaxplayers"], stats.get("maxplayers"))
-            data["eMinplaytime"] = min(data["eMinplaytime"], stats.get("minplaytime"))
-            data["eMaxplaytime"] = max(data["eMaxplaytime"], stats.get("maxplaytime"))
-    i += 1
+    # do it all in one pass!
+    for game in gamesXmlRoot:
+        thingId = game.get("id")
+        thingType = game.get("type")
+        data = gamesById.get(thingId)
+        paramToColumn = {}
 
+        for column in columns:
+            if column["label"] == "#":
+                continue
+            getParamFromGameXml(game, column, column, data, paramToColumn)
+
+        # there are issues with some games that have 0 as values
+        # TODO: figure out a valid range
+        for key in data:
+            if key.startswith("min"):
+                column = paramToColumn[key]
+                val = float(data[key])
+                clamp = column["graph"].get("clampMin", val)
+                val = max(val, clamp)
+                setv(collectionStats, key, val, min)
+            if key.startswith("max"):
+                column = paramToColumn[key]
+                val = float(data[key])
+                clamp = column["graph"].get("clampMax", val)
+                val = min(val, clamp)
+                setv(collectionStats, key, val, max)
+
+        if thingType == "boardgame":
+            data["index"] = len(gameData) + 1
+            data.setdefault("expansions", [])
+            gameData.append(data)
+            gamesById[thingId] = data
+        elif thingType == "boardgameexpansion":
+            parents = game.findall("link[@type='boardgameexpansion']")
+            for p in parents:
+                parentId = p.get("id")
+                if parentId not in gamesById:
+                    continue
+                parent = gamesById.get(parentId)
+                parent.setdefault("expansions", [])
+                parent["expansions"].append(data)
+
+        if args.verbose:
+            print(data["name"])
+
+    # todo:
     # read homerules and adjust stats
+    # print("collectionStats", collectionStats)
 
-exportToCsv(gameData)
+    # exportToCsv(gameData)
+    pdfWriter.writeToFile(args.outFile, gameData, collectionStats)
+
+################################################################################
+# handle command line args
+
+def parse():
+    parser = argparse.ArgumentParser(description="Get your boardgame collection"
+                                     + " from Board Game Geek.")
+    parser.add_argument("userName",
+                        help="The username of the player whose collection you want.")
+    # parser.add_argument("-f", "--force", action='store_true',
+    #                     help="Force retrieve the user's full collection from bgg.com,"
+    #                     + " otherwise only updates will be retrieved. You'll need to do"
+    #                     + " this if you delete items from your collection.")
+    parser.add_argument("-i", "--intermediate", action='store_true',
+                        help="Output intermediate xml files. This is useful if you want"
+                        + " to create homerules.")
+    parser.add_argument("-p", "--player-name", dest="playerName",
+                        help="The name of the human player that this user represents.")
+    parser.add_argument("-r", "--retries", type=int, default=5,
+                        help="Number of times to request info from BGG before giving up.")
+    parser.add_argument("-s", "--settings-file", dest="settingsFile", default="settings.json",
+                        help="Path to a settings file to load. Default is 'settings.json'.")
+    parser.add_argument("-t", "--timestamp", action='store_true',
+                        help="Output files will have a timestamp appended to their name.")
+    parser.add_argument("-v", "--verbose", action='store_true',
+                        help="Print verbose output.")
+
+    args = parser.parse_args()
+    args.time = datetime.now()
+    if args.timestamp:
+        args.filePostfix = args.time.strftime("-%Y%m%d%H%M%S")
+    else:
+        args.filePostfix = ""
+    args.outFile = outPath + args.userName + args.filePostfix + ".pdf"
+    args.outPath = outPath
+
+    print("get collection for user '" + args.userName + "'.")
+    if args.verbose:
+        print("got args", args)
+    return args
+
+def parseSettings(args):
+    with open(args.settingsFile) as file:
+        data = json.load(file)
+        print("json", type(data), data)
+    return data
+
+################################################################################
+
+
+options = parse()
+settings = settingsLoad(options.settingsFile)
+settings["options"] = options
+# purposefully import these after settings are loaded
+import netCode
+import pdfWriter
+process(options)
+print("done.")

@@ -1,0 +1,93 @@
+{
+	"page-size": "LETTER",
+	"page-border": 1,
+	"unit": "inch",
+	"font-size": "8pt",
+	"title-font-size": "14pt",
+	"cell-padding": "3pt",
+	"columns": [
+		{
+			"label": "#",
+			"param": "index",
+			"autoWidth": "888",
+			"align": "right",
+			"type": "string"
+		},
+		{
+			"label": "Game",
+			"param": "name",
+			"width": 2.2,
+			"align": "left",
+			"type": "string"
+		},
+		{
+			"label": "Player Count",
+			"param": {
+				"min": {
+					"param": "minplayers"
+				},
+				"max": {
+					"param": "maxplayers"
+				}
+			},
+			"width": 1.5,
+			"align": "left",
+			"type": "graph",
+			"graph": {
+				"type": "candleStick",
+				"precision": 0,
+				"clampMin": 1,
+				"clampMax": 10
+			}
+		},
+		{
+			"label": "Play Time",
+			"param": {
+				"min": {
+					"param": "minplaytime"
+				},
+				"max": {
+					"param": "maxplaytime"
+				}
+			},
+			"width": 1.5,
+			"align": "left",
+			"type": "graph",
+			"graph": {
+				"type": "bar",
+				"precision": 2,
+				"clampMin": 0,
+				"clampMax": 180
+			}
+		},
+		{
+			"label": "Weight",
+			"param": {
+				"min": {
+					"param": "statistics/ratings/averageweight",
+					"dest": "minweight"
+				},
+				"max": {
+					"param": "statistics/ratings/averageweight",
+					"dest": "maxweight"
+				}
+			},
+			"width": 1,
+			"align": "left",
+			"type": "graph",
+			"graph": {
+				"type": "bar",
+				"precision": 2,
+				"clampMin": 0,
+				"clampMax": 5
+			}
+		},
+		{
+			"label": "Year",
+			"param": "yearpublished",
+			"autoWidth": "8888",
+			"align": "right",
+			"type": "string"
+		}
+	]
+}
