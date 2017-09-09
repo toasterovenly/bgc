@@ -179,23 +179,37 @@ class GraphObject:
         self.c.setFillGray(self.centerColor)
         self.c.rect(minFillPos, y, width, -ROW_HEIGHT, fill=1, stroke=0)
         self.c.setFillGray(self.textColor)
+        rightText = graphArgs["maxText"]
+
         if minFill == maxFill:
-            self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, str(maxFill))
+            if not self.isBarGraph:
+                self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, rightText)
+            else:
+                self.c.setFillGray(self.centerColor)
+                self.c.drawString(maxFillPos, y - FONT_SIZE, rightText)
         else:
             if not self.isBarGraph:
                 leftText = graphArgs["minText"]
-                if self.c.stringWidth(leftText) < self.stepWidth:
-                    leftTextPos = minFillPos + self.stepWidth * 0.5
-                    self.c.drawCentredString(leftTextPos, y - FONT_SIZE, leftText)
-                else:
-                    self.c.drawString(minFillPos, y - FONT_SIZE, leftText)
+                lStringWidth = self.c.stringWidth(leftText)
+                if lStringWidth < width:
+                    if lStringWidth < self.stepWidth:
+                        leftTextPos = minFillPos + self.stepWidth * 0.5
+                        self.c.drawCentredString(leftTextPos, y - FONT_SIZE, leftText)
+                    else:
+                        self.c.drawString(minFillPos, y - FONT_SIZE, leftText)
 
-            rightText = graphArgs["maxText"]
-            if self.c.stringWidth(rightText) < self.stepWidth:
-                rightTextPos = maxFillPos - self.stepWidth * 0.5
-                self.c.drawCentredString(rightTextPos, y - FONT_SIZE, rightText)
+            rStringWidth = self.c.stringWidth(rightText)
+            print("rStringWidth", rightText, "\t", rStringWidth, "\t", width, "\t", self.stepWidth)
+            if rStringWidth < width:
+                if rStringWidth < self.stepWidth:
+                    print
+                    rightTextPos = maxFillPos - self.stepWidth * 0.5
+                    self.c.drawCentredString(rightTextPos, y - FONT_SIZE, rightText)
+                else:
+                    self.c.drawRightString(maxFillPos, y - FONT_SIZE, rightText)
             else:
-                self.c.drawRightString(maxFillPos, y - FONT_SIZE, rightText)
+                self.c.setFillGray(self.centerColor)
+                self.c.drawString(maxFillPos, y - FONT_SIZE, rightText)
 
     def draw(self, x, y, graphArgs):
         # print("draw graph")
@@ -301,7 +315,7 @@ def makeColumn(c, x, y, column, row):
     return width
 
 def makeRow(c, row, x, y):
-    # print("\n---\n", row["name"])
+    print("\n---\n", row["name"])
     columns = settings["columns"]
 
     for column in columns:
