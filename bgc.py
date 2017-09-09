@@ -158,6 +158,7 @@ def parse():
                         help="Output files will have a timestamp appended to their name.")
     parser.add_argument("-v", "--verbose", action='store_true',
                         help="Print verbose output.")
+    parser.add_argument('--version', action='version', version='%(prog)s 1.0')
 
     args = parser.parse_args()
     args.time = datetime.now()
