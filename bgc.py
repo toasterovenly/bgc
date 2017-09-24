@@ -95,20 +95,20 @@ def process(args):
                 continue
             getParamFromGameXml(game, column, column, data, paramToColumn)
 
-        # there are issues with some games that have 0 as values
-        # TODO: figure out a valid range
         for key in data:
             if key.startswith("min"):
                 column = paramToColumn[key]
                 val = float(data[key])
                 clamp = column["graph"].get("clampMin", val)
-                val = max(val, clamp)
+                force = column["graph"].get("forceMin", val)
+                val = min(max(val, clamp), force)
                 setv(collectionStats, key, val, min)
             if key.startswith("max"):
                 column = paramToColumn[key]
                 val = float(data[key])
                 clamp = column["graph"].get("clampMax", val)
-                val = min(val, clamp)
+                force = column["graph"].get("forceMax", val)
+                val = max(min(val, clamp), force)
                 setv(collectionStats, key, val, max)
 
         if thingType == "boardgame":

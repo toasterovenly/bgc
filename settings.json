@@ -79,7 +79,8 @@
 				"type": "bar",
 				"precision": 2,
 				"clampMin": 0,
-				"clampMax": 5
+				"clampMax": 5,
+				"forceMin": 0
 			}
 		},
 		{
