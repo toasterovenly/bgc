@@ -77,6 +77,11 @@ def truncate(f, n):
     i, _, d = s.partition('.')
     return '.'.join([i, (d)[:n]])
 
+def makeMonotonic(numbers):
+    if len(numbers) < 2:
+        return numbers
+    return numbers.sort()
+
 ################################################################################
 # class for drawing graphs
 
@@ -171,22 +176,26 @@ class GraphObject:
 
     def drawCenterSection(self, x, y, right, graphArgs):
         minFill = self.minVal if self.isBarGraph else max(graphArgs["minFill"], self.minVal)
-        maxFill = min(graphArgs["maxFill"], self.maxVal)
+        maxFill = min(max(graphArgs["maxFill"], minFill), self.maxVal)
         minFillPos = remap(minFill, self.minVal, self.maxVal, x, right)
         maxFillPos = remap(maxFill + self.step, self.minVal, self.maxVal, x, right)
         width = maxFillPos - minFillPos
-
-        self.c.setFillGray(self.centerColor)
-        self.c.rect(minFillPos, y, width, -ROW_HEIGHT, fill=1, stroke=0)
-        self.c.setFillGray(self.textColor)
         rightText = graphArgs["maxText"]
 
+        if graphArgs["maxFill"] > 0:
+            self.c.setFillGray(self.centerColor)
+            self.c.rect(minFillPos, y, width, -ROW_HEIGHT, fill=1, stroke=0)
+            self.c.setFillGray(self.textColor)
+
         if minFill == maxFill:
-            if not self.isBarGraph:
+            if graphArgs["maxFill"] == 0:
+                self.c.setFillGray(self.centerColor)
+                self.c.drawString(minFillPos, y - FONT_SIZE, "no data")
+            elif not self.isBarGraph:
                 self.c.drawCentredString((maxFillPos + minFillPos) / 2, y - FONT_SIZE, rightText)
             else:
                 self.c.setFillGray(self.centerColor)
-                self.c.drawString(maxFillPos, y - FONT_SIZE, rightText)
+                self.c.drawString(minFillPos, y - FONT_SIZE, rightText)
         else:
             if not self.isBarGraph:
                 leftText = graphArgs["minText"]
@@ -281,10 +290,18 @@ def makeGraphColumn(c, x, y, column, row):
     else:
         graph = column["graphObj"]
 
+    # todo: actually use bar and fill
     minBar = intOrFloat(row[paramMin], precision)
     minFill = intOrFloat(row[paramMin], precision)
     maxFill = intOrFloat(row[paramMax], precision)
     maxBar = intOrFloat(row[paramMax], precision)
+
+    barValues = [minBar, minFill, maxFill, maxBar]
+    makeMonotonic(barValues)
+    minBar = barValues[0]
+    minFill = barValues[1]
+    maxFill = barValues[2]
+    maxBar = barValues[3]
 
     graphArgs = {
         "minBar": max(minBar, graph.clampMin),

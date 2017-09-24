@@ -3,8 +3,6 @@
 * get homerules working
 * add multiuser support
 * make executable (maybe not, hit a dead end)
-* add info to top of document
-    * total game count
 * add info to bottom of document
     * range of games in collection: aba-ORC / 1-65
 * warnings
