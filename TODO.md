@@ -1,6 +1,8 @@
 # bgc TODO
 --------
 * get homerules working
+* add multiuser support
+* make executable
 * add info to top of document
     * total game count
 * add info to bottom of document

@@ -6,6 +6,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import toLength
 import reportlab.lib.pagesizes as pagesizes
 from settings import settings
+from pprint import pprint
 
 ################################################################################
 # file-scoped variables
@@ -314,8 +315,39 @@ def makeColumn(c, x, y, column, row):
 
     return width
 
+def drawExpansionRow(c, x, y, string, indent, color):
+    c.setFillGray(color)
+    c.rect(x, y, CONTENT_AREA["width"], -ROW_HEIGHT, fill=1, stroke=0)
+    c.setFillGray(0)
+
+    x += indent
+    c.drawString(x + SPACE_AROUND, y - FONT_SIZE, string)
+
+def makeRowExpansions(c, row, x, y):
+    columns = settings["columns"]
+    firstColWidth = colWidth(columns[0], c)
+    expAreaWidth = CONTENT_AREA["width"] - firstColWidth
+    expansionString= ""
+    color = rowColor(row)
+
+    # crappy wordwrap
+    for exp in row["expansions"]:
+        expName = "+ " + exp["name"] + " "
+        maybeString = expansionString + expName
+        if c.stringWidth(maybeString) > expAreaWidth:
+            drawExpansionRow(c, x, y, expansionString, firstColWidth, color)
+            y -= ROW_HEIGHT
+            expansionString = expName
+        else:
+            expansionString = maybeString
+
+    drawExpansionRow(c, x, y, expansionString, firstColWidth, color)
+    y -= ROW_HEIGHT
+    return y
+
 def makeRow(c, row, x, y):
     print("\n---\n", row["name"])
+    pprint(row)
     columns = settings["columns"]
 
     for column in columns:
@@ -375,6 +407,8 @@ def makePage(c, gameData, pageNum):
         game = gameData[collectionStats["currentGameIndex"]]
         makeRow(c, game, x, y)
         y -= ROW_HEIGHT
+        if len(game["expansions"]) > 0:
+            y = makeRowExpansions(c, game, x, y)
         collectionStats["currentGameIndex"] += 1
     else:
         # drawRect(c, SAFE_AREA["left"], SAFE_AREA["top"], SAFE_AREA["right"], SAFE_AREA["bottom"])
