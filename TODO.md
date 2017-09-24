@@ -2,7 +2,7 @@
 --------
 * get homerules working
 * add multiuser support
-* make executable
+* make executable (maybe not, hit a dead end)
 * add info to top of document
     * total game count
 * add info to bottom of document
@@ -17,5 +17,6 @@
     * word wrap
     * add markers for "best" number of players?
     * add marker for average playtime?
+    * make expansions optional, add several ways to view them
 
 

@@ -6,7 +6,6 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import toLength
 import reportlab.lib.pagesizes as pagesizes
 from settings import settings
-from pprint import pprint
 
 ################################################################################
 # file-scoped variables
@@ -200,10 +199,8 @@ class GraphObject:
                         self.c.drawString(minFillPos, y - FONT_SIZE, leftText)
 
             rStringWidth = self.c.stringWidth(rightText)
-            print("rStringWidth", rightText, "\t", rStringWidth, "\t", width, "\t", self.stepWidth)
             if rStringWidth < width:
                 if rStringWidth < self.stepWidth:
-                    print
                     rightTextPos = maxFillPos - self.stepWidth * 0.5
                     self.c.drawCentredString(rightTextPos, y - FONT_SIZE, rightText)
                 else:
@@ -346,8 +343,7 @@ def makeRowExpansions(c, row, x, y):
     return y
 
 def makeRow(c, row, x, y):
-    print("\n---\n", row["name"])
-    pprint(row)
+    # print("\n---\n", row["name"])
     columns = settings["columns"]
 
     for column in columns:
@@ -363,9 +359,11 @@ def makeRowHeader(c, x, y):
 
 def makePageHeader(c):
     today = date.today().isoformat()
+    gameCount = str.format("{} games, {} expansions", collectionStats["gameCount"], collectionStats["expansionCount"])
     x = CONTENT_AREA["right"]
     y = CONTENT_AREA["top"] + PAGE_BORDER * 0.5
-    c.drawRightString(x, y - FONT_SIZE * 0.5, today)
+    c.drawRightString(x, y, today)
+    c.drawRightString(x, y - FONT_SIZE, gameCount)
 
     name = settings["options"].playerName or settings["options"].userName
     message = str.format("{}'s Tabletop Games", name)
@@ -402,7 +400,10 @@ def makePage(c, gameData, pageNum):
     y -= ROW_HEIGHT
 
     while collectionStats["currentGameIndex"] < len(gameData):
-        if y - ROW_HEIGHT < CONTENT_AREA["bottom"]:
+        game = gameData[collectionStats["currentGameIndex"]]
+        hasExpansions = len(game["expansions"]) > 0
+        expHeight = ROW_HEIGHT if hasExpansions else 0
+        if y - ROW_HEIGHT - expHeight < CONTENT_AREA["bottom"]:
             break
         game = gameData[collectionStats["currentGameIndex"]]
         makeRow(c, game, x, y)

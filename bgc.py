@@ -78,7 +78,10 @@ def process(args):
     gamesXmlRoot, gamesById = netCode.getUserData(args)
 
     gameData = [] # alphabetical
-    collectionStats = {}
+    collectionStats = {
+        "gameCount": 0,
+        "expansionCount": 0
+    }
 
     # do it all in one pass!
     for game in gamesXmlRoot:
@@ -109,11 +112,13 @@ def process(args):
                 setv(collectionStats, key, val, max)
 
         if thingType == "boardgame":
+            collectionStats["gameCount"] += 1
             data["index"] = len(gameData) + 1
             data.setdefault("expansions", [])
             gameData.append(data)
             gamesById[thingId] = data
         elif thingType == "boardgameexpansion":
+            collectionStats["expansionCount"] += 1
             parents = game.findall("link[@type='boardgameexpansion']")
             for p in parents:
                 parentId = p.get("id")
