@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<items totalitems="120" termsofuse="http://boardgamegeek.com/xmlapi/termsofuse" pubdate="Sun, 06 Aug 2017 03:26:54 +0000">
+<items totalitems="133" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse" pubdate="Fri, 05 Oct 2018 01:32:11 +0000">
 		<item objecttype="thing" objectid="526" subtype="boardgame" collid="8169686">
 	<name sortindex="1">Abalone</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-13 18:18:23" />
@@ -96,6 +96,14 @@
 	<name sortindex="1">Cleopatra and the Society of Architects</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-06 14:46:10" />
 								</item>
+		<item objecttype="thing" objectid="1561" subtype="boardgame" collid="54676179">
+	<name sortindex="1">Clue Master Detective</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-10-02 12:53:14" />
+								</item>
+		<item objecttype="thing" objectid="178900" subtype="boardgame" collid="54727504">
+	<name sortindex="1">Codenames</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-10-04 20:31:16" />
+								</item>
 		<item objecttype="thing" objectid="146130" subtype="boardgame" collid="25170445">
 	<name sortindex="1">Coin Age</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-10-15 00:18:03" />
@@ -121,11 +129,11 @@
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2011-01-26 01:13:24" />
 								</item>
 		<item objecttype="thing" objectid="138547" subtype="boardgame" collid="36363422">
-	<name sortindex="1">Dixit Odyssey (expansion)</name>
+	<name sortindex="1">Dixit: Odyssey (expansion)</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-18 22:00:10" />
 								</item>
 		<item objecttype="thing" objectid="55660" subtype="boardgame" collid="12179565">
-	<name sortindex="1">Dixit Quest</name>
+	<name sortindex="1">Dixit: Quest</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2011-01-26 01:13:41" />
 								</item>
 		<item objecttype="thing" objectid="2394" subtype="boardgame" collid="23148335">
@@ -135,6 +143,10 @@
 		<item objecttype="thing" objectid="148203" subtype="boardgame" collid="23147718">
 	<name sortindex="1">Dutch Blitz</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 01:43:04" />
+								</item>
+		<item objecttype="thing" objectid="82168" subtype="boardgame" collid="23124058">
+	<name sortindex="1">Escape from the Aliens in Outer Space</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-07-19 15:38:40" />
 								</item>
 		<item objecttype="thing" objectid="157820" subtype="boardgame" collid="27621979">
 	<name sortindex="1">Escape: The Curse of the Temple – Big Box</name>
@@ -155,6 +167,10 @@
 		<item objecttype="thing" objectid="158918" subtype="boardgame" collid="32282426">
 	<name sortindex="1">FLY</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-04 21:07:10" />
+								</item>
+		<item objecttype="thing" objectid="175324" subtype="boardgame" collid="53130822">
+	<name sortindex="1">Fog of Love</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-07-26 16:15:16" />
 								</item>
 		<item objecttype="thing" objectid="136063" subtype="boardgame" collid="22464464">
 	<name sortindex="1">Forbidden Desert</name>
@@ -208,6 +224,14 @@
 	<name sortindex="1">Jambo Expansion</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-13 18:16:59" />
 								</item>
+		<item objecttype="thing" objectid="193042" subtype="boardgame" collid="42834924">
+	<name sortindex="1">Junk Art</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2017-08-28 10:07:04" />
+								</item>
+		<item objecttype="thing" objectid="394" subtype="boardgame" collid="8169648">
+	<name sortindex="1">Kahuna</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-10-04 20:27:35" />
+								</item>
 		<item objecttype="thing" objectid="257" subtype="boardgame" collid="8169511">
 	<name sortindex="1">Kill Doctor Lucky</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-08-14 13:57:28" />
@@ -240,6 +264,10 @@
 	<name sortindex="1">Lord of the Rings: Sauron</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-01-11 01:07:54" />
 								</item>
+		<item objecttype="thing" objectid="50" subtype="boardgame" collid="8169685">
+	<name sortindex="1">Lost Cities</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-10-04 20:28:29" />
+								</item>
 		<item objecttype="thing" objectid="129622" subtype="boardgame" collid="21844143">
 	<name sortindex="1">Love Letter</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-01-10 02:26:59" />
@@ -264,9 +292,13 @@
 	<name sortindex="1">Murder of Crows</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-02 01:20:31" />
 								</item>
+		<item objecttype="thing" objectid="2342" subtype="boardgame" collid="54676238">
+	<name sortindex="1">Mystery Mansion</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-10-02 12:54:11" />
+								</item>
 		<item objecttype="thing" objectid="915" subtype="boardgame" collid="10259294">
 	<name sortindex="1">Mystery of the Abbey</name>
-					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2010-12-30 05:17:38" />
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2017-09-06 20:25:58" />
 								</item>
 		<item objecttype="thing" objectid="12942" subtype="boardgame" collid="8169447">
 	<name sortindex="1">No Thanks!</name>
@@ -280,6 +312,10 @@
 	<name sortindex="1">ORC</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2017-04-06 15:12:09" />
 								</item>
+		<item objecttype="thing" objectid="30549" subtype="boardgame" collid="45783215">
+	<name sortindex="1">Pandemic</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2017-10-04 18:39:57" />
+								</item>
 		<item objecttype="thing" objectid="1549" subtype="boardgame" collid="23148282">
 	<name sortindex="1">Password New 12th Edition</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-04-26 03:51:55" />
@@ -287,6 +323,10 @@
 		<item objecttype="thing" objectid="1775" subtype="boardgame" collid="23148321">
 	<name sortindex="1">Password Plus</name>
 					<status own="1" prevowned="0" fortrade="1" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2015-12-24 12:26:35" />
+								</item>
+		<item objecttype="thing" objectid="218603" subtype="boardgame" collid="50030434">
+	<name sortindex="1">Photosynthesis</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-03-02 23:13:02" />
 								</item>
 		<item objecttype="thing" objectid="2987" subtype="boardgame" collid="8169429">
 	<name sortindex="1">Pirate&#039;s Cove</name>
@@ -308,9 +348,13 @@
 	<name sortindex="1">Power Grid: The New Power Plant Cards</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-03-31 23:28:41" />
 								</item>
+		<item objecttype="thing" objectid="176396" subtype="boardgame" collid="35853173">
+	<name sortindex="1">Quadropolis</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-07-19 15:38:53" />
+								</item>
 		<item objecttype="thing" objectid="681" subtype="boardgame" collid="37571559">
-	<name sortindex="1">Quarto</name>
-					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-10-17 20:42:21" />
+	<name sortindex="1">Quarto!</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2017-09-06 20:36:57" />
 								</item>
 		<item objecttype="thing" objectid="624" subtype="boardgame" collid="25170447">
 	<name sortindex="1">Quoridor</name>
@@ -336,6 +380,10 @@
 	<name sortindex="1">Saboteur: Brettspiel Adventskalender 2016 Promo</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2017-06-22 12:43:59" />
 								</item>
+		<item objecttype="thing" objectid="66849" subtype="boardgame" collid="53130774">
+	<name sortindex="1">Safranito</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-07-26 16:14:24" />
+								</item>
 		<item objecttype="thing" objectid="128667" subtype="boardgame" collid="23124082">
 	<name sortindex="1">Samurai Sword</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2016-01-11 21:26:23" />
@@ -353,7 +401,7 @@
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2014-06-29 11:42:14" />
 								</item>
 		<item objecttype="thing" objectid="15062" subtype="boardgame" collid="8169366">
-	<name sortindex="1">Shadows over Camelot</name>
+	<name sortindex="1">Shadows Over Camelot</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:51:15" />
 								</item>
 		<item objecttype="thing" objectid="35704" subtype="boardgame" collid="8169369">
@@ -439,6 +487,10 @@
 		<item objecttype="thing" objectid="14996" subtype="boardgame" collid="8169356">
 	<name sortindex="1">Ticket to Ride: Europe</name>
 					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2009-12-27 05:51:42" />
+								</item>
+		<item objecttype="thing" objectid="173156" subtype="boardgame" collid="44916259">
+	<name sortindex="1">Timeline Challenge</name>
+					<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-07-27 10:01:09" />
 								</item>
 		<item objecttype="thing" objectid="158917" subtype="boardgame" collid="32282430">
 	<name sortindex="1">TKO</name>
