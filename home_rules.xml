@@ -12,4 +12,8 @@
 		<name sortindex="1">No Thanks!</name>
 		<stats maxplayers="5"></stats>
 	</item>
+	<item collid="54676238" objectid="2342" objecttype="thing" subtype="boardgame">
+		<name sortindex="1">Mystery Mansion</name>
+		<stats maxplayers="6"></stats>
+	</item>
 </items>

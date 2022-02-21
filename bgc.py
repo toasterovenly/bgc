@@ -63,7 +63,7 @@ def setv(obj, k, v, pred):
 def getParamFromGameXml(game, paramObj, column, output, paramToColumn):
     param = paramObj["param"]
 
-    if isinstance(param, collections.Mapping):
+    if isinstance(param, collections.abc.Mapping):
         for p in param:
             getParamFromGameXml(game, param[p], column, output, paramToColumn)
         return
