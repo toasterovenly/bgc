@@ -61,12 +61,23 @@ def getUrlFactory(args):
     @retries(max_attempts=args.retries+1, wait=waitFunc, exceptions=http.client.ResponseNotReady)
     def getUrl(url, message):
         message = message or ""
-        result = urllib.request.urlopen(url)
-        print(message, "-", result.code, result.reason)
+
+        try:
+            result = urllib.request.urlopen(url)
+        except urllib.error.HTTPError as exc:  # Python >2.5
+            header = http.client.parse_headers(exc.fp)
+            exc.add_note(header.as_string())
+            raise
+
+        print(message, "-", result.code, result.reason, "-", url)
+
         if result.code == http.HTTPStatus.ACCEPTED.value:
             raise http.client.ResponseNotReady(result.reason)
         elif result.code == http.HTTPStatus.OK.value:
             return result.read()
+        # else:
+        #     raise urllib.error.HTTPError(url, result.code, result.reason)
+
     return getUrl
 
 def getRoot(someBytes):
