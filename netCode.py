@@ -5,6 +5,7 @@ import http
 import errno
 import os
 import sys
+import math
 from tryagain import retries
 
 ################################################################################
@@ -86,8 +87,19 @@ def getRoot(someBytes):
         return ET.fromstring(someBytes)
     return None
 
-def dumpToFile(someBytes, fileName):
-    # pass
+def mergeGamesXml(root1, root2):
+    if root1 is None:
+        return root2
+    root1.extend(root2)
+    return root1
+
+def dumpToFile(xmlRoot, fileName):
+    ET.indent(xmlRoot)
+    xml = ET.ElementTree(xmlRoot)
+    xml.write(fileName, encoding='utf-8', xml_declaration=True)
+    print("wrote file:", fileName)
+
+def dumpStringToFile(someBytes, fileName):
     with open(fileName, "w", encoding='utf-8') as text_file:
         someBytes = str(someBytes, 'utf-8')
         text_file.write(someBytes)
@@ -121,24 +133,40 @@ def getUserData(args):
         sys.exit()
     collectionRoot = getRoot(collectionXml)
     if args.intermediate:
-        dumpToFile(collectionXml, outFileName("collection"))
+        dumpToFile(collectionRoot, outFileName("collection"))
 
-    gameIdsStr = ""
     gamesById = {}
+    maxThingsPerRequest = 20
+    itemCount = len(collectionRoot)
+    requestCount = math.ceil(itemCount / maxThingsPerRequest)
+    gamesRoot = None
 
-    for item in collectionRoot:
-        gameId = item.get("objectid")
-        gamesById[gameId] = {"name": item.find("name").text}
-        gameIdsStr += gameId + ","
-    gameIdsStr = gameIdsStr[:-1] # remove trailing comma
+    for requestNumber in range (0, requestCount):
+        startIndex = requestNumber * maxThingsPerRequest
+        endIndex = min(startIndex + maxThingsPerRequest, itemCount)
 
-    try:
-        gamesXml = getUrl(urls["games"] + gameIdsStr, "get full game data")
-    except http.client.ResponseNotReady:
-        print("The server is processing your request. Try again in a little bit.")
-        sys.exit()
-    gamesRoot = getRoot(gamesXml)
+        # for item in collectionRoot:
+        gameIdsStr = ""
+        for itemIndex in range(startIndex, endIndex):
+            item = collectionRoot[itemIndex]
+            gameId = item.get("objectid")
+            gamesById[gameId] = {"name": item.find("name").text}
+            gameIdsStr += gameId + ","
+        gameIdsStr = gameIdsStr[:-1] # remove trailing comma
+
+        try:
+            gamesXml = getUrl(urls["games"] + gameIdsStr, "get full game data")
+            # dumpStringToFile(gamesXml, args.outPath + "raw" + str(requestNumber) + ".xml")
+        except http.client.ResponseNotReady:
+            print("The server is processing your request. Try again in a little bit.")
+            sys.exit()
+
+        if gamesRoot is None:
+            gamesRoot = getRoot(gamesXml)
+        else:
+            gamesRoot = mergeGamesXml(gamesRoot, getRoot(gamesXml))
+
     if args.intermediate:
-        dumpToFile(gamesXml, outFileName("games"))
+        dumpToFile(gamesRoot, outFileName("games"))
 
     return (gamesRoot, gamesById)
